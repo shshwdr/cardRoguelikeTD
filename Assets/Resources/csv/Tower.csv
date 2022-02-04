@@ -1,0 +1,7 @@
+﻿name,displayName,placeType,isUnlocked
+single,Arrow Tower,shelf,1
+bomb,Cannon Tower,shelf,1
+fridge,Toll,ground,1
+guide,Blocker,ground,1
+wall,Wall,shelf,1
+bank,Bank,shelf,1

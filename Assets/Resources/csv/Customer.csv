@@ -1,0 +1,5 @@
+﻿name,displayName,hp,moveSpeed,canBlock
+normal,女性,30,0.2,1
+fast,孩子,10,0.4,1
+cantBlock,男性,60,0.3,0
+lotsHP,有钱人,200,0.2,1

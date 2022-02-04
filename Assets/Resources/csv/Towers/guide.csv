@@ -1,0 +1,4 @@
+﻿name,displayName,levelTier,description,blockTime,range,price,blockCount
+1,导购,1,阻拦,6,0.3,20,3
+2,屈臣氏导购,2,阻拦时间增长,10,0.3,20,3
+3,带喇叭导购,2,阻拦人数增加,6,0.3,30,6

@@ -1,0 +1,60 @@
+{
+    "allMainItem":
+    [
+      {
+        "name": "shelf",
+        "displayName":"shelf",
+        "catelog":"bed",
+        "isUnlocked":true,
+        "description":"shelf",
+        "earning":10,
+        "requireResources":[
+          {"key":"stick","amount":2},
+          {"key":"coin","amount":50}
+        ],
+        "rooms":["bedroom"]
+      }
+    ],
+    "allDecorations":[
+      {
+        "name": "tree",
+        "catelog":"decoration",
+        "affectRadius":10,
+        "earning":5,
+        "isUnlocked":true,
+        "displayName":"Tree",
+        "description":"Tree",
+        "requireResources":[
+          {"key":"stick","amount":2},
+          {"key":"coin","amount":50}
+        ],
+        "rooms":["bedroom"]
+      },{
+        "name": "lamp",
+        "earning":10,
+        "isUnlocked":false,
+        "affectRadius":10,
+        "catelog":"decoration",
+        "displayName":"Lamp",
+        "description":"Lamp",
+        "requireResources":[
+          {"key":"stick","amount":2},
+          {"key":"coin","amount":50}
+        ],
+        "rooms":["bedroom"]
+      },{
+        "name": "duck",
+        "earning":15,
+        "isUnlocked":false,
+        "affectRadius":20,
+        "catelog":"decoration",
+        "displayName":"Duck",
+        "description":"Duck",
+        "requireResources":[
+          {"key":"stick","amount":2},
+          {"key":"coin","amount":50}
+        ],
+        "rooms":["spring"]
+      }
+    ]
+  }

@@ -1,0 +1,3 @@
+﻿name,displayName,stage,request,extraRequests
+introduction,倒霉的魔王,0,earnMoney:300,hasMoney:500|dontUse:guide
+introduction2,倒霉的魔王2,0,earnMoney:300,hasMoney:400|dontUse:guide

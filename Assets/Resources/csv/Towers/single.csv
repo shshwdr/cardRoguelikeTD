@@ -1,0 +1,5 @@
+﻿name,displayName,levelTier,description,attackTime,attackDamage,range,price
+1,苹果,1,单点攻击,0.3,1,1,20
+2,富士苹果,2,单价更贵,0.3,2,1,30
+3,加力果,2,输出速度更快,0.2,1,1,20
+4,黄元帅,2,范围更广,0.3,1,2,35

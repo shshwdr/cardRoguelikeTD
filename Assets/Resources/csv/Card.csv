@@ -1,0 +1,9 @@
+﻿name,displayName,description,cardType,cost,isUnlocked
+wall,Wall,Place a Wall,maze,10,1
+single,Arrow Tower,Place an arrow Tower,"tower,target",40,1
+bomb,Cannon Tower,Place a cannon Tower,"tower,area",50,1
+fridge,Toll,Place a toll,trap,40,1
+guide,Blocker,Place a blocker,trap,40,1
+fireball,Fire Ball,throw a fire ball,spell,25,1
+redraw,Divination,draw cards,spell,15,1
+bank,Bank,Place a bank,Econ,60,1

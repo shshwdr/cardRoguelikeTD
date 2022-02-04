@@ -1,0 +1,2 @@
+﻿customer_id|level|how many|time between each customer|wait before next round,,,,
+normal|1|5|1|8,fast|1|2|0.7|8,cantBlock|1|4|1|8,lotsHP|1|4|1|8,fast|1|7|0.5|8
