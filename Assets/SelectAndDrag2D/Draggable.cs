@@ -16,6 +16,8 @@ public abstract class Draggable : GroundItem
     public InfoBase info;
     public bool isBuilt = false;
 
+    public int cost;
+
 
     public void changeOverlayColor(Color color)
     {
@@ -80,12 +82,13 @@ public abstract class Draggable : GroundItem
 
     public void consumeRequirements()
     {
-        InfoWithRequirementBase infoWithRequirement = (InfoWithRequirementBase)info;
-        var requirements = infoWithRequirement.requireResources;
-        foreach(var req in requirements)
-        {
-            Inventory.Instance.consumeItem(req.key, req.amount);
-        }
+        //InfoWithRequirementBase infoWithRequirement = (InfoWithRequirementBase)info;
+        //var requirements = infoWithRequirement.requireResources;
+        //foreach(var req in requirements)
+        //{
+        //    Inventory.Instance.consumeItem(req.key, req.amount);
+        //}
+        Inventory.Instance.consumeCoin(cost);
     }
     public void addBackRequirements()
     {
@@ -135,7 +138,7 @@ public abstract class Draggable : GroundItem
         {
             isDragging = false;
             material.color = Color.white;
-            //MouseManager.Instance.finishDragItem(gameObject);
+            MouseManager.Instance.finishDragItem(gameObject);
             build();
         }
     }

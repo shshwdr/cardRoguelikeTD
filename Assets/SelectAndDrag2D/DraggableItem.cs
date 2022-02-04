@@ -55,6 +55,7 @@ public class DraggableItem : Draggable
     }
     protected override void build()
     {
+        hideOverlay();
         if (effectRangeItem)
         {
             hideOverlay();
@@ -71,7 +72,7 @@ public class DraggableItem : Draggable
         }
         if (!isBuilt)
         {
-            RoomItemManager.Instance.addItem(this);
+           // RoomItemManager.Instance.addItem(this);
 
             consumeRequirements();
         }

@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class GroundItem:MonoBehaviour
 {
 
-    public Collider placeCollider;
+    public Collider2D placeCollider;
     //public IEnumerator renderNavAsync(bool showMesh = true)
     //{
 

@@ -93,17 +93,18 @@ public class Customer : HPCharacterController
 
     public void spentAllMoney()
     {
-        noMoney = true;
-        //CustomerManager.Instance.removeCustomer(this);
-        emotes.showNoMoney();
-        Debug.Log("no money");
-        if (isBlocked)
-        {
+        finishedShopping();
+        //noMoney = true;
+        ////CustomerManager.Instance.removeCustomer(this);
+        //emotes.showNoMoney();
+        //Debug.Log("no money");
+        //if (isBlocked)
+        //{
 
-            getReleased();
-        }
+        //    getReleased();
+        //}
 
-        pathFinding.moveSpeed *= 2;
+        //pathFinding.moveSpeed *= 2;
     }
 
     public override void Die()

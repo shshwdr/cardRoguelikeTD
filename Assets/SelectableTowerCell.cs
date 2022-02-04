@@ -30,7 +30,7 @@ public class SelectableTowerCell : MonoBehaviour
             {
 
                 var prefab = Resources.Load<GameObject>("tower/" + info.name);
-                var go = Instantiate(prefab, MouseManager.Instance.previousSelected.transform.position, Quaternion.identity);
+                //var go = Instantiate(prefab, MouseManager.Instance.previousSelected.transform.position, Quaternion.identity);
                 Inventory.Instance.consumeCoin(info.price);
             }
         }

@@ -39,7 +39,8 @@ public class CustomerManager : Singleton<CustomerManager>
 
     public List<Customer> getAllCustoemrsWithMoney()
     {
-        return customers.Count == 0?customers: (List<Customer>)customers.Where(x => !x.isDead);
+        return customers;
+       // return customers.Count == 0?customers: (List<Customer>)customers.Where(x => !x.isDead);
     }
 
     public void addCustomer(Customer cus)
