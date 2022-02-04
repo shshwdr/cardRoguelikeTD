@@ -17,6 +17,7 @@ public abstract class Draggable : GroundItem
     public bool isBuilt = false;
 
     public int cost;
+    public Card card;
 
 
     public void changeOverlayColor(Color color)
@@ -89,6 +90,7 @@ public abstract class Draggable : GroundItem
         //    Inventory.Instance.consumeItem(req.key, req.amount);
         //}
         Inventory.Instance.consumeCoin(cost);
+        BattleCardManager.Instance.useCard(card);
     }
     public void addBackRequirements()
     {

@@ -25,6 +25,18 @@ public class BattleCardManager : Singleton<BattleCardManager>
         CardsOnHand.Clear();
     }
 
+    public void useCard(Card card)
+    {
+        if (!CardsOnHand.Contains(card))
+        {
+            Debug.LogError("card not on hand " + card);
+        }
+        CardsOnHand.Remove(card);
+
+
+        EventPool.Trigger("handCardsUpdate");
+    }
+
     public void redrawHand()
     {
         clearHand();
