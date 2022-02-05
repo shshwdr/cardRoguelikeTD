@@ -9,8 +9,8 @@ public abstract class Draggable : GroundItem
     public bool isDragging = true;
     Vector3 screenPoint;
     Camera dragCamera;
-    Material material;
-    public Renderer renderer;
+    //Material material;
+    //public Renderer renderer;
     public Renderer overlay;
     public string type;
     public InfoBase info;
@@ -20,9 +20,9 @@ public abstract class Draggable : GroundItem
     public Card card;
 
 
-    public void changeOverlayColor(Color color)
+    public void changeOverlayColor(Color color, float alpha = 0.5f)
     {
-        overlay.material.color = color;
+        overlay.material.color =new Color( color.r,color.g,color.b, alpha);
     }
 
     public void showEnableOverlay()
@@ -35,7 +35,7 @@ public abstract class Draggable : GroundItem
         else
         {
 
-            renderer.material.color = Color.green;
+            //renderer.material.color = Color.green;
         }
     }
 
@@ -49,7 +49,7 @@ public abstract class Draggable : GroundItem
         else
         {
 
-            renderer.material.color = Color.red;
+           // renderer.material.color = Color.red;
         }
     }
 
@@ -62,7 +62,7 @@ public abstract class Draggable : GroundItem
         }
         else
         {
-            renderer.material.color = Color.yellow;
+            //renderer.material.color = Color.yellow;
         }
     }
 
@@ -75,7 +75,7 @@ public abstract class Draggable : GroundItem
         else
         {
 
-            renderer.material.color = Color.white;
+            //renderer.material.color = Color.white;
         }
 
     }
@@ -114,7 +114,7 @@ public abstract class Draggable : GroundItem
     protected virtual void Start()
     {
         dragCamera = Camera.main;
-        material = renderer.material;
+        //material = renderer.material;
         screenPoint = dragCamera.WorldToScreenPoint(gameObject.transform.position);
     }
     
@@ -139,7 +139,7 @@ public abstract class Draggable : GroundItem
         if (canbuild)
         {
             isDragging = false;
-            material.color = Color.white;
+           // material.color = Color.white;
             MouseManager.Instance.finishDragItem(gameObject);
             build();
         }

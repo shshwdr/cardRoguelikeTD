@@ -9,7 +9,9 @@ Assets/AssetStoreTools*
 builds
 windowsBuild
 build
-WindowsBuild
+/builds/
+/windowsBuild/
+/build/
 buildWindows
 pakcedBuild
 *.rar

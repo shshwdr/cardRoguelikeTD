@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8211208887499705964
+--- !u!1001 &4027015913409716642
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -38,6 +38,10 @@ PrefabInstance:
     - target: {fileID: 3637669636582616835, guid: 3cc0dc6db3f24f543b46534ffd4507af, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317493453960529283, guid: 3cc0dc6db3f24f543b46534ffd4507af, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4735876128323771121, guid: 3cc0dc6db3f24f543b46534ffd4507af, type: 3}
       propertyPath: m_Pivot.x
@@ -149,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6075590779286974053, guid: 3cc0dc6db3f24f543b46534ffd4507af, type: 3}
       propertyPath: m_Name
-      value: tower
+      value: InstanceSpell
       objectReference: {fileID: 0}
     - target: {fileID: 7716222527578638131, guid: 3cc0dc6db3f24f543b46534ffd4507af, type: 3}
       propertyPath: m_Pivot.x
@@ -185,27 +189,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cc0dc6db3f24f543b46534ffd4507af, type: 3}
---- !u!1 &2712512115611705353 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6075590779286974053, guid: 3cc0dc6db3f24f543b46534ffd4507af, type: 3}
-  m_PrefabInstance: {fileID: 8211208887499705964}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4941558769608559340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2712512115611705353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee2aa490ef5333f42baa7ea255dd3b03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActivated: 0
-  type: 
-  shootPoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
-  renderObject: {fileID: 0}
-  selections: {fileID: 0}
-  selectableCells: []

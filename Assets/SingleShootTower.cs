@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SingleShootTower : Tower
+public class SingleShootTower : AttackByTime
 {
     public int shootCount = 1;
 

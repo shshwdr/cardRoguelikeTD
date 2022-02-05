@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockTower : Tower
+public class BlockTower : AttackByTime
 {
     int blockCount = 3;
     int currentBlockCount = 0;

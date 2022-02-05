@@ -77,6 +77,7 @@ public class DraggableItem : Draggable
             consumeRequirements();
         }
         isBuilt = true;
+        GetComponent<CardEffect>().activate();
         //StartCoroutine(renderNavAsync());
     }
     public override void removeDragItem()
