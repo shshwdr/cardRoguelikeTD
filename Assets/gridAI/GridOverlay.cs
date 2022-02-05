@@ -24,28 +24,28 @@ public class GridOverlay : MonoBehaviour,IClickable
 
     public void showInfo()
     {
-        selections.SetActive(true);
-        renderer.color = new Color(1, 1, 1,0.5f);
+        //selections.SetActive(true);
+        //renderer.color = new Color(1, 1, 1,0.5f);
 
-        int i = 0;
-        foreach(var info in TowerManager.Instance.towerDict.Values)
-        {
-            if(info.placeType == type && info.isUnlocked == 1)
-            {
-                if (i >= selectableCells.Length)
-                {
-                    Debug.LogError("too many items but not enough cells, plan to add item "+i.ToString()+" but only have cell count "+ selectableCells.Length.ToString());
-                }
-                selectableCells[i].gameObject.SetActive(true);
-                selectableCells[i].GetComponent<SelectableTowerCell>().init(info,this);
-                i++;
-            }
-        }
-        for (; i < selectableCells.Length; i++)
-        {
-            selectableCells[i].gameObject.SetActive(false);
+        //int i = 0;
+        //foreach(var info in TowerManager.Instance.towerDict.Values)
+        //{
+        //    if(info.placeType == type && info.isUnlocked == 1)
+        //    {
+        //        if (i >= selectableCells.Length)
+        //        {
+        //            Debug.LogError("too many items but not enough cells, plan to add item "+i.ToString()+" but only have cell count "+ selectableCells.Length.ToString());
+        //        }
+        //        selectableCells[i].gameObject.SetActive(true);
+        //        selectableCells[i].GetComponent<SelectableTowerCell>().init(info,this);
+        //        i++;
+        //    }
+        //}
+        //for (; i < selectableCells.Length; i++)
+        //{
+        //    selectableCells[i].gameObject.SetActive(false);
 
-        }
+        //}
         
 
     }

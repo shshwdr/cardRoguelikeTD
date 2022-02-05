@@ -15,25 +15,25 @@ public class SelectableTowerCell : MonoBehaviour
     bool isUpgrade = false;
     public void buildTower()
     {
-        if (isCancel)
-        {
-            Destroy(overlay.gameObject);
-            Inventory.Instance.addCoin(info.sellPrice);
-        }else if (isUpgrade)
-        {
-            overlay.gameObject.GetComponent<Tower>().upgradeTower(dInfo);
-            Inventory.Instance.consumeCoin(dInfo.price);
-        }
-        else
-        {
-            if (Inventory.Instance.canConsumeCoin(info.price))
-            {
+        //if (isCancel)
+        //{
+        //    Destroy(overlay.gameObject);
+        //    Inventory.Instance.addCoin(info.sellPrice);
+        //}else if (isUpgrade)
+        //{
+        //    overlay.gameObject.GetComponent<Tower>().upgradeTower(dInfo);
+        //    Inventory.Instance.consumeCoin(dInfo.price);
+        //}
+        //else
+        //{
+        //    if (Inventory.Instance.canConsumeCoin(info.price))
+        //    {
 
-                var prefab = Resources.Load<GameObject>("tower/" + info.name);
-                //var go = Instantiate(prefab, MouseManager.Instance.previousSelected.transform.position, Quaternion.identity);
-                Inventory.Instance.consumeCoin(info.price);
-            }
-        }
+        //        var prefab = Resources.Load<GameObject>("tower/" + info.name);
+        //        //var go = Instantiate(prefab, MouseManager.Instance.previousSelected.transform.position, Quaternion.identity);
+        //        Inventory.Instance.consumeCoin(info.price);
+        //    }
+        //}
         overlay.hideInfo();
     }
 
@@ -48,7 +48,7 @@ public class SelectableTowerCell : MonoBehaviour
            info = _info;
         overlay = _overlay;
 
-        nameLabel.text = info.displayName + " " + info.price.ToString();
+        //nameLabel.text = info.displayName + " " + info.price.ToString();
         descLabel.text = info.description;
     }
 

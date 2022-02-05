@@ -19,10 +19,10 @@ public class Tower:CardEffect,IClickable
 
     //public SelectableTowerCell[] selectableCells;
 
-    public void upgradeTower(DetailTowerInfo _info)
-    {
-        towerInfo.detailInfo = _info;
-    }
+    //public void upgradeTower(DetailTowerInfo _info)
+    //{
+    //    towerInfo.detailInfo = _info;
+    //}
 
     private void Awake()
     {
@@ -41,7 +41,7 @@ public class Tower:CardEffect,IClickable
 
     private void Start()
     {
-        towerInfo = TowerManager.Instance.towerDict[type];
+        towerInfo = new TowerInfo( CardManager.Instance.getCardInfo(type));
         TowerManager.Instance.BuildTower(this);
         hideInfo();
     }

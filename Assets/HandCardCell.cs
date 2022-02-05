@@ -31,7 +31,7 @@ public class HandCardCell : MonoBehaviour
 
     public void spawnTower()
     {
-        var prefab = Resources.Load<GameObject>("tower/single");
+        var prefab = Resources.Load<GameObject>("tower/Arrow");
         GameObject spawnInstance = Instantiate(prefab);
         spawnInstance.GetComponent<DraggableItem>().cost = card.cost;
         spawnInstance.GetComponent<DraggableItem>().card = card;

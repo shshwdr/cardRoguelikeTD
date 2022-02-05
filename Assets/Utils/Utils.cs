@@ -8,7 +8,7 @@ public class Utils : MonoBehaviour
     static public Vector2[] dir4V2 = { new Vector2(1, 0), new Vector2(-1, 0), new Vector2(0, -1), new Vector2(0, 1), };
     static public Vector2Int[] dir4V2Int = { new Vector2Int(1, 0), new Vector2Int(-1, 0), new Vector2Int(0, -1), new Vector2Int(0, 1), };
     static public Vector2[] dir5V2 = { new Vector2(1, 0), new Vector2(-1, 0), new Vector2(0, -1), new Vector2(0, 1), new Vector2(0, 0), };
-
+   
     T CopyComponent<T>(T original, GameObject destination) where T : Component
     {
         System.Type type = original.GetType();

@@ -1,4 +1,5 @@
 using Sinbad;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,12 @@ public class CardInfo : BaseInfo
     public string cardType;
     public float cost;
     public int isUnlocked;
+    public float damage;
+    public float speedReverse;
+    public float speed;
+    public float range;
+    public List<string> tags;
+
 }
 
 
@@ -21,6 +28,10 @@ public class CardManager : Singleton<CardManager>
         foreach (var card in cards)
         {
             cardInfoDict[card.name] = card;
+            if(card.speedReverse != 0)
+            {
+                card.speed = 1f / card.speedReverse;
+            }
         }
     }
     public CardInfo getCardInfo(string n)

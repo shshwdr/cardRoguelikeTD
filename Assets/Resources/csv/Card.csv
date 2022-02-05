@@ -1,9 +1,11 @@
-﻿name,displayName,description,cardType,cost,isUnlocked
-wall,Wall,Place a Wall,maze,10,1
-single,Arrow Tower,Place an arrow Tower,"tower,target",40,1
-bomb,Cannon Tower,Place a cannon Tower,"tower,area",50,1
-fridge,Toll,Place a toll,trap,40,1
-guide,Blocker,Place a blocker,trap,40,1
-fireball,Fire Ball,throw a fire ball,spell,25,1
-redraw,Divination,draw cards,spell,15,1
-bank,Bank,Place a bank,Econ,60,1
+﻿name,displayName,description,cost,damage,speedReverse,range,tags
+Wall,Wall,Wall,2,0,0,1,Maze
+Fireball,Fireball,Fireball,10,20,1,1.5,Spell
+Divination,Divination,Divination,3,0,0,0,Spell
+Cannon,Cannon,Cannon,10,10,0.7,2,Tower| Area
+Balanced,Balanced,Balanced,8,8,1.5,2,Tower| Target
+Arrow,Arrow,Arrow,5,2,3,2.5,Tower| Target
+Bank,Bank,Bank,15,0,0,1,Econ
+Pulse,Pulse,Pulse,10,5,0.7,1,Tower| Area
+Frost,Frost,Frost,15,2,0.7,2,Tower| Area| Debuff
+Sniper,Sniper,Sniper,12,15,0.3,5,Tower| Target

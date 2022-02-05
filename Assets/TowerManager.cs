@@ -10,24 +10,33 @@ public class BaseInfo
     public string description;
 }
 
-public class TowerInfo : BaseInfo
+public class TowerInfo : CardInfo
 {
-    public string placeType;
-    public int isUnlocked;
-    public DetailTowerInfo detailInfo;
+    public TowerInfo(CardInfo inf)
+    {
+        damage = inf.damage;
+        speed = inf.speed;
+        range = inf.range;
+        tags = inf.tags;
+    }
+}
+    //public string placeType;
+    //public int isUnlocked;
+    //public DetailTowerInfo detailInfo;
 
-    public int spentPrice;
-    public string description { get { return detailInfo.description; } }
-    public float attackTime { get { return detailInfo.attackTime; } }
-    public float attackDamage { get { return detailInfo.attackDamage; } }
-    public int price { get {
-            string test = name;
+    //public int spentPrice;
+    //public string description { get { return detailInfo.description; } }
+    public int level = 1;
+    public float attackTime { get { return speed; } }
+    public float attackDamage { get { return damage*level; } }
+    //public int price { get {
+    //        string test = name;
             
-            return (int)(detailInfo.price * Mathf.Pow(TowerManager.Instance.buildTowerPenalty,(1+ TowerManager.Instance.builtTowerDict[name])));
-        } }
-    public int sellPrice { get { return (int)(spentPrice * TowerManager.Instance.sellTowerPenalty); } }
-    public float levelTier { get { return detailInfo.levelTier; } }
-    public float range { get { return detailInfo.range; } }
+    //        return (int)(detailInfo.price * Mathf.Pow(TowerManager.Instance.buildTowerPenalty,(1+ TowerManager.Instance.builtTowerDict[name])));
+    //    } }
+    public int sellPrice { get { return (int)(cost*level/2f); } }
+    //public float levelTier { get { return detailInfo.levelTier; } }
+   // public float range { get { return range; } }
 }
 
 public class DetailTowerInfo: BaseInfo
@@ -63,70 +72,70 @@ public class BankTowerInfo : DetailTowerInfo {
 public class TowerManager : Singleton<TowerManager>
 {
 
-    public float buildTowerPenalty { get { return 1.25f; } }
-    public float sellTowerPenalty { get { return 0.5f; } }
+    //public float buildTowerPenalty { get { return 1.25f; } }
+    //public float sellTowerPenalty { get { return 0.5f; } }
 
     public Dictionary<string, int> builtTowerDict = new Dictionary<string, int>();
-    public Dictionary<string, TowerInfo> towerDict = new Dictionary<string, TowerInfo>();
-    public Dictionary<string, Dictionary<string, DetailTowerInfo>> towerDetailsDict = new Dictionary<string, Dictionary<string, DetailTowerInfo>>();
-    private void Awake()
-    {
-        var towers = CsvUtil.LoadObjects<TowerInfo>("Tower");
-        foreach (var info in towers)
-        {
-            //very bad code
-            switch (info.name) {
-                case "single":
-                case "bomb":
-                case "fridge":
-                    towerDetailsDict[info.name] = new Dictionary<string, DetailTowerInfo>();
-                    var towerDetails = CsvUtil.LoadObjects<SingleTowerInfo>("Towers/" + info.name);
-                    foreach (var dInfo in towerDetails)
-                    {
-                        if (info.detailInfo == null)
-                        {
-                            info.detailInfo = dInfo;
-                        }
-                        towerDetailsDict[info.name][dInfo.name] = dInfo;
-                    }
-                    break;
-                case "guide":
+    //public Dictionary<string, TowerInfo> towerDict = new Dictionary<string, TowerInfo>();
+    //public Dictionary<string, Dictionary<string, DetailTowerInfo>> towerDetailsDict = new Dictionary<string, Dictionary<string, DetailTowerInfo>>();
+    //private void Awake()
+    //{
+    //    var towers = CsvUtil.LoadObjects<TowerInfo>("Tower");
+    //    foreach (var info in towers)
+    //    {
+    //        //very bad code
+    //        switch (info.name) {
+    //            case "single":
+    //            case "bomb":
+    //            case "fridge":
+    //                towerDetailsDict[info.name] = new Dictionary<string, DetailTowerInfo>();
+    //                var towerDetails = CsvUtil.LoadObjects<SingleTowerInfo>("Towers/" + info.name);
+    //                foreach (var dInfo in towerDetails)
+    //                {
+    //                    if (info.detailInfo == null)
+    //                    {
+    //                        info.detailInfo = dInfo;
+    //                    }
+    //                    towerDetailsDict[info.name][dInfo.name] = dInfo;
+    //                }
+    //                break;
+    //            case "guide":
 
-                    towerDetailsDict[info.name] = new Dictionary<string, DetailTowerInfo>();
-                    var towerDetails2 = CsvUtil.LoadObjects<GuideTowerInfo>("Towers/" + info.name);
-                    foreach (var dInfo in towerDetails2)
-                    {
-                        if (info.detailInfo == null)
-                        {
-                            info.detailInfo = dInfo;
-                        }
-                        towerDetailsDict[info.name][dInfo.name] = dInfo;
-                    }
-                    break;
-                case "bank":
+    //                towerDetailsDict[info.name] = new Dictionary<string, DetailTowerInfo>();
+    //                var towerDetails2 = CsvUtil.LoadObjects<GuideTowerInfo>("Towers/" + info.name);
+    //                foreach (var dInfo in towerDetails2)
+    //                {
+    //                    if (info.detailInfo == null)
+    //                    {
+    //                        info.detailInfo = dInfo;
+    //                    }
+    //                    towerDetailsDict[info.name][dInfo.name] = dInfo;
+    //                }
+    //                break;
+    //            case "bank":
 
-                    towerDetailsDict[info.name] = new Dictionary<string, DetailTowerInfo>();
-                    var towerDetails3 = CsvUtil.LoadObjects<BankTowerInfo>("Towers/" + info.name);
-                    foreach (var dInfo in towerDetails3)
-                    {
-                        if (info.detailInfo == null)
-                        {
-                            info.detailInfo = dInfo;
-                        }
-                        towerDetailsDict[info.name][dInfo.name] = dInfo;
-                    }
-                    break;
-            }
-            builtTowerDict[info.name] = 0;
-            towerDict[info.name] = info;
+    //                towerDetailsDict[info.name] = new Dictionary<string, DetailTowerInfo>();
+    //                var towerDetails3 = CsvUtil.LoadObjects<BankTowerInfo>("Towers/" + info.name);
+    //                foreach (var dInfo in towerDetails3)
+    //                {
+    //                    if (info.detailInfo == null)
+    //                    {
+    //                        info.detailInfo = dInfo;
+    //                    }
+    //                    towerDetailsDict[info.name][dInfo.name] = dInfo;
+    //                }
+    //                break;
+    //        }
+    //        builtTowerDict[info.name] = 0;
+    //        towerDict[info.name] = info;
 
-        }
-    }
+    //    }
+    //}
 
     public void BuildTower(Tower go)
     {
         var info = go.towerInfo;
-        info.spentPrice = info.price;
+        //info.spentPrice = info.price;
         builtTowerDict[info.name]++;
 
     }
