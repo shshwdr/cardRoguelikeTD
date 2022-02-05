@@ -14,11 +14,14 @@ public class TowerInfo : CardInfo
 {
     public TowerInfo(CardInfo inf)
     {
+        name = inf.name;
+        displayName = inf.displayName;
+        description = inf.description;
         damage = inf.damage;
         speed = inf.speed;
         range = inf.range;
         tags = inf.tags;
-    }
+
 }
     //public string placeType;
     //public int isUnlocked;
@@ -136,7 +139,7 @@ public class TowerManager : Singleton<TowerManager>
     {
         var info = go.towerInfo;
         //info.spentPrice = info.price;
-        builtTowerDict[info.name]++;
+        //builtTowerDict[info.name]++;
 
     }
     // Start is called before the first frame update

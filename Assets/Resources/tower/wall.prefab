@@ -53,7 +53,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2712512115611705353, guid: 08f9adc903d26ad46a2d8d9ad433cafd, type: 3}
       propertyPath: m_Name
-      value: wall
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3376121984765045524, guid: 08f9adc903d26ad46a2d8d9ad433cafd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7028185455154284926, guid: 396cf0b024909d34a9609136bd3f5ede, type: 3}
+    - target: {fileID: 4941558769608559340, guid: 08f9adc903d26ad46a2d8d9ad433cafd, type: 3}
+      propertyPath: type
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206918101016054393, guid: 08f9adc903d26ad46a2d8d9ad433cafd, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08f9adc903d26ad46a2d8d9ad433cafd, type: 3}
