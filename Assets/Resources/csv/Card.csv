@@ -1,6 +1,6 @@
 ﻿name,displayName,description,cost,damage,speedReverse,range,tags
 Wall,Wall,Wall,2,0,0,1,Maze
-Fireball,Fireball,Fireball,10,20,1,1.5,Spell
+Fireball,Fireball,Fireball,10,8,1,2,Spell
 Divination,Divination,Divination,3,0,0,0,Spell
 Cannon,Cannon,Cannon,10,10,0.7,2,Tower| Area
 Balanced,Balanced,Balanced,8,8,1.5,2,Tower| Target

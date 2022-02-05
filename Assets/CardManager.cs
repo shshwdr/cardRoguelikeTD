@@ -36,6 +36,10 @@ public class CardManager : Singleton<CardManager>
     }
     public CardInfo getCardInfo(string n)
     {
+        if (!cardInfoDict.ContainsKey(n))
+        {
+            Debug.LogError("card not exist " + n);
+        }
         return cardInfoDict[n];
     }
     // Start is called before the first frame update

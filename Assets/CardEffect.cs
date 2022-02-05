@@ -5,9 +5,21 @@ using UnityEngine;
 
 public class CardEffect:MonoBehaviour
 {
+
+    public string cardType;
+    public string type { get { return cardType.Length > 0 ? cardType : name; } }
     public bool isActivated = false;
-    public void activate()
+    public GameObject renderObject;
+    public virtual void activate()
     {
         isActivated = true;
     }
+    protected virtual  void Awake()
+    {
+        if (!renderObject)
+        {
+            renderObject = transform.Find("render").GetChild(0).gameObject;
+        }
+    }
+
 }

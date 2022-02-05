@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3557577916330797520}
   - component: {fileID: 6342593456731536481}
   - component: {fileID: 4492096459326798494}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 2870246767390660156}
   - component: {fileID: 1071955846208311691}
   - component: {fileID: 1014393754872953242}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: emotes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,8 @@ GameObject:
   - component: {fileID: 5313333383007524583}
   - component: {fileID: 5313333383007524582}
   - component: {fileID: 5313333383007524581}
-  m_Layer: 0
+  - component: {fileID: 95544089215781192}
+  m_Layer: 9
   m_Name: customer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,6 +397,22 @@ MonoBehaviour:
   rb: {fileID: 0}
   moveSpeed: 0.2
   nextWaypointDistance: 0.1
+--- !u!58 &95544089215781192
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5313333383007524579}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.13}
+  serializedVersion: 2
+  m_Radius: 0.1
 --- !u!1 &5313333383332307060
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +425,7 @@ GameObject:
   - component: {fileID: 5313333383332307048}
   - component: {fileID: 5313333383332307049}
   - component: {fileID: 5313333383332307050}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +525,7 @@ GameObject:
   - component: {fileID: 5313333384648227411}
   - component: {fileID: 5313333384648227409}
   - component: {fileID: 5313333384648227410}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7751069496780178395}
   - component: {fileID: 4500602850212588431}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: hpBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

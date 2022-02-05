@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Tower:CardEffect,IClickable
 {
-    public string type;
     public TowerInfo towerInfo;
    
     //public Transform shootPoint;
@@ -12,7 +11,6 @@ public class Tower:CardEffect,IClickable
     //float currentCoolDown = 0;
 
     //public  GameObject bulletPrefab;
-    public GameObject renderObject;
 
 
     //public GameObject selections;
@@ -24,19 +22,12 @@ public class Tower:CardEffect,IClickable
     //    towerInfo.detailInfo = _info;
     //}
 
-    private void Awake()
+    protected override void Awake()
     {
-
+        base.Awake();
         //selectableCells = GetComponentsInChildren<SelectableTowerCell>();
         //selections = selectableCells[0].transform.parent.gameObject;
-        if(type.Length == 0)
-        {
-            Debug.LogError("no type for tower " + this);
-        }
-        if (!renderObject)
-        {
-            renderObject = transform.Find("render").GetChild(0).gameObject;
-        }
+        
     }
 
     private void Start()
