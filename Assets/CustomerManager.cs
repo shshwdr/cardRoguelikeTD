@@ -26,6 +26,14 @@ public class CustomerManager : Singleton<CustomerManager>
             CustomerInfoDict[info.name] = info;
         }
     }
+
+    public void updateNavMesh()
+    {
+        foreach(var customer in customers)
+        {
+            customer.GetComponent<NPCPathFinding>().updatePathFinding();
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

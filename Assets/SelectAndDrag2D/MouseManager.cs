@@ -101,6 +101,11 @@ public class MouseManager : Singleton<MouseManager>
 
                 Vector3 newPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
                 Vector3 mousePosition = dragCamera.ScreenToWorldPoint(newPosition);
+
+                if (currentDraggable.isGridBased)
+                {
+
+                }
                 currentDragItem.transform.position = mousePosition;
 
 

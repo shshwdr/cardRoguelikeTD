@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class DraggableItem : Draggable
 {
     public bool isMainItem;
+    public bool isPathChanging;
     public bool occupied;
     public AffectRange effectRangeItem;
 
@@ -78,6 +79,11 @@ public class DraggableItem : Draggable
         }
         isBuilt = true;
         GetComponent<CardEffect>().activate();
+        if (isPathChanging)
+        {
+            CustomerManager.Instance.updateNavMesh();
+            NavMeshManager.Instance.updateNavMesh();
+        }
         //StartCoroutine(renderNavAsync());
     }
     public override void removeDragItem()

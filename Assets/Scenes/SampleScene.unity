@@ -20328,6 +20328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058074694}
   - component: {fileID: 1058074695}
+  - component: {fileID: 1058074696}
   m_Layer: 0
   m_Name: navManager
   m_TagString: Untagged
@@ -20363,7 +20364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACQn+sLe/gwZgIAACAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMziVjDElIby0Q0kMSJqSTiy9CWmMNsuTRR4Bk+O/VyjZ2yPTE8vbt7tsP+ZMIZStgTpulEfxRcyA/BwRt8mPQOR/gQLdarcUHtJw3wV2BJBo5L9QJHfARhlldgjOC/VJbieQkgF6JXJtywbcw09bZAOdUWgguox1GqwB9Dsgh/AzvMOQYrPQWrY9g3SWDUzAZKAemo7bEllazvGKSlhVwlNyRRy37OrJU6KUhJFeonGkphW2kEHesYqvrqgAD2CsXNHQWyyO9ALEtHKrsxz7nuQXXSDL0OBcmDKhOSn7remoltbta1zuVHstMJtMoqk76+M0/HEV3bnT50NYdJVjDFYLtXuiRUet6Y+3D86/CvdpTuaMbCW8FqCe9NNorHpzOeAz1FtJ59/fc2qwAtuvwWuoF6Kvvy0mvxtPJaHozvlkMk9tmU9jQKY7iMJOi3MQtTGpgLXWcfbwDMGFPf4L6eCW2yRtQlPTXwivd9s+pcdwLY11wNS0r1LrR3iCVLOIAsTXvZtooMP0MFSgq3XEV8rjLhV74/h91T/HlNNUbX/sgLkIi3PGT5MK10vvz6myh949gi2fvpFDQzR0dT2FQM61UfW/9ltqwtTc5Zb2wrRf866GR6Q1L6O1mzMf8mrI0HwLPR3cp5BNG0804vSbxEoUKfVK5qoU24wlrU11yFa6u/aAMloZW8fa5oful+Ci17ZhC5XrNDIB6rjOchYMJRcIj5QsuwoDW4JxQceHkMyNSsx3w7Jwoi50uDs7QrMuSkUq8a4dIRmbxC5IRhM+XvTLwLmCPxdtkJ3L6B1BLAwQUAAAICAAAkJ/rojbcbG0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0koVZskGieZJxinGKaWKyUZpuakqaoaVRappJcqJRkrGRqVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAkJ/rC3v4MGYCAAAgBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAkJ/rojbcbG0AAAB4AAAACQAkAAAAAAAAAAAAAACzAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAGsDAAAAAA==
+    dataString: UEsDBBQAAAgIAACQn+vjGDFSZwIAACEFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMziVjGxKS3lpCSA9JmNJOLr4IaY01yJJHHwGS4b9XK9vYIdMTy9u3u28/5A8ilK2BOW2WRvAnzYF8HxG0ybdR73yEA91qtRbv0HFeBXclkmjk/KZO6ICnGGZ1Bc4I9kNtJZKTAHolCm2qBd/CXFtnA1xQaSG4jHYYrQL0MSKH8DO+w5BjsLIZWu/BuktGp2AyUA5MT+2IHa1hecUkrWrgKLknpx37OrJU6KUlJFeonGkphW2lEHesY6vrugQD2CsXNHQWyyO9BLEtHaocxr4UhQXXSjL0eC9MGFCTlPzUzdQqaneNrjcqPZZJp7MsqmqyPn0hjNPoLoyuHrvCaYJFXCnY7jc9MmrdYK5D+P6zcq/2VO7oRsJrCepZL432igenMx5DvYXsvv977m1eAtv1eCP1AvT11+1kV5PbaXp7M7lZjJNZuyps6BRncZhLUW3iGqYNsJY6Dj8eApiwqF9BfTwT2+YNKEr6a+EP3Q7vqXU8CGNdcLUtK9S60d4glSziALE17+baKDDDDDUoKt1xFfK4y41e+P4f9UDx6bTVW1/3Ii5CItzzk+TCtdL78+psqfdPYMsX76RQ0M8dHc9hUHOtVHNww5a6sLU3BWWDsK0X/POhkdsbltDZZsIn/JqyrBgDL9K7DIopo9lmkl2TeIlChT6pXDVC2/GEtak+uQpX131RRktD63j83ND9UrxX2vZMoQq9ZgZAvTQZzsLBhCLhlfIFF2FAa3BOqLhw8pETqdkOeH5OlMdOFwdnaN5nyUkt3rRDJCfz+AnJCcLny14ZeBOwx+JdshM5/QNQSwMEFAAACAgAAJCf66I23GxtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJKFWbJBonmScYpximlislGabmpKmqGlUWqaSXKiUZKxkalSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAJCf6+MYMVJnAgAAIQUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJCf66I23GxtAAAAeAAAAAkAJAAAAAAAAAAAAAAAtAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABsAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -20404,6 +20405,18 @@ MonoBehaviour:
     pivotPointRoot: {fileID: 0}
     spreadOutCount: 1
   showGraphs: 1
+--- !u!114 &1058074696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058074693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5caf5843445194692c72646399e4b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1072805265
 GameObject:
   m_ObjectHideFlags: 0
@@ -23374,7 +23387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1562362327
 Transform:
   m_ObjectHideFlags: 0
@@ -25644,8 +25657,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 532, y: 0}
-  m_SizeDelta: {x: 792, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1733765073
 MonoBehaviour:
@@ -28400,8 +28413,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 532, y: 0}
-  m_SizeDelta: {x: 792, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2018361769
 MonoBehaviour:

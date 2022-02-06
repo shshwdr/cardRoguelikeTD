@@ -6,6 +6,7 @@ using UnityEngine.AI;
 
 public abstract class Draggable : GroundItem
 {
+    public bool isGridBased = true;
     public bool isDragging = true;
     Vector3 screenPoint;
     Camera dragCamera;

@@ -66,6 +66,12 @@ public class NPCPathFinding : MonoBehaviour
         seeker.StartPath(rb.position, target, OnPathComplete);
     }
 
+    public void updatePathFinding()
+    {
+        
+        seeker.StartPath(rb.position, target, OnPathComplete);
+    }
+
     private void FixedUpdate()
     {
         if (path == null)
@@ -75,7 +81,6 @@ public class NPCPathFinding : MonoBehaviour
             //renderer.setDirection(Vector2.zero);
             return;
         }
-
         //if (DialogueUtils.Instance.isInDialogue)
         //{
         //    return;
