@@ -21948,7 +21948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxCardCountInHand: 5
-  redrawCooldown: 10
+  redrawCooldown: 3
 --- !u!1001 &1426617755
 PrefabInstance:
   m_ObjectHideFlags: 0

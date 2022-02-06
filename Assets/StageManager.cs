@@ -47,6 +47,8 @@ public class StageManager : Singleton<StageManager>
     public Button nextRoundButton;
     public Image nextRoundImage;
 
+    public bool isLoop = false;
+
     List<List<StageInfo>> stageInfos = new List<List<StageInfo>>();
     // Start is called before the first frame update
     void Awake()
@@ -74,7 +76,19 @@ public class StageManager : Singleton<StageManager>
 
     void prepare()
     {
-        currentStage = stageInfos[currentStageId];
+        if (isStageFinished())
+        {
+            if (isLoop)
+            {
+                currentRoundId = 0;
+            }
+            else
+            {
+                return;
+            }
+        }
+
+            currentStage = stageInfos[currentStageId];
         currentRound = currentStage[currentRoundId];
         roundCustomerNumber = currentRound.customerCount;
         nextRoundTime = currentRound.waitTimeTillNextRound;
@@ -120,6 +134,11 @@ public class StageManager : Singleton<StageManager>
 
     public bool isStageFinished()
     {
+        //???
+        if (currentStage == null)
+        {
+            return false;
+        }
         return currentRoundId >= currentStage.Count;
     }
     void stageFinish()
@@ -137,8 +156,16 @@ public class StageManager : Singleton<StageManager>
         }
         if (isStageFinished())
         {
-            hideNextRoundButton();
-            return;
+            if (isLoop)
+            {
+                currentRoundId = 0;
+            }
+            else
+            {
+                hideNextRoundButton();
+                return;
+
+            }
         }
         //currentRoundTimer += Time.deltaTime;
         if (currentRoundCounter >= roundCustomerNumber)
