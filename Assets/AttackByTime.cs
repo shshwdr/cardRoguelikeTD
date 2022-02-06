@@ -8,15 +8,15 @@ public class AttackByTime : MonoBehaviour
 
     float currentCoolDown = 0;
 
-    public GameObject bulletPrefab;
-    Tower tower;
+    protected GameObject bulletPrefab;
+    protected Tower tower;
 
-    public TowerInfo towerInfo { get {
-            if (!tower)
-            {
-                Debug.Log("no tower yet!");
-            }
-            return tower.towerInfo; } }
+    //public TowerInfo towerInfo { get {
+    //        if (!tower)
+    //        {
+    //            Debug.Log("no tower yet!");
+    //        }
+    //        return tower.towerInfo; } }
 
 
     public GameObject renderObject
@@ -35,6 +35,11 @@ public class AttackByTime : MonoBehaviour
         tower = GetComponent<Tower>();
         shootPoint = transform.Find("shootPoint");
     }
+    protected virtual void Start()
+    {
+
+        bulletPrefab = Resources.Load<GameObject>("bullet/" + tower.type);
+    }
 
     private void Update()
     {
@@ -43,7 +48,7 @@ public class AttackByTime : MonoBehaviour
             return;
         }
         currentCoolDown += Time.deltaTime;
-        if (currentCoolDown >= tower.towerInfo.attackTime)
+        if (currentCoolDown >= tower.attackTime)
         {
             currentCoolDown = 0;
             attack();

@@ -1,11 +1,11 @@
-﻿name,displayName,description,cost,damage,speedReverse,range,tags
-Wall,Wall,Wall,2,0,0,1,Maze
-Fireball,Fireball,Fireball,10,8,1,2,Spell
-Divination,Divination,Divination,3,0,0,0,Spell
-Cannon,Cannon,Cannon,10,10,0.7,2,Tower| Area
-Balanced,Balanced,Balanced,8,8,1.5,2,Tower| Target
-Arrow,Arrow,Arrow,5,2,3,2.5,Tower| Target
-Bank,Bank,Bank,15,0,0,1,Econ
-Pulse,Pulse,Pulse,10,5,0.7,1,Tower| Area
-Frost,Frost,Frost,15,2,0.7,2,Tower| Area| Debuff
-Sniper,Sniper,Sniper,12,15,0.3,5,Tower| Target
+﻿name,displayName,description,cost,damage,speed,spawnMoveSpeed,range,spawnRange,tags
+Wall,Wall,Wall,2,0,0,,1,,Maze
+Fireball,Fireball,Fireball,10,8,1,,2,,Spell
+Divination,Divination,Divination,3,0,0,,0,,Spell
+Cannon,Cannon,Cannon,10,10,0.7,0.3,2,1,Tower| Area
+Balanced,Balanced,Balanced,8,8,1.5,1,2,,Tower| Target
+Arrow,Arrow,Arrow,5,2,3,3,2.5,,Tower| Target
+Bank,Bank,Bank,15,0,0,,1,,Econ
+Pulse,Pulse,Pulse,10,5,0.7,,1,,Tower| Area
+Frost,Frost,Frost,15,2,0.7,,2,1,Tower| Area| Debuff
+Sniper,Sniper,Sniper,12,15,0.3,,5,,Tower| Target

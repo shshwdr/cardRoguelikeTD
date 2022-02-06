@@ -21,7 +21,7 @@ public class CardSpell : CardEffect
 
         cardInfo = CardManager.Instance.getCardInfo(type);
 
-        renderObject.transform.localScale = Vector3.one * Utils.gridSize * cardInfo.range;
+        renderObject.transform.localScale = Vector3.one * cardInfo.range * 2;
     }
 
 

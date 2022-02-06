@@ -14,20 +14,20 @@ public class TollTower : AttackByTime
         var customers = new List<Customer>( CustomerManager.Instance.getAllCustomers());
         foreach (var cus in customers)
         {
-            if ((cus.transform.position - shootPoint.position).magnitude <= towerInfo.range)
-            {
-                renderObject.transform.DOLocalJump(Vector3.zero, jumpHeight,1 , jumpTime);
+            //if ((cus.transform.position - shootPoint.position).magnitude <= towerInfo.range)
+            //{
+            //    renderObject.transform.DOLocalJump(Vector3.zero, jumpHeight,1 , jumpTime);
 
-                //var go = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
-                //go.GetComponent<Bullet>().init(towerInfo.attackDamage, cus.transform);
-                cus.getDamage(towerInfo.attackDamage);
+            //    //var go = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
+            //    //go.GetComponent<Bullet>().init(towerInfo.attackDamage, cus.transform);
+            //    cus.getDamage(towerInfo.attackDamage);
 
-                //currentShootCount++;
-                //if (currentShootCount >= shootCount)
-                //{
-                //    break;
-                //}
-            }
+            //    //currentShootCount++;
+            //    //if (currentShootCount >= shootCount)
+            //    //{
+            //    //    break;
+            //    //}
+            //}
         }
     }
 }

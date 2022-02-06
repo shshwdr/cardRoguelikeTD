@@ -8,7 +8,7 @@ public class SelectableTowerCell : MonoBehaviour
 
     public TMP_Text nameLabel;
     public TMP_Text descLabel;
-    public TowerInfo info;
+    //public TowerInfo info;
     public DetailTowerInfo dInfo;
     protected IClickable overlay;
     bool isCancel = false;
@@ -42,27 +42,27 @@ public class SelectableTowerCell : MonoBehaviour
         isCancel = false;
         isUpgrade = false;
     }
-    public void init(TowerInfo _info, IClickable _overlay)
-    {
-        initAll();
-           info = _info;
-        overlay = _overlay;
+    //public void init(TowerInfo _info, IClickable _overlay)
+    //{
+    //    initAll();
+    //       info = _info;
+    //    overlay = _overlay;
 
-        //nameLabel.text = info.displayName + " " + info.price.ToString();
-        descLabel.text = info.description;
-    }
+    //    //nameLabel.text = info.displayName + " " + info.price.ToString();
+    //    descLabel.text = info.description;
+    //}
 
 
-    public void initCancel(TowerInfo _info, IClickable _overlay)
-    {
-        initAll();
-        isCancel = true;
-        info = _info;
-        overlay = _overlay;
+    //public void initCancel(TowerInfo _info, IClickable _overlay)
+    //{
+    //    initAll();
+    //    isCancel = true;
+    //    info = _info;
+    //    overlay = _overlay;
 
-        nameLabel.text = "移除";
-        descLabel.text = info.sellPrice.ToString();
-    }
+    //    nameLabel.text = "移除";
+    //    descLabel.text = info.sellPrice.ToString();
+    //}
 
     public void initUpgrade(DetailTowerInfo _info, IClickable _overlay)
     {

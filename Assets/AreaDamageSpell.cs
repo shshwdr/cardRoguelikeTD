@@ -12,7 +12,7 @@ public class AreaDamageSpell : CardSpell
     {
         base.activate();
         //do damage
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(cardHappenCenter.position, cardInfo.range* Utils.gridSize/2f, LayerMask.GetMask("Enemy"));
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(cardHappenCenter.position, cardInfo.range, LayerMask.GetMask("Enemy"));
         foreach(var enemyC in colliders)
         {
             var enemy = enemyC.GetComponent<Customer>();

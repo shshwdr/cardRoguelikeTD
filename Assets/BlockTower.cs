@@ -17,18 +17,18 @@ public class BlockTower : AttackByTime
         }
         foreach (var cus in CustomerManager.Instance.getAllCustoemrsWithMoney())
         {
-            if ((cus.transform.position - shootPoint.position).magnitude <= towerInfo.range)
-            {
-                //find a better way!
-                if (cus.getBlocked(this))
-                {
-                    currentBlockCount++;
-                    if (currentBlockCount >= blockCount)
-                    {
-                        break;
-                    }
-                }
-            }
+            //if ((cus.transform.position - shootPoint.position).magnitude <= towerInfo.range)
+            //{
+            //    //find a better way!
+            //    if (cus.getBlocked(this))
+            //    {
+            //        currentBlockCount++;
+            //        if (currentBlockCount >= blockCount)
+            //        {
+            //            break;
+            //        }
+            //    }
+            //}
         }
     }
 

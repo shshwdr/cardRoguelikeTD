@@ -16,10 +16,10 @@ public class SingleShootTower : AttackByTime
             {
                 continue;
             }
-            if ((cus.transform.position - shootPoint.position).magnitude <= towerInfo.range)
+            if ((cus.transform.position - shootPoint.position).magnitude <= tower.range)
             {
                 var go = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
-                go.GetComponent<Bullet>().init(towerInfo.attackDamage, cus.transform);
+                go.GetComponent<Bullet>().init(tower, cus.transform);
                 //cus.getDamage(towerInfo.attackDamage);
                 currentShootCount++;
                 if (currentShootCount >= shootCount)

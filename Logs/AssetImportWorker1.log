@@ -10025,3 +10025,35 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 369.036205 seconds.
+  path: Assets/Resources/tower/Wall 1.prefab
+  artifactKey: Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Wall 1.prefab using Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9155289f4dc8b1e68a0ae37e457b555') in 0.534156 seconds 
+  Import took 0.562807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.506815 seconds.
+  path: Assets/Resources/tower/Cannon.prefab
+  artifactKey: Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Cannon.prefab using Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6217e8ac8f7e55cafce8dd0df7d40145') in 0.490141 seconds 
+  Import took 0.511051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.073080 seconds.
+  path: Assets/Resources/tower/Fireball 1.prefab
+  artifactKey: Guid(58a2d58a427dc904aa60b6be540e88dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Fireball 1.prefab using Guid(58a2d58a427dc904aa60b6be540e88dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7719a04c44c194f7be3a668b55f22da') in 0.514722 seconds 
+  Import took 0.533877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.334148 seconds.
+  path: Assets/Resources/tower/Divination.prefab
+  artifactKey: Guid(58a2d58a427dc904aa60b6be540e88dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Divination.prefab using Guid(58a2d58a427dc904aa60b6be540e88dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935f6c173c7851e93115b6e109847e34') in 0.445368 seconds 
+  Import took 0.464284 seconds .
+

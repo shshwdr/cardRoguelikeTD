@@ -6,7 +6,7 @@ using UnityEngine;
 public class CardEffect:MonoBehaviour
 {
 
-    public string cardType;
+    [SerializeField] string cardType;
     public string type { get { return cardType.Length > 0 ? cardType : name; } }
     public bool isActivated = false;
     public GameObject renderObject;

@@ -10,37 +10,37 @@ public class BaseInfo
     public string description;
 }
 
-public class TowerInfo : CardInfo
-{
-    public TowerInfo(CardInfo inf)
-    {
-        name = inf.name;
-        displayName = inf.displayName;
-        description = inf.description;
-        damage = inf.damage;
-        speed = inf.speed;
-        range = inf.range;
-        tags = inf.tags;
+//public class TowerInfo : CardInfo
+//{
+//    public TowerInfo(CardInfo inf)
+//    {
+//        name = inf.name;
+//        displayName = inf.displayName;
+//        description = inf.description;
+//        damage = inf.damage;
+//        speed = inf.speed;
+//        range = inf.range;
+//        tags = inf.tags;
 
-}
-    //public string placeType;
-    //public int isUnlocked;
-    //public DetailTowerInfo detailInfo;
+//}
+//    //public string placeType;
+//    //public int isUnlocked;
+//    //public DetailTowerInfo detailInfo;
 
-    //public int spentPrice;
-    //public string description { get { return detailInfo.description; } }
-    public int level = 1;
-    public float attackTime { get { return speed; } }
-    public float attackDamage { get { return damage*level; } }
-    //public int price { get {
-    //        string test = name;
+//    //public int spentPrice;
+//    //public string description { get { return detailInfo.description; } }
+//    public int level = 1;
+//    public float attackTime { get { return speed; } }
+//    public float attackDamage { get { return damage*level; } }
+//    //public int price { get {
+//    //        string test = name;
             
-    //        return (int)(detailInfo.price * Mathf.Pow(TowerManager.Instance.buildTowerPenalty,(1+ TowerManager.Instance.builtTowerDict[name])));
-    //    } }
-    public int sellPrice { get { return (int)(cost*level/2f); } }
-    //public float levelTier { get { return detailInfo.levelTier; } }
-   // public float range { get { return range; } }
-}
+//    //        return (int)(detailInfo.price * Mathf.Pow(TowerManager.Instance.buildTowerPenalty,(1+ TowerManager.Instance.builtTowerDict[name])));
+//    //    } }
+//    public int sellPrice { get { return (int)(cost*level/2f); } }
+//    //public float levelTier { get { return detailInfo.levelTier; } }
+//   // public float range { get { return range; } }
+//}
 
 public class DetailTowerInfo: BaseInfo
 {

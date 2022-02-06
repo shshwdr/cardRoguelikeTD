@@ -11,9 +11,10 @@ public class CardInfo : BaseInfo
     public float cost;
     public int isUnlocked;
     public float damage;
-    public float speedReverse;
     public float speed;
+    public float spawnMoveSpeed;
     public float range;
+    public float spawnRange;
     public List<string> tags;
 
 }
@@ -28,10 +29,12 @@ public class CardManager : Singleton<CardManager>
         foreach (var card in cards)
         {
             cardInfoDict[card.name] = card;
-            if(card.speedReverse != 0)
+            if (card.speed != 0)
             {
-                card.speed = 1f / card.speedReverse;
+                card.speed = 1f / card.speed;
             }
+            card.range = card.range * Utils.gridSize;
+            card.spawnRange = card.spawnRange * Utils.gridSize;
         }
     }
     public CardInfo getCardInfo(string n)

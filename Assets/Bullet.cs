@@ -4,32 +4,47 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-
+    public bool useTarget = true;
     public Transform target;
-    public float damage;
+    public Vector3 targetPosition;
+    float damage;
     public float speed = 3f;
     public float hitDistance = 0.3f;
+    public GameObject explosion;
+    float range;
+    public int bulletType = 0;//0:single 1 area
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
-    public void init(float d, Transform t)
+    public void init(Tower tower, Transform t)
     {
-        damage = d;
+        damage = tower.damage;
+        range = tower.spawnRange;
+        speed = tower.spawnMoveSpeed;
         target = t;
+        if (!useTarget)
+        {
+            targetPosition = target.position;
+        }
     }
     // Update is called once per frame
     void Update()
     {
-        if(target == null)
+        if (useTarget)
         {
-            Destroy(gameObject);
-            return;
+            if (target == null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            targetPosition = target.position;
         }
-        var dir = (target.position - transform.position).normalized;
+        var dir = (targetPosition - transform.position).normalized;
         transform.Translate(dir * speed*Time.deltaTime);
-        if((target.position - transform.position).sqrMagnitude <= hitDistance)
+        if((targetPosition - transform.position).sqrMagnitude <= hitDistance)
         {
             hit();
         }
@@ -37,10 +52,33 @@ public class Bullet : MonoBehaviour
 
     void hit()
     {
-        var hpObject = target.GetComponent<HPCharacterController>();
-        if (hpObject)
+        if(bulletType == 0)
         {
-            hpObject.getDamage(damage);
+
+            var hpObject = target.GetComponent<HPCharacterController>();
+            if (hpObject)
+            {
+                hpObject.getDamage(damage);
+            }
+        }
+        else
+        {
+            var explo = Instantiate(explosion, transform.position, Quaternion.identity);
+            explo.transform.localScale = Vector3.one * range * 2;
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, range, LayerMask.GetMask("Enemy"));
+            foreach (var enemyC in colliders)
+            {
+                var enemy = enemyC.GetComponent<Customer>();
+                if (enemy)
+                {
+                    enemy.getDamage(damage);
+                }
+                else
+                {
+                    Debug.LogError("customer not existed on " + enemy);
+                }
+            }
+            Destroy(explo, 0.2f);
         }
         Destroy(gameObject);
     }

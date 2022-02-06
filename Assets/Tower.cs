@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Tower:CardEffect,IClickable
 {
-    public TowerInfo towerInfo;
+    public CardInfo towerInfo;
+    public int level = 1;
    
     //public Transform shootPoint;
 
@@ -32,9 +33,50 @@ public class Tower:CardEffect,IClickable
 
     private void Start()
     {
-        towerInfo = new TowerInfo( CardManager.Instance.getCardInfo(type));
+        towerInfo = CardManager.Instance.getCardInfo(type);
         TowerManager.Instance.BuildTower(this);
         hideInfo();
+    }
+
+    public float range
+    {
+        get
+        {
+            return towerInfo.range;
+        }
+    }
+
+    public float attackTime {
+
+        get
+        {
+            return towerInfo.speed;
+        }
+    }
+
+
+    public float spawnRange
+    {
+        get
+        {
+            return towerInfo.spawnRange;
+        }
+    }
+    public float spawnMoveSpeed
+    {
+        get
+        {
+            return towerInfo.spawnMoveSpeed;
+        }
+    }
+
+
+    public float damage
+    {
+        get
+        {
+            return towerInfo.damage * level;
+        }
     }
 
     private void Update()
