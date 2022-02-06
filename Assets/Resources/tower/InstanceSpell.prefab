@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: overlay
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2743797363360489089, guid: 3cc0dc6db3f24f543b46534ffd4507af, type: 3}
+      propertyPath: isGridBased
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3637669636582616835, guid: 3cc0dc6db3f24f543b46534ffd4507af, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

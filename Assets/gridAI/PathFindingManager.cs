@@ -14,7 +14,7 @@ class PathFindingNode {
     }
 }
 
-public class PathFindingManager : MonoBehaviour
+public class PathFindingManager : Singleton<PathFindingManager>
 {
     public Transform overlayParent;
     public Transform startPoint;
@@ -27,13 +27,32 @@ public class PathFindingManager : MonoBehaviour
     void Start()
     {
 
-        regenerateNav();
-        EventPool.OptIn("regenerateNav", regenerateNav);
+        //regenerateNav();
+       // EventPool.OptIn("regenerateNav", regenerateNav);
 
     }
+    public Dictionary<Vector2Int, bool> canBeOccupied = new Dictionary<Vector2Int, bool>();
 
+    public bool testIfCanBeOccupied(Vector2Int ask)
+    {
+        if (canBeOccupied.ContainsKey(ask))
+        {
+            return canBeOccupied[ask];
+        }
+        var grid = new Dictionary<Vector2Int, Transform>( GridManager.Instance.gridItemDict);
+        grid[ask] = transform;
+        var res = canFindPath(grid);
+        canBeOccupied[ask] = res;
+        return res;
+    }
 
-    public void regenerateNav()
+    public void clearCanBeOccupied()
+    {
+        canBeOccupied.Clear();
+    }
+
+    //todo make it static
+    public bool canFindPath(Dictionary<Vector2Int, Transform> gridItemDict)
     {
         startPosition = Utils.snapToGrid(startPoint.position);
         startGridPos = Utils.positionToGridIndex2d(startPosition);
@@ -46,8 +65,12 @@ public class PathFindingManager : MonoBehaviour
 
         priorityQueue.Enqueue(new PathFindingNode(startGridPos, 0), 0);
         posToPreviousPos[startGridPos] = startGridPos;
-        var gridItemDict = GridManager.Instance.gridItemDict;
-        int loopBreaker = 100000;
+        if ((gridItemDict.ContainsKey(startGridPos) && gridItemDict[startGridPos] != null) || (gridItemDict.ContainsKey(endGridPos) && gridItemDict[endGridPos] != null))
+        {
+            return false;
+        }
+            //var gridItemDict = GridManager.Instance.gridItemDict;
+            int loopBreaker = 100000;
         while (priorityQueue.Count > 0)
         {
             if (loopBreaker == 0)
@@ -98,7 +121,7 @@ public class PathFindingManager : MonoBehaviour
                     break;
                 }
                 loopBreaker--;
-                GridManager.Instance.gridOverlayDict[currentPos].updateColor(Color.green);
+                //GridManager.Instance.gridOverlayDict[currentPos].updateColor(Color.green);
                 Vector2Int previousPos = posToPreviousPos[currentPos];
                 if (previousPos == currentPos)
                 {
@@ -107,10 +130,12 @@ public class PathFindingManager : MonoBehaviour
                 currentPos = previousPos;
             }
             print("print road");
+            return true;
         }
         else
         {
             print("no valid road");
+            return false;
         }
     }
     //public void toggleShowOverlay()

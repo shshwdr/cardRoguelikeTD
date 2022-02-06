@@ -23,11 +23,12 @@ public class GridManager : Singleton<GridManager>
     {
         Utils.gridSize = gridSize;
         startPosition = Utils.snapToGrid(startPoint.position);
-        startGridPos = Utils.positionToGridIndex2d(startPosition);
+        startGridPos = Utils.positionToGridIndexCenter2d(startPosition);
         endPosition = Utils.snapToGrid(endPoint.position);
+        var endGridPos = Utils.positionToGridIndexCenter2d(endPosition);
 
-        width = (int)((endPosition - startPosition).x / gridSize);
-        height = (int)((endPosition - startPosition).y / gridSize);
+        width = (endGridPos - startGridPos).x+1 ;
+        height = (endGridPos - startGridPos).y+1;
 
 
         var overlayPrefab = Resources.Load<GameObject>("overlay");
@@ -67,7 +68,10 @@ public class GridManager : Singleton<GridManager>
         var gridPos = Utils.positionToGridIndexCenter2d(item.transform.position);
         if (gridItemDict.ContainsKey(gridPos) && gridItemDict[gridPos]==null)
         {
-            return true;
+            if (PathFindingManager.Instance.testIfCanBeOccupied(gridPos))
+            {
+                return true;
+            }
         }
         return false;
     }
@@ -77,6 +81,7 @@ public class GridManager : Singleton<GridManager>
         var gridPos = Utils.positionToGridIndexCenter2d(item.transform.position);
         //item.gridPos = gridPos;
         gridItemDict[gridPos] = item;
+        PathFindingManager.Instance.clearCanBeOccupied();
         //gridOverlayDict[gridPos].updateColor(Color.red);
         //EventPool.Trigger("regenerateNav");
     }
