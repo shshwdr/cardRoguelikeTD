@@ -29,8 +29,16 @@ public class CustomerManager : Singleton<CustomerManager>
 
     public void updateNavMesh()
     {
-        foreach(var customer in customers)
+        StartCoroutine(updateNavMeshGragually());
+    }
+
+
+    IEnumerator updateNavMeshGragually()
+    {
+        //todo make it in background and don't do if customer is dead
+        foreach (var customer in customers)
         {
+            yield return new WaitForSeconds(0.1f);
             customer.GetComponent<NPCPathFinding>().updatePathFinding();
         }
     }

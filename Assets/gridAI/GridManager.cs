@@ -22,9 +22,9 @@ public class GridManager : Singleton<GridManager>
     private void Awake()
     {
         Utils.gridSize = gridSize;
-        startPosition = Utils.snapToGrid(startPoint.position);
+        startPosition = Utils.snapToGridCenter(startPoint.position);
         startGridPos = Utils.positionToGridIndexCenter2d(startPosition);
-        endPosition = Utils.snapToGrid(endPoint.position);
+        endPosition = Utils.snapToGridCenter(endPoint.position);
         var endGridPos = Utils.positionToGridIndexCenter2d(endPosition);
 
         width = (endGridPos - startGridPos).x+1 ;

@@ -134,6 +134,11 @@ public class Utils : MonoBehaviour
         return new Vector3(snapFloat(origin.x), snapFloat(origin.y), snapFloat(origin.z));
     }
 
+    public static Vector3 snapToGridCenter(Vector3 origin)
+    {
+        return new Vector3(snapFloatCenter(origin.x), snapFloatCenter(origin.y), snapFloatCenter(origin.z));
+    }
+
     public static int distanceToIndex(float distance)
     {
         return Mathf.RoundToInt(distance / gridSize);
@@ -143,10 +148,6 @@ public class Utils : MonoBehaviour
         return Mathf.RoundToInt((distance - gridSize / 2f) / gridSize);
     }
 
-    public static Vector3 snapToGridCenter(Vector3 origin)
-    {
-        return new Vector3(snapFloatCenter(origin.x), snapFloatCenter(origin.y), snapFloatCenter(origin.z));
-    }
 
     public static Vector2Int positionToGridIndexCenter2d(Vector3 origin)
     {
