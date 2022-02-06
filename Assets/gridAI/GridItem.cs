@@ -16,7 +16,7 @@ public class GridItem : MonoBehaviour
     void init()
     {
         Utils.snapToGrid(transform.position);
-        GridManager.Instance.addItem(this);
+       // GridManager.Instance.addItem(this);
     }
 
     // Update is called once per frame

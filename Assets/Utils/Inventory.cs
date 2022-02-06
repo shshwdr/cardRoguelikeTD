@@ -46,6 +46,10 @@ public class Inventory : Singleton<Inventory>
     }
     public bool canConsumeCoin(int amount)
     {
+        if (CheatManager.Instance.hasUnlimitResource)
+        {
+            return true;
+        }
         return coins >= amount;
     }
 

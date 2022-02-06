@@ -17,7 +17,7 @@ public class GridManager : Singleton<GridManager>
     
     public int width;
     public int height;
-    public Dictionary<Vector2Int, GridItem> gridItemDict = new Dictionary<Vector2Int, GridItem>();
+    public Dictionary<Vector2Int, Transform> gridItemDict = new Dictionary<Vector2Int, Transform>();
     public Dictionary<Vector2Int, GridOverlay> gridOverlayDict = new Dictionary<Vector2Int, GridOverlay>();
     private void Awake()
     {
@@ -61,13 +61,24 @@ public class GridManager : Singleton<GridManager>
         }
     }
 
-    public void addItem(GridItem item)
+    public bool checkIfPlaceCanBeOccupied(Transform item)
     {
-        var gridPos = Utils.positionToGridIndex2d(item.transform.position);
-        item.gridPos = gridPos;
+
+        var gridPos = Utils.positionToGridIndexCenter2d(item.transform.position);
+        if (gridItemDict.ContainsKey(gridPos) && gridItemDict[gridPos]==null)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public void addItem(Transform item)
+    {
+        var gridPos = Utils.positionToGridIndexCenter2d(item.transform.position);
+        //item.gridPos = gridPos;
         gridItemDict[gridPos] = item;
-        gridOverlayDict[gridPos].updateColor(Color.red);
-        EventPool.Trigger("regenerateNav");
+        //gridOverlayDict[gridPos].updateColor(Color.red);
+        //EventPool.Trigger("regenerateNav");
     }
     // Start is called before the first frame update
     void Start()

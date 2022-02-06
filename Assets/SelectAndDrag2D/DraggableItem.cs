@@ -51,6 +51,20 @@ public class DraggableItem : Draggable
     }
     public override bool canBuildItem()
     {
+
+        if (isGridBased)
+        {
+            //check grid manager
+            if (GridManager.Instance.checkIfPlaceCanBeOccupied(transform))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         return true;
         //return RegionManager.Instance.currentRegion.canPlaceRoom(this);
     }
@@ -83,6 +97,7 @@ public class DraggableItem : Draggable
         {
             CustomerManager.Instance.updateNavMesh();
             NavMeshManager.Instance.updateNavMesh();
+            GridManager.Instance.addItem(transform);
         }
         //StartCoroutine(renderNavAsync());
     }

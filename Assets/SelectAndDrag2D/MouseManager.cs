@@ -104,7 +104,9 @@ public class MouseManager : Singleton<MouseManager>
 
                 if (currentDraggable.isGridBased)
                 {
-
+                    //map to grid position
+                    //
+                    mousePosition = Utils.snapToGridCenter(mousePosition);
                 }
                 currentDragItem.transform.position = mousePosition;
 

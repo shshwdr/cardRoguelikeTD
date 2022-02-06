@@ -148,15 +148,17 @@ public class Utils : MonoBehaviour
         return new Vector3(snapFloatCenter(origin.x), snapFloatCenter(origin.y), snapFloatCenter(origin.z));
     }
 
-    public static Vector2 positionToGridIndexCenter2d(Vector3 origin)
+    public static Vector2Int positionToGridIndexCenter2d(Vector3 origin)
     {
-        return new Vector2(floatToGridIndexCenter(origin.x), floatToGridIndexCenter(origin.y));
+        return new Vector2Int((int)floatToGridIndexCenter(origin.x), (int)floatToGridIndexCenter(origin.y));
     }
 
     public static Vector2Int positionToGridIndex2d(Vector3 origin)
     {
         return new Vector2Int(floatToGridIndex(origin.x), floatToGridIndex(origin.y));
     }
+
+
 
 
     public static List<int> randomMultipleIndex(int count, int selectCount)
