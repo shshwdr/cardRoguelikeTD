@@ -10,6 +10,9 @@ public class MouseManager : Singleton<MouseManager>
     public bool isInBuildMode;
     public GameObject selectedItem;
     public float rotateSmooth = 10.0f;
+
+    public SelectToFocusTarget currentFocusTarget;
+    public LayerMask focusTargetLayer;
     void selectItem(GameObject go)
     {
         selectedItem = go;
@@ -134,6 +137,8 @@ public class MouseManager : Singleton<MouseManager>
                 return;
             }
 
+            
+
             //LayerMask mask = LayerMask.GetMask("item");
             //if (currentDragItem == null && isInBuildMode)
             //{
@@ -170,7 +175,39 @@ public class MouseManager : Singleton<MouseManager>
             if (currentDragItem)
             {
                 currentDragItem.GetComponent<Draggable>().tryBuild();
+                return;
             }
+
+            //select the focus target
+            //if (currentDragItem == null && isInBuildMode)
+            {
+                //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
+                //RaycastHit2D[] hits = Physics2D.RaycastAll(mousePos2D, Vector2.zero);
+                foreach (var hit in Physics2D.RaycastAll(mousePos2D, Vector2.zero))
+                {
+                    Debug.Log("hit " + hit.transform.gameObject);
+                    var hitItem = hit.transform.GetComponent<SelectToFocusTarget>();
+                    if (hitItem)
+                    {
+
+                        if (currentFocusTarget)
+                        {
+                            currentFocusTarget.deselect();
+                        }
+                        currentFocusTarget = hitItem;
+                        currentFocusTarget.select();
+                        return;
+                    }
+                }
+            }
+            if (currentFocusTarget)
+            {
+                currentFocusTarget.deselect();
+            }
+            currentFocusTarget = null;
 
             //if (selectedItem)
             //{

@@ -96,6 +96,10 @@ public class Customer : HPCharacterController
 
         base.Die();
         CustomerManager.Instance.removeCustomer(this);
+        if(MouseManager.Instance.currentFocusTarget == GetComponent<SelectToFocusTarget>())
+        {
+            MouseManager.Instance.currentFocusTarget = null;
+        }
         Destroy(gameObject);
     }
 

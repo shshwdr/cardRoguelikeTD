@@ -55,9 +55,17 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 9088539178944729739, guid: 875b9f195ca71944b8a9504b8566423b, type: 3}
+    - target: {fileID: 5313333383007524578, guid: 2f82004dfe6e10b44bd9b3b145cd3b99, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5313333383007524579, guid: 2f82004dfe6e10b44bd9b3b145cd3b99, type: 3}
       propertyPath: m_Name
       value: fast
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902169697992497591, guid: 2f82004dfe6e10b44bd9b3b145cd3b99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f82004dfe6e10b44bd9b3b145cd3b99, type: 3}
