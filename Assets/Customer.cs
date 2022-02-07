@@ -91,28 +91,7 @@ public class Customer : HPCharacterController
         }
     }
 
-    public void spentAllMoney()
-    {
-        finishedShopping();
-        //noMoney = true;
-        ////CustomerManager.Instance.removeCustomer(this);
-        //emotes.showNoMoney();
-        //Debug.Log("no money");
-        //if (isBlocked)
-        //{
-
-        //    getReleased();
-        //}
-
-        //pathFinding.moveSpeed *= 2;
-    }
-
-    public override void Die()
-    {
-        spentAllMoney();
-    }
-
-    public void finishedShopping()
+    public void clean()
     {
 
         base.Die();
@@ -120,8 +99,22 @@ public class Customer : HPCharacterController
         Destroy(gameObject);
     }
 
-    public void spendMoney()
+    public override void Die()
     {
-        Inventory.Instance.addCoin((int)(maxHp - hp));
+        //add coins
+        Inventory.Instance.addCoin(customerInfo.reward);
+        clean();
     }
+
+    public void finishedShopping()
+    {
+        //do damage to player
+        BattleManager.Instance.getDamage(1);
+        clean();
+    }
+
+    //public void spendMoney()
+    //{
+    //    Inventory.Instance.addCoin((int)(maxHp - hp));
+    //}
 }

@@ -67,5 +67,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: normal
       objectReference: {fileID: 0}
+    - target: {fileID: 5313333383007524583, guid: 2f82004dfe6e10b44bd9b3b145cd3b99, type: 3}
+      propertyPath: detailedGizmos
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f82004dfe6e10b44bd9b3b145cd3b99, type: 3}

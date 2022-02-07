@@ -6,6 +6,7 @@ public class CharacterInfo : BaseInfo
 {
     public Dictionary<string,int> initialDeck;
     public int isUnlocked;
+    public int maxHP;
 
 
 }

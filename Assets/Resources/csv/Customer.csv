@@ -1,5 +1,11 @@
-﻿name,displayName,hp,moveSpeed,canBlock
-normal,女性,30,0.2,1
-fast,孩子,10,0.4,1
-cantBlock,男性,60,0.3,0
-lotsHP,有钱人,200,0.2,1
+﻿name,displayName,hp,moveSpeed,reward,canBlock
+normal,Small Toast,3,0.2,1,1
+fast,Big Toast,11,0.1,2,1
+cantBlock,Eggshell,21,0.2,2,0
+lotsHP,Bacon,3,0.3,1,1
+medusa,Medusa,9,0.4,2,0
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

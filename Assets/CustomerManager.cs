@@ -10,6 +10,7 @@ public class CustomerInfo : BaseInfo
     public int hp;
     public float moveSpeed;
     public bool canBlock;
+    public int reward;
 }
 public class CustomerManager : Singleton<CustomerManager>
 {
@@ -38,7 +39,7 @@ public class CustomerManager : Singleton<CustomerManager>
         //todo make it in background and don't do if customer is dead
         foreach (var customer in customers)
         {
-            yield return new WaitForSeconds(0.1f);
+            yield return null;
             customer.GetComponent<NPCPathFinding>().updatePathFinding();
         }
     }

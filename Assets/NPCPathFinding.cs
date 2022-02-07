@@ -53,6 +53,10 @@ public class NPCPathFinding : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            Debug.Log("path error!");
+        }
     }
     // Start is called before the first frame update
     public void cancelPath()
@@ -91,7 +95,7 @@ public class NPCPathFinding : MonoBehaviour
             path = null;
             reachedEndOfPath = true;
             // npc.finishPath();
-            customer.spendMoney();
+            //customer.spendMoney();
             customer.finishedShopping();
            // animator.SetFloat("speed", 0);
             return;
