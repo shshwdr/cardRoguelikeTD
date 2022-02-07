@@ -33,12 +33,15 @@ public class HandCardCell : MonoBehaviour
     {
         var prefab = Resources.Load<GameObject>("tower/"+ card.cardName);
         GameObject spawnInstance = Instantiate(prefab);
-        spawnInstance.GetComponent<DraggableItem>().cost = card.cost;
-        spawnInstance.GetComponent<DraggableItem>().card = card;
+        spawnInstance.GetComponent<CardEffect>().cost = card.cost;
+        spawnInstance.GetComponent<CardEffect>().card = card;
+        if (spawnInstance.GetComponent<DraggableItem>())
+        {
+            MouseManager.Instance.startDragItem(spawnInstance);
+        }
         spawnInstance.name = card.cardName;
         //spawnInstance.GetComponent<DraggableItem>().Init(prefab.name, itemInfo, isMainItem);
 
-        MouseManager.Instance.startDragItem(spawnInstance);
     }
 
     public void onPointerEnter()

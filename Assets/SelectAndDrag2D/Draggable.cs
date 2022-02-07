@@ -17,8 +17,6 @@ public abstract class Draggable : GroundItem
     public InfoBase info;
     public bool isBuilt = false;
 
-    public int cost;
-    public Card card;
 
 
     public void changeOverlayColor(Color color, float alpha = 0.5f)
@@ -82,17 +80,7 @@ public abstract class Draggable : GroundItem
     }
 
 
-    public void consumeRequirements()
-    {
-        //InfoWithRequirementBase infoWithRequirement = (InfoWithRequirementBase)info;
-        //var requirements = infoWithRequirement.requireResources;
-        //foreach(var req in requirements)
-        //{
-        //    Inventory.Instance.consumeItem(req.key, req.amount);
-        //}
-        Inventory.Instance.consumeCoin(cost);
-        BattleCardManager.Instance.useCard(card);
-    }
+    
     public void addBackRequirements()
     {
         InfoWithRequirementBase infoWithRequirement = (InfoWithRequirementBase)info;

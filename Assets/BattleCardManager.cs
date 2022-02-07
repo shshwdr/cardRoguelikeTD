@@ -53,6 +53,15 @@ public class BattleCardManager : Singleton<BattleCardManager>
         EventPool.Trigger("handCardsUpdate");
     }
 
+    public void drawCard(int cardCount)
+    {
+        for (int i = 0; i < cardCount; i++)
+        {
+            CardsOnHand.Add(DeckManager.Instance.drawCard());
+        }
+        EventPool.Trigger("handCardsUpdate");
+    }
+
     // Update is called once per frame
     void Update()
     {

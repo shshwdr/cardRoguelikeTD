@@ -61,16 +61,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183804616120225735, guid: 8fe562b5df2738a4eb5067f7a3404f3f, type: 3}
       propertyPath: m_Name
-      value: Fireball
+      value: Divination
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1292876729989267235, guid: 8fe562b5df2738a4eb5067f7a3404f3f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8fe562b5df2738a4eb5067f7a3404f3f, type: 3}
 --- !u!1 &8840741199771638477 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7183804616120225735, guid: 8fe562b5df2738a4eb5067f7a3404f3f, type: 3}
   m_PrefabInstance: {fileID: 1802178152808895754}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7569803432150459460
+--- !u!114 &-5220281924277356354
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,10 +80,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8840741199771638477}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac6e355fd05596640bdc934c3a990c8d, type: 3}
+  m_Script: {fileID: 11500000, guid: a99351cc80801ec46906724f0cc3a50a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardType: 
-  isActivated: 0
-  renderObject: {fileID: 0}
-  cardHappenCenter: {fileID: 0}

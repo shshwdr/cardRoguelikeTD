@@ -89,7 +89,7 @@ public class DraggableItem : Draggable
         {
            // RoomItemManager.Instance.addItem(this);
 
-            consumeRequirements();
+            GetComponent<CardEffect>().consumeRequirements();
         }
         isBuilt = true;
         GetComponent<CardEffect>().activate();
