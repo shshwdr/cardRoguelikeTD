@@ -11,6 +11,8 @@ public class MouseManager : Singleton<MouseManager>
     public GameObject selectedItem;
     public float rotateSmooth = 10.0f;
 
+    public TowerInfoController currentSelectedInfo;
+
     public SelectToFocusTarget currentFocusTarget;
     public LayerMask focusTargetLayer;
     void selectItem(GameObject go)
@@ -161,6 +163,11 @@ public class MouseManager : Singleton<MouseManager>
 
         if (Input.GetMouseButtonDown(0))
         {
+            if (currentSelectedInfo)
+            {
+                currentSelectedInfo.hideInfo();
+                currentSelectedInfo = null;
+            }
             if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
             {
                 print("on ui");
@@ -177,6 +184,7 @@ public class MouseManager : Singleton<MouseManager>
                 currentDragItem.GetComponent<Draggable>().tryBuild();
                 return;
             }
+
 
             //select the focus target
             //if (currentDragItem == null && isInBuildMode)
@@ -201,13 +209,33 @@ public class MouseManager : Singleton<MouseManager>
                         currentFocusTarget.select();
                         return;
                     }
+
+                    var hitInfo = hit.transform.GetComponent<TowerInfoController>();
+                    if (hitInfo)
+                    {
+                        if (currentSelectedInfo)
+                        {
+                            currentSelectedInfo.hideInfo();
+                        }
+                        currentSelectedInfo = hitInfo;
+                        currentSelectedInfo.showInfo();
+                        return;
+                    }
                 }
+            }
+
+
+
+            if (currentSelectedInfo)
+            {
+                currentSelectedInfo.hideInfo();
+                currentSelectedInfo = null;
             }
             if (currentFocusTarget)
             {
                 currentFocusTarget.deselect();
+                currentFocusTarget = null;
             }
-            currentFocusTarget = null;
 
             //if (selectedItem)
             //{

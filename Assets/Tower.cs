@@ -36,6 +36,8 @@ public class Tower:CardEffect,IClickable
         towerInfo = CardManager.Instance.getCardInfo(type);
         TowerManager.Instance.BuildTower(this);
         hideInfo();
+
+        GetComponentInChildren<TowerInfoController>().init(this);
     }
 
     public float range

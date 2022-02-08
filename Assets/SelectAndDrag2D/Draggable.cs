@@ -26,6 +26,10 @@ public abstract class Draggable : GroundItem
 
     public void showEnableOverlay()
     {
+        if (GetComponent<TowerInfoController>())
+        {
+            GetComponent<TowerInfoController>().showInfo();
+        }
         if (overlay)
         {
             overlay.gameObject.SetActive(true);
@@ -40,6 +44,10 @@ public abstract class Draggable : GroundItem
 
     public void showDisableOverlay()
     {
+        if (GetComponent<TowerInfoController>())
+        {
+            GetComponent<TowerInfoController>().showInfo();
+        }
         if (overlay)
         {
             overlay.gameObject.SetActive(true);
@@ -54,6 +62,10 @@ public abstract class Draggable : GroundItem
 
     public void showActiveOverlay()
     {
+        if (GetComponent<TowerInfoController>())
+        {
+            GetComponent<TowerInfoController>().showInfo();
+        }
         if (overlay)
         {
             overlay.gameObject.SetActive(true);
@@ -67,6 +79,10 @@ public abstract class Draggable : GroundItem
 
     public void hideOverlay()
     {
+        if (GetComponent<TowerInfoController>())
+        {
+            GetComponent<TowerInfoController>().hideInfo();
+        }
         if (overlay)
         {
             overlay.gameObject.SetActive(false);
