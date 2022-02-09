@@ -15,6 +15,7 @@ public abstract class Draggable : GroundItem
     public Renderer overlay;
     public string type;
     public InfoBase info;
+    public GameObject upgradeOverlay;
     public bool isBuilt = false;
 
 
@@ -22,6 +23,22 @@ public abstract class Draggable : GroundItem
     public void changeOverlayColor(Color color, float alpha = 0.5f)
     {
         overlay.material.color =new Color( color.r,color.g,color.b, alpha);
+    }
+
+    public void showUpgradeOverlay()
+    {
+        if (upgradeOverlay)
+        {
+
+            upgradeOverlay.SetActive(true);
+        }
+    }
+    public void hideUpgradeOverlay()
+    {
+        if (upgradeOverlay)
+        {
+            upgradeOverlay.SetActive(false);
+        }
     }
 
     public void showEnableOverlay()

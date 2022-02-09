@@ -31,6 +31,12 @@ public class Tower:CardEffect,IClickable
         
     }
 
+    public void upgrade()
+    {
+        level++;
+        GetComponent<TowerInfoController>().init(this);
+    }
+
     private void Start()
     {
         towerInfo = CardManager.Instance.getCardInfo(type);
@@ -44,16 +50,56 @@ public class Tower:CardEffect,IClickable
     {
         get
         {
-            return towerInfo.range;
+            return rangeByLevel(level);
+        }
+    }
+    public float nextRange {
+        get
+        {
+            return rangeByLevel(level + 1);
         }
     }
 
-    public float attackTime {
+    public float nextRangeDiff
+    {
+        get
+        {
+            return rangeByLevel(level+1) - rangeByLevel(level);
+        }
+    }
+
+    public float rangeByLevel(int l)
+    {
+        return towerInfo.range + towerInfo.rangeIncreaseByLevel * towerInfo.range * (l-1);
+    }
+
+    public float attackTime 
+    {
+        get
+        {
+            return speed == 0? speed:1f/ speed;
+        }
+    }
+
+    public float speed {
 
         get
         {
-            return towerInfo.speed;
+            return speedByLevel(level);
         }
+    }
+
+    public float nextSpeedDiff
+    {
+        get
+        {
+            return speedByLevel(level+1) - speedByLevel(level);
+        }
+    }
+
+    public float speedByLevel(int l)
+    {
+        return towerInfo.speed + towerInfo.speedIncreaseByLevel * towerInfo.speed * (l - 1);
     }
 
 
@@ -77,9 +123,23 @@ public class Tower:CardEffect,IClickable
     {
         get
         {
-            return towerInfo.damage * level;
+            return damageByLevel(level);
         }
     }
+
+    public float nextDamageDiff {
+        get
+        {
+            return damageByLevel(level+1) - damageByLevel(level);
+        }
+    }
+
+
+    public int damageByLevel(int l)
+    {
+        return (int)( towerInfo.damage + towerInfo.damageIncreaseByLevel * towerInfo.damage * (l - 1));
+    }
+
 
     private void Update()
     {

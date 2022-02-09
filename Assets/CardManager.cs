@@ -17,6 +17,11 @@ public class CardInfo : BaseInfo
     public float spawnRange;
     public List<string> tags;
 
+
+    public float damageIncreaseByLevel;
+    public float speedIncreaseByLevel;
+    public float rangeIncreaseByLevel;
+
 }
 
 
@@ -29,10 +34,10 @@ public class CardManager : Singleton<CardManager>
         foreach (var card in cards)
         {
             cardInfoDict[card.name] = card;
-            if (card.speed != 0)
-            {
-                card.speed = 1f / card.speed;
-            }
+            //if (card.speed != 0)
+            //{
+            //    card.speed = 1f / card.speed;
+            //}
             card.range = card.range * Utils.gridSize;
             card.spawnRange = card.spawnRange * Utils.gridSize;
         }

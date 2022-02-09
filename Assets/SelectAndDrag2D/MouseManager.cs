@@ -92,7 +92,47 @@ public class MouseManager : Singleton<MouseManager>
             //currentDragItem.transform.RotateAround(Vector3.zero, Vector3.up * tilt, rotateSmooth * Time.deltaTime);
 
             var currentDraggable = currentDragItem.GetComponent<Draggable>();
-            //if (isDragging)
+
+            bool canUpgrade = false;
+            Tower upgradeTower = null;
+
+            // show upgrade info
+            {
+                //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
+                if (currentDraggable.GetComponent<Tower>())
+                {
+                    //RaycastHit2D[] hits = Physics2D.RaycastAll(mousePos2D, Vector2.zero);
+                    foreach (var hit in Physics2D.RaycastAll(mousePos2D, Vector2.zero))
+                    {
+                        //Debug.Log("hit " + hit.transform.gameObject);
+
+                        var hitInfo = hit.transform.GetComponent<TowerInfoController>();
+                        if (hitInfo)
+                        {
+                            if (hitInfo.transform!=currentDraggable.transform && hitInfo.canUpgradeWith(currentDraggable.GetComponent<Tower>()))
+                            {
+                                upgradeTower = hitInfo.GetComponent<Tower>();
+                                currentDraggable.GetComponent<TowerInfoController>().showUpgradeInfo(upgradeTower);
+                                currentDraggable.showEnableOverlay();
+                                currentDraggable.showUpgradeOverlay();
+                                canUpgrade = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (!canUpgrade)
+                    {
+                        currentDraggable.GetComponent<TowerInfoController>().hideUpgradeInfo();
+                        currentDraggable.hideUpgradeOverlay();
+                    }
+                }
+            }
+
+
+            if (!canUpgrade)
             {
                 bool canbuild = currentDraggable.canBuildItem();
                 if (!canbuild)
@@ -103,7 +143,7 @@ public class MouseManager : Singleton<MouseManager>
                 {
                     currentDraggable.showEnableOverlay();
                 }
-
+            }
                 Vector3 newPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
                 Vector3 mousePosition = dragCamera.ScreenToWorldPoint(newPosition);
 
@@ -116,9 +156,23 @@ public class MouseManager : Singleton<MouseManager>
                 currentDragItem.transform.position = mousePosition;
 
 
+
+
+            //start upgrade
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (upgradeTower)
+                {
+                    upgradeTower.upgrade();
+                    currentDragItem.GetComponent<TowerInfoController>().hideInfo();
+                    currentDragItem.GetComponent<TowerInfoController>().hideUpgradeInfo();
+                    currentDraggable.hideUpgradeOverlay();
+
+                    Destroy(currentDraggable.gameObject);
+                    return;
+
+                }
             }
-
-
         }
 
 
@@ -139,7 +193,7 @@ public class MouseManager : Singleton<MouseManager>
                 return;
             }
 
-            
+
 
             //LayerMask mask = LayerMask.GetMask("item");
             //if (currentDragItem == null && isInBuildMode)
