@@ -11,6 +11,8 @@ public class HPCharacterController : MonoBehaviour
     public bool isDead;
     public bool isStuned;
 
+    public float speedAdjust;
+
     public AudioClip[] beHitClips;
 
     public Rigidbody2D rb;
@@ -49,6 +51,8 @@ public class HPCharacterController : MonoBehaviour
             }
         }
         currentInvinsibleTimer += Time.deltaTime;
+
+        
     }
 
     public void updateHP()
@@ -60,6 +64,22 @@ public class HPCharacterController : MonoBehaviour
     virtual protected void playHurtSound()
     {
 
+    }
+
+    protected Dictionary<string, List<Buff>> currentBuffs = new Dictionary<string, List<Buff>>();
+
+    public void applyBuff(Dictionary<string,int> buffs)
+    {
+        foreach(var pair in buffs)
+        {
+            BuffInfo buffInfo = BuffManager.Instance.getBuffInfo(pair.Key);
+            Buff buff = new Buff(buffInfo, pair.Value);
+            if (!currentBuffs.ContainsKey(buffInfo.name))
+            {
+                currentBuffs[buffInfo.name] = new List<Buff>();
+            }
+            currentBuffs[buffInfo.name].Add(buff);
+        }
     }
     public void getDamage(float damage = 1)
     {

@@ -16,6 +16,7 @@ public class CardInfo : BaseInfo
     public float range;
     public float spawnRange;
     public List<string> tags;
+    public string buff;
 
 
     public float damageIncreaseByLevel;

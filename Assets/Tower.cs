@@ -134,7 +134,13 @@ public class Tower:CardEffect,IClickable
         }
     }
 
-
+    public string buff
+    {
+        get
+        {
+            return towerInfo.buff;
+        }
+    }
     public int damageByLevel(int l)
     {
         return (int)( towerInfo.damage + towerInfo.damageIncreaseByLevel * towerInfo.damage * (l - 1));

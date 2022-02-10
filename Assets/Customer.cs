@@ -55,6 +55,7 @@ public class Customer : HPCharacterController
     protected override void Awake()
     {
         base.Awake();
+        spriteObject = gameObject;
         pathFinding = GetComponent<NPCPathFinding>();
         emotes = GetComponentInChildren<EmotesController>();
     }
@@ -89,6 +90,34 @@ public class Customer : HPCharacterController
                 getReleased();
             }
         }
+
+        if (currentBuffs.ContainsKey("Frost") && currentBuffs["Frost"].Count > 0)
+        {
+            var nextBuff = new List<Buff>();
+            foreach (var buff in currentBuffs["Frost"])
+            {
+                speedAdjust = 1 - buff.effect;
+                if (buff.invalidTime <= Time.time)
+                {
+
+                }
+                else
+                {
+                    nextBuff.Add(buff);
+                }
+
+            }
+            currentBuffs["Frost"] = nextBuff;
+            spriteObject.GetComponent<SpriteRenderer>().color = Color.blue;
+        }
+        else
+        {
+            //reset speed
+            speedAdjust = 1;
+            spriteObject.GetComponent<SpriteRenderer>().color = Color.white;
+        }
+
+        GetComponent<NPCPathFinding>().moveSpeed = customerInfo.moveSpeed * speedAdjust;
     }
 
     public void clean()

@@ -8,7 +8,7 @@ public class AttackByTime : MonoBehaviour
 
     float currentCoolDown = 0;
 
-    protected GameObject bulletPrefab;
+    public GameObject bulletPrefab;
     protected Tower tower;
 
     //public TowerInfo towerInfo { get {
@@ -37,8 +37,10 @@ public class AttackByTime : MonoBehaviour
     }
     protected virtual void Start()
     {
-
-        bulletPrefab = Resources.Load<GameObject>("bullet/" + tower.type);
+        if (!bulletPrefab)
+        {
+            bulletPrefab = Resources.Load<GameObject>("bullet/" + tower.type);
+        }
     }
 
     private void Update()

@@ -1,11 +1,11 @@
-﻿name,displayName,description,cost,damage,speed,spawnMoveSpeed,range,spawnRange,tags,damageIncreaseByLevel,speedIncreaseByLevel,rangeIncreaseByLevel
-Wall,Wall,Wall,2,0,0,,0,,Maze,,,
-Fireball,Fireball,Fireball,10,8,1,,2,,Spell,,,
-Divination,Divination,draw two cards,3,0,0,0,0,,Spell,,,
-Cannon,Cannon,Cannon,10,10,0.7,0.3,2,1,Tower| Area,0.1,0.1,0.1
-Balanced,Balanced,Balanced,8,8,1.5,1,2,,Tower| Target,0.1,0.1,0.1
-Arrow,Arrow,Arrow,5,2,3,3,2.5,,Tower| Target,0.1,0.1,0.1
-Bank,Bank,Bank,15,0,0,,0,,Econ,,,
-Pulse,Pulse,Pulse,10,5,0.7,,1,,Tower| Area,0.1,0.1,0.1
-Frost,Frost,Frost,15,2,0.7,,2,1,Tower| Area| Debuff,0.1,0.1,0.1
-Sniper,Sniper,Sniper,12,15,0.3,,5,,Tower| Target,0.1,0.1,0.1
+﻿name,displayName,description,cost,damage,speed,spawnMoveSpeed,range,spawnRange,buff,tags,damageIncreaseByLevel,speedIncreaseByLevel,rangeIncreaseByLevel
+Wall,Wall,Wall,2,0,0,,0,,,Maze,,,
+Fireball,Fireball,Fireball,10,8,1,,2,,,Spell,,,
+Divination,Divination,draw two cards,3,0,0,0,0,,,Spell,,,
+Cannon,Cannon,Cannon,10,10,0.7,0.3,2,1,,Tower| Area,0.1,0.1,0.1
+Balanced,Balanced,Balanced,8,8,1.5,1,2,,,Tower| Target,0.1,0.1,0.1
+Arrow,Arrow,Arrow,5,2,3,3,2.5,,,Tower| Target,0.1,0.1,0.1
+Bank,Bank,Bank,15,0,0,,0,,,Econ,,,
+Pulse,Pulse,Pulse,10,5,0.7,,1,,,Tower| Area,0.1,0.1,0.1
+Frost,Frost,Frost,15,2,0.7,0.3,2,1,Frost,Tower| Area| Debuff,0.1,0.1,0.1
+Sniper,Sniper,Sniper,12,15,0.3,,5,,,Tower| Target,0.1,0.1,0.1

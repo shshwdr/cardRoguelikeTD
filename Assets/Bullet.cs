@@ -13,6 +13,8 @@ public class Bullet : MonoBehaviour
     public GameObject explosion;
     float range;
     public int bulletType = 0;//0:single 1 area
+    string buff;
+    int towerLevel;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,8 @@ public class Bullet : MonoBehaviour
         damage = tower.damage;
         range = tower.spawnRange;
         speed = tower.spawnMoveSpeed;
+        buff = tower.buff;
+        towerLevel = tower.level;
         target = t;
         if (!useTarget)
         {
@@ -72,6 +76,7 @@ public class Bullet : MonoBehaviour
                 if (enemy)
                 {
                     enemy.getDamage(damage);
+                    enemy.applyBuff(new Dictionary<string, int>(){ { buff,towerLevel} });
                 }
                 else
                 {
