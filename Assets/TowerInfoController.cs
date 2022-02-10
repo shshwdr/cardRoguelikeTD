@@ -39,7 +39,7 @@ public class TowerInfoController : MonoBehaviour
         rangeLabel.text = "range: " + range.ToString("F2");
         levelLabel.text = "level: " + tower.level.ToString();
         damageLabel.text = "damage: " + tower.damage.ToString();
-        speedLabel.text = "speed: " + tower.attackTime.ToString("F2");
+        speedLabel.text = "speed: " + tower.speed.ToString("F2");
         upgradeInfo.SetActive(false);
 
     }

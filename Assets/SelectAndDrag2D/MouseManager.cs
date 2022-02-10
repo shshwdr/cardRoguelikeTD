@@ -15,6 +15,8 @@ public class MouseManager : Singleton<MouseManager>
 
     public SelectToFocusTarget currentFocusTarget;
     public LayerMask focusTargetLayer;
+
+    public Tower currentHoverTower;
     void selectItem(GameObject go)
     {
         selectedItem = go;
@@ -114,7 +116,14 @@ public class MouseManager : Singleton<MouseManager>
                         {
                             if (hitInfo.transform!=currentDraggable.transform && hitInfo.canUpgradeWith(currentDraggable.GetComponent<Tower>()))
                             {
+
                                 upgradeTower = hitInfo.GetComponent<Tower>();
+                                if (!currentHoverTower || currentHoverTower!=upgradeTower)
+                                {
+
+                                    currentHoverTower = upgradeTower;
+                                    currentDraggable.GetComponent<TowerInfoController>().init(upgradeTower);
+                                }
                                 currentDraggable.GetComponent<TowerInfoController>().showUpgradeInfo(upgradeTower);
                                 currentDraggable.showEnableOverlay();
                                 currentDraggable.showUpgradeOverlay();
@@ -134,6 +143,11 @@ public class MouseManager : Singleton<MouseManager>
 
             if (!canUpgrade)
             {
+                if (currentHoverTower)
+                {
+                    currentDraggable.GetComponent<TowerInfoController>().init(currentDraggable.GetComponent<Tower>());
+                    currentHoverTower = null;
+                }
                 bool canbuild = currentDraggable.canBuildItem();
                 if (!canbuild)
                 {
