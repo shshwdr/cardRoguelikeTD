@@ -12,6 +12,7 @@ public class StageInfo
     public float customerIntervalTime;
     public float waitTimeTillNextRound;
 
+
     public StageInfo (string[] input)
     {
         customer = input[0];
@@ -49,6 +50,10 @@ public class StageManager : Singleton<StageManager>
 
     public bool isLoop = false;
 
+
+    int pickCardEveryTurn = 3;
+    int turnNum = 0;
+
     List<List<StageInfo>> stageInfos = new List<List<StageInfo>>();
     // Start is called before the first frame update
     void Awake()
@@ -76,6 +81,12 @@ public class StageManager : Singleton<StageManager>
 
     void prepare()
     {
+        turnNum++;
+        if (turnNum >= pickCardEveryTurn)
+        {
+            turnNum = 0;
+            GameObject.FindObjectOfType<PickCardController>(true).showView();
+        }
         if (isStageFinished())
         {
             if (isLoop)

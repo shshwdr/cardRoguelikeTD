@@ -38,6 +38,12 @@ public class DeckManager : Singleton<DeckManager>
         currentDeck.RemoveAt(0);
         return firstCard;
     }
+
+    public void addCardToDeck(string n)
+    {
+
+        deckInfos.Add(CardManager.Instance.getCardInfo(n));
+    }
     public List<CardInfo> getDeckInfos()
     {
         //
