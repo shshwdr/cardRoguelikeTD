@@ -6,6 +6,15 @@ public class SingleShootTower : AttackByTime
 {
     public int shootCount = 1;
 
+    public GameObject bulletPrefab;
+    protected override void Awake()
+    {
+        base.Awake();
+        if (!bulletPrefab)
+        {
+            bulletPrefab = Resources.Load<GameObject>("bullet/" + tower.type);
+        }
+    }
     int shoot(Customer cus,int currentShootCount)
     {
         var go = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);

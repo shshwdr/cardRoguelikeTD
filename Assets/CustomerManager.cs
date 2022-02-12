@@ -38,7 +38,7 @@ public class CustomerManager : Singleton<CustomerManager>
     IEnumerator updateNavMeshGragually()
     {
         //todo make it in background and don't do if customer is dead
-        foreach (var customer in customers)
+        foreach (var customer in customers.ToList())
         {
             yield return null;
             customer.GetComponent<NPCPathFinding>().updatePathFinding();

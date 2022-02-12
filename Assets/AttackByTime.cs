@@ -8,7 +8,6 @@ public class AttackByTime : MonoBehaviour
 
     float currentCoolDown = 0;
 
-    public GameObject bulletPrefab;
     protected Tower tower;
 
     //public TowerInfo towerInfo { get {
@@ -30,17 +29,13 @@ public class AttackByTime : MonoBehaviour
             return tower.renderObject;
         }
     }
-    private void Awake()
+    protected virtual void Awake()
     {
         tower = GetComponent<Tower>();
         shootPoint = transform.Find("shootPoint");
     }
     protected virtual void Start()
     {
-        if (!bulletPrefab)
-        {
-            bulletPrefab = Resources.Load<GameObject>("bullet/" + tower.type);
-        }
     }
 
     private void Update()
