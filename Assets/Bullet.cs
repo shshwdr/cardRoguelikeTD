@@ -15,6 +15,7 @@ public class Bullet : MonoBehaviour
     public int bulletType = 0;//0:single 1 area
     string buff;
     int towerLevel;
+    Tower shootTower;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class Bullet : MonoBehaviour
         buff = tower.buff;
         towerLevel = tower.level;
         target = t;
+        shootTower = tower;
         if (!useTarget)
         {
             targetPosition = target.position;
@@ -62,7 +64,7 @@ public class Bullet : MonoBehaviour
             var hpObject = target.GetComponent<HPCharacterController>();
             if (hpObject)
             {
-                hpObject.getDamage(damage);
+                hpObject.getDamage(damage, shootTower);
             }
         }
         else
@@ -75,7 +77,7 @@ public class Bullet : MonoBehaviour
                 var enemy = enemyC.GetComponent<Customer>();
                 if (enemy)
                 {
-                    enemy.getDamage(damage);
+                    enemy.getDamage(damage, shootTower);
                     if (buff!=null && buff!="")
                     {
 

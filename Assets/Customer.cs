@@ -126,6 +126,10 @@ public class Customer : HPCharacterController
 
         GetComponent<NPCPathFinding>().moveSpeed = customerInfo.moveSpeed * speedAdjust;
     }
+    public override bool isFlying()
+    {
+        return customerInfo.isFlying == 1;
+    }
 
     public void clean()
     {

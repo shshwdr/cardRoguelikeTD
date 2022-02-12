@@ -7,9 +7,9 @@ public class SingleShootTower : AttackByTime
     public int shootCount = 1;
 
     public GameObject bulletPrefab;
-    protected override void Awake()
+    protected override void Start()
     {
-        base.Awake();
+        base.Start();
         if (!bulletPrefab)
         {
             bulletPrefab = Resources.Load<GameObject>("bullet/" + tower.type);
@@ -33,7 +33,7 @@ public class SingleShootTower : AttackByTime
         if (MouseManager.Instance.currentFocusTarget)
         {
             var focusCustomer = MouseManager.Instance.currentFocusTarget.GetComponent<Customer>();
-            if ((focusCustomer.transform.position - shootPoint.position).magnitude <= tower.range)
+            if ((focusCustomer.transform.position - shootPoint.position).magnitude <= tower.range && focusCustomer.canBeDamaged(tower))
             {
                 currentShootCount = shoot(focusCustomer, currentShootCount);
             }
@@ -50,7 +50,7 @@ public class SingleShootTower : AttackByTime
             {
                 continue;
             }
-            if ((cus.transform.position - shootPoint.position).magnitude <= tower.range)
+            if ((cus.transform.position - shootPoint.position).magnitude <= tower.range && cus.canBeDamaged(tower))
             {
                 currentShootCount = shoot(cus, currentShootCount);
             }

@@ -25,6 +25,11 @@ public class HPCharacterController : MonoBehaviour
     float currentInvinsibleTimer;
     //protected EmotesController emotesController;
     protected GameObject spriteObject;
+
+    public virtual bool isFlying()
+    {
+        return false;
+    }
     // Start is called before the first frame update
     virtual protected void Awake()
     {
@@ -81,7 +86,23 @@ public class HPCharacterController : MonoBehaviour
             currentBuffs[buffInfo.name].Add(buff);
         }
     }
-    public void getDamage(float damage = 1)
+
+
+    public bool canBeDamaged(Tower tower)
+    {
+        if ((isFlying() && !tower.canAttackFlying) || (isFlying() && !tower.canAttackGround))
+        {
+            return false;
+        }
+        return true;
+    }
+
+    public void getDamage(float damage, CardInfo card)
+    {
+        getDamage(damage);
+    }
+
+    public void getDamage(float damage)
     {
         if (isDead)
         {
@@ -106,6 +127,16 @@ public class HPCharacterController : MonoBehaviour
             currentStunTimer = 0;
             //animator.SetTrigger("hit");
         }
+    }
+
+    public void getDamage(float damage,Tower tower)
+    {
+        if ((isFlying() && !tower.canAttackFlying) || (isFlying() && !tower.canAttackGround))
+        {
+            return;
+        }
+        getDamage(damage);
+        
 
     }
 

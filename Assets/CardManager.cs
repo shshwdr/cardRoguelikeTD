@@ -18,6 +18,10 @@ public class CardInfo : BaseInfo
     public List<string> tags;
     public string buff;
 
+    public bool canAttackFly;
+    public bool canAttackGround;
+
+
 
     public float damageIncreaseByLevel;
     public float speedIncreaseByLevel;
@@ -41,6 +45,8 @@ public class CardManager : Singleton<CardManager>
             //}
             card.range = card.range * Utils.gridSize;
             card.spawnRange = card.spawnRange * Utils.gridSize;
+            card.canAttackFly = card.tags.Contains("Sky");
+            card.canAttackGround = card.tags.Contains("Ground");
         }
     }
     public CardInfo getCardInfo(string n)

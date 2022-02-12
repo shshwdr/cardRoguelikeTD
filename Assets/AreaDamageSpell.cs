@@ -18,7 +18,7 @@ public class AreaDamageSpell : CardSpell
             var enemy = enemyC.GetComponent<Customer>();
             if (enemy)
             {
-                enemy.getDamage(cardInfo.damage);
+                enemy.getDamage(cardInfo.damage,cardInfo);
             }
             else
             {

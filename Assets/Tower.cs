@@ -6,7 +6,17 @@ public class Tower:CardEffect,IClickable
 {
     public CardInfo towerInfo;
     public int level = 1;
-   
+
+    public Tower DeepCopy()
+    {
+        Tower sc = new Tower();
+
+        sc.towerInfo = this.towerInfo;
+        sc.level = this.level;
+
+        return sc;
+    }
+
     //public Transform shootPoint;
 
     //float currentCoolDown = 0;
@@ -57,6 +67,22 @@ public class Tower:CardEffect,IClickable
         get
         {
             return rangeByLevel(level + 1);
+        }
+    }
+
+    public bool canAttackFlying
+    {
+        get
+        {
+            return towerInfo.canAttackFly;
+        }
+    }
+
+    public bool canAttackGround
+    {
+        get
+        {
+            return towerInfo.canAttackGround;
         }
     }
 

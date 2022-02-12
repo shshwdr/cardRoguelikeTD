@@ -22,9 +22,9 @@ public class AttackInArea : AttackByTime
         bool hitted = false;
         foreach(var r in result)
         {
-            if (r.GetComponent<Customer>())
+            if (r.GetComponent<Customer>() && r.GetComponent<Customer>().canBeDamaged(tower))
             {
-                r.GetComponent<Customer>().getDamage(tower.damage);
+                r.GetComponent<Customer>().getDamage(tower.damage, tower);
                 hitted = true;
             }
         }
