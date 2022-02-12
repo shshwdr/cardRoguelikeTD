@@ -76,7 +76,11 @@ public class Bullet : MonoBehaviour
                 if (enemy)
                 {
                     enemy.getDamage(damage);
-                    enemy.applyBuff(new Dictionary<string, int>(){ { buff,towerLevel} });
+                    if (buff!=null && buff!="")
+                    {
+
+                        enemy.applyBuff(new Dictionary<string, int>() { { buff, towerLevel } });
+                    }
                 }
                 else
                 {

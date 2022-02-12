@@ -11,6 +11,7 @@ public class CustomerInfo : BaseInfo
     public float moveSpeed;
     public bool canBlock;
     public int reward;
+    public int isFlying;
 }
 public class CustomerManager : Singleton<CustomerManager>
 {

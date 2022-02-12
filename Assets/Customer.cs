@@ -1,3 +1,4 @@
+using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class Customer : HPCharacterController
     EmotesController emotes;
     NPCPathFinding pathFinding;
     public Transform target;
+    public Transform finalTarget;
     bool isBlocked = false;
     BlockTower blockTower;
     float blockTime = 0;
@@ -15,6 +17,7 @@ public class Customer : HPCharacterController
     CustomerInfo customerInfo;
     bool canBlock = false;
     bool noMoney = false;
+    Seeker seeker;
 
     public bool getBlocked(BlockTower tower)
     {
@@ -55,6 +58,7 @@ public class Customer : HPCharacterController
     protected override void Awake()
     {
         base.Awake();
+        seeker = GetComponent<Seeker>();
         spriteObject = gameObject;
         pathFinding = GetComponent<NPCPathFinding>();
         emotes = GetComponentInChildren<EmotesController>();
@@ -70,11 +74,14 @@ public class Customer : HPCharacterController
     public void init(Transform _target, CustomerInfo info)
     {
         target = _target;
+        finalTarget = target;
         customerInfo = info;
 
         hp = customerInfo.hp;
         GetComponent<NPCPathFinding>().moveSpeed = customerInfo.moveSpeed;
         canBlock = customerInfo.canBlock;
+
+
 
     }
 
@@ -123,7 +130,6 @@ public class Customer : HPCharacterController
     public void clean()
     {
 
-        base.Die();
         CustomerManager.Instance.removeCustomer(this);
         if(MouseManager.Instance.currentFocusTarget == GetComponent<SelectToFocusTarget>())
         {
@@ -134,9 +140,18 @@ public class Customer : HPCharacterController
 
     public override void Die()
     {
+        base.Die();
+
+        foreach(var behavior in GetComponents<BehaviorWhenDestroyed>())
+        {
+            behavior.onDestroyed(null);
+        }
+
         //add coins
         Inventory.Instance.addCoin(customerInfo.reward);
         clean();
+
+
     }
 
     public void finishedShopping()
