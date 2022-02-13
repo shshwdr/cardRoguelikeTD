@@ -31,7 +31,11 @@ public class CustomerManager : Singleton<CustomerManager>
 
     public void updateNavMesh()
     {
-        StartCoroutine(updateNavMeshGragually());
+        foreach (var customer in customers.ToList())
+        {
+            customer.GetComponent<NPCPathFinding>().updatePathFinding();
+        }
+        //StartCoroutine(updateNavMeshGragually());
     }
 
 

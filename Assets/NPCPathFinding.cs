@@ -66,14 +66,19 @@ public class NPCPathFinding : MonoBehaviour
     public void setTarget(Transform t)
     {
         target = t.position;
+        updatePathFinding();
+    }
 
+    public IEnumerator updatePathFindingIenumerator()
+    {
+
+        yield return null;
         seeker.StartPath(rb.position, target, OnPathComplete);
     }
 
     public void updatePathFinding()
     {
-        
-        seeker.StartPath(rb.position, target, OnPathComplete);
+        StartCoroutine(updatePathFindingIenumerator());
     }
 
     private void FixedUpdate()
