@@ -17,7 +17,8 @@ public class GridManager : Singleton<GridManager>
     
     public int width;
     public int height;
-    public Dictionary<Vector2Int, Transform> gridItemDict = new Dictionary<Vector2Int, Transform>();
+    public Dictionary<Vector2Int, Transform> gridItemPathDict = new Dictionary<Vector2Int, Transform>();
+    public Dictionary<Vector2Int, Transform> gridItemBuildDict = new Dictionary<Vector2Int, Transform>();
     public Dictionary<Vector2Int, GridOverlay> gridOverlayDict = new Dictionary<Vector2Int, GridOverlay>();
     private void Awake()
     {
@@ -37,7 +38,8 @@ public class GridManager : Singleton<GridManager>
             for(int j = 0; j < height; j++)
             {
                 Vector2Int pos = new Vector2Int(i, j) + startGridPos;
-                gridItemDict[pos] = null;
+                gridItemPathDict[pos] = null;
+                gridItemBuildDict[pos] = null;
                 gridOverlayDict[pos] = Instantiate(overlayPrefab, new Vector3(i * gridSize, j * gridSize, 0)+startPosition, Quaternion.identity, overlayParent).GetComponent<GridOverlay>();
 
             }
@@ -66,7 +68,7 @@ public class GridManager : Singleton<GridManager>
     {
 
         var gridPos = Utils.positionToGridIndexCenter2d(item.transform.position);
-        if (gridItemDict.ContainsKey(gridPos) && gridItemDict[gridPos]==null)
+        if (gridItemBuildDict.ContainsKey(gridPos) && gridItemBuildDict[gridPos]==null)
         {
             if (PathFindingManager.Instance.testIfCanBeOccupied(gridPos))
             {
@@ -76,11 +78,16 @@ public class GridManager : Singleton<GridManager>
         return false;
     }
 
-    public void addItem(Transform item)
+    public void addItem(Transform item, bool isPathChanging)
     {
         var gridPos = Utils.positionToGridIndexCenter2d(item.transform.position);
         //item.gridPos = gridPos;
-        gridItemDict[gridPos] = item;
+        gridItemBuildDict[gridPos] = item;
+        if (isPathChanging)
+        {
+
+            gridItemPathDict[gridPos] = item;
+        }
         PathFindingManager.Instance.clearCanBeOccupied();
         //gridOverlayDict[gridPos].updateColor(Color.red);
         //EventPool.Trigger("regenerateNav");

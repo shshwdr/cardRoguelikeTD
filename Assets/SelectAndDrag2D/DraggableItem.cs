@@ -93,11 +93,11 @@ public class DraggableItem : Draggable
         }
         isBuilt = true;
         GetComponent<CardEffect>().activate();
+        GridManager.Instance.addItem(transform, isPathChanging);
         if (isPathChanging)
         {
             CustomerManager.Instance.updateNavMesh();
             NavMeshManager.Instance.updateNavMesh();
-            GridManager.Instance.addItem(transform);
         }
         //StartCoroutine(renderNavAsync());
     }

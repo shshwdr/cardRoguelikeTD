@@ -39,7 +39,7 @@ public class PathFindingManager : Singleton<PathFindingManager>
         {
             return canBeOccupied[ask];
         }
-        var grid = new Dictionary<Vector2Int, Transform>( GridManager.Instance.gridItemDict);
+        var grid = new Dictionary<Vector2Int, Transform>( GridManager.Instance.gridItemPathDict);
         grid[ask] = transform;
         var res = canFindPath(grid);
         canBeOccupied[ask] = res;
