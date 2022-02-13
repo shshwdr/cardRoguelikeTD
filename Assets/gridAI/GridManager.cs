@@ -64,13 +64,13 @@ public class GridManager : Singleton<GridManager>
         }
     }
 
-    public bool checkIfPlaceCanBeOccupied(Transform item)
+    public bool checkIfPlaceCanBeOccupied(DraggableItem item)
     {
 
         var gridPos = Utils.positionToGridIndexCenter2d(item.transform.position);
         if (gridItemBuildDict.ContainsKey(gridPos) && gridItemBuildDict[gridPos]==null)
         {
-            if (PathFindingManager.Instance.testIfCanBeOccupied(gridPos))
+            if (PathFindingManager.Instance.testIfCanBeOccupied(item))
             {
                 return true;
             }

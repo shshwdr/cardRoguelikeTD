@@ -206,7 +206,8 @@ public class StageManager : Singleton<StageManager>
             {
                 var enemyPrefab = Resources.Load<GameObject>("customer/"+ currentCustomerName);
                 var go = Instantiate(enemyPrefab, startingPoint.position, Quaternion.identity);
-                go.GetComponent<Customer>().init(endPoint, CustomerManager.Instance.CustomerInfoDict[currentCustomerName]);
+                go.GetComponent<Customer>().init(endPoint.position, CustomerManager.Instance.CustomerInfoDict[currentCustomerName]);
+               // go.GetComponent<Customer>().pathFinding.setTarget(go.GetComponent<Customer>().target);
                 currentTimer = 0;
                 currentRoundCounter++;
             }

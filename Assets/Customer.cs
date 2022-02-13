@@ -6,9 +6,9 @@ using UnityEngine;
 public class Customer : HPCharacterController
 {
     EmotesController emotes;
-    NPCPathFinding pathFinding;
-    public Transform target;
-    public Transform finalTarget;
+    public NPCPathFinding pathFinding;
+    public Vector3 target;
+    public Vector3 finalTarget;
     bool isBlocked = false;
     BlockTower blockTower;
     float blockTime = 0;
@@ -69,19 +69,19 @@ public class Customer : HPCharacterController
         base.Start();
         CustomerManager.Instance.addCustomer(this);
 
-        pathFinding.setTarget(target);
     }
-    public void init(Transform _target, CustomerInfo info)
+    public void init(Vector3 _target, CustomerInfo info)
     {
         target = _target;
         finalTarget = target;
         customerInfo = info;
-
-        hp = customerInfo.hp;
+        maxHp = customerInfo.hp;
+        hp = maxHp;
         GetComponent<NPCPathFinding>().moveSpeed = customerInfo.moveSpeed;
         canBlock = customerInfo.canBlock;
 
 
+        pathFinding.setTarget(target);
 
     }
 

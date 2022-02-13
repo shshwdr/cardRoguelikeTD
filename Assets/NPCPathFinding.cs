@@ -63,9 +63,9 @@ public class NPCPathFinding : MonoBehaviour
     {
         path = null;
     }
-    public void setTarget(Transform t)
+    public void setTarget(Vector3 t)
     {
-        target = t.position;
+        target = t;
         updatePathFinding();
     }
 
@@ -78,7 +78,9 @@ public class NPCPathFinding : MonoBehaviour
 
     public void updatePathFinding()
     {
-        StartCoroutine(updatePathFindingIenumerator());
+
+        seeker.StartPath(rb.position, target, OnPathComplete);
+        //StartCoroutine(updatePathFindingIenumerator());
     }
 
     private void FixedUpdate()

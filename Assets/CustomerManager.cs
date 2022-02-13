@@ -31,11 +31,11 @@ public class CustomerManager : Singleton<CustomerManager>
 
     public void updateNavMesh()
     {
-        foreach (var customer in customers.ToList())
-        {
-            customer.GetComponent<NPCPathFinding>().updatePathFinding();
-        }
-        //StartCoroutine(updateNavMeshGragually());
+        //foreach (var customer in customers.ToList())
+        //{
+        //    customer.GetComponent<NPCPathFinding>().updatePathFinding();
+        //}
+        StartCoroutine(updateNavMeshGragually());
     }
 
 
@@ -63,6 +63,23 @@ public class CustomerManager : Singleton<CustomerManager>
     {
         return customers;
        // return customers.Count == 0?customers: (List<Customer>)customers.Where(x => !x.isDead);
+    }
+
+    public void spawnEnemies(List<Vector3> positions, GameObject spawnItem)
+    {
+        StartCoroutine(spawnEnemiesGradually(positions, spawnItem));
+    }
+
+    IEnumerator spawnEnemiesGradually(List<Vector3> positions, GameObject spawnItem)
+    {
+
+        foreach (var pos in positions)
+        {
+            yield return null;
+            var go = Instantiate(spawnItem, pos, Quaternion.identity, transform.parent);
+
+            go.GetComponent<Customer>().init(StageManager.Instance.endPoint.position, CustomerManager.Instance.CustomerInfoDict[spawnItem.name]);
+        }
     }
 
     public void addCustomer(Customer cus)

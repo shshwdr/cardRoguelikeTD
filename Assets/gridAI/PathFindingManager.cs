@@ -33,14 +33,20 @@ public class PathFindingManager : Singleton<PathFindingManager>
     }
     public Dictionary<Vector2Int, bool> canBeOccupied = new Dictionary<Vector2Int, bool>();
 
-    public bool testIfCanBeOccupied(Vector2Int ask)
+    public bool testIfCanBeOccupied(DraggableItem item)
     {
+
+        var ask = Utils.positionToGridIndexCenter2d(item.transform.position);
         if (canBeOccupied.ContainsKey(ask))
         {
             return canBeOccupied[ask];
         }
         var grid = new Dictionary<Vector2Int, Transform>( GridManager.Instance.gridItemPathDict);
-        grid[ask] = transform;
+        if (item.isPathChanging)
+        {
+
+            grid[ask] = transform;
+        }
         var res = canFindPath(grid);
         canBeOccupied[ask] = res;
         return res;

@@ -55,7 +55,7 @@ public class DraggableItem : Draggable
         if (isGridBased)
         {
             //check grid manager
-            if (GridManager.Instance.checkIfPlaceCanBeOccupied(transform))
+            if (GridManager.Instance.checkIfPlaceCanBeOccupied(this))
             {
                 return true;
             }
