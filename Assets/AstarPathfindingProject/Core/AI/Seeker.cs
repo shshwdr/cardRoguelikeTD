@@ -463,8 +463,7 @@ namespace Pathfinding {
 			lastPathID = path.pathID;
 
 			// Pre process the path
-			RunModifiers(ModifierPass.PreProcess, path);
-
+			RunModifiers(ModifierPass.PreProcess, path); 
 			// Send the request to the pathfinder
 			AstarPath.StartPath(path);
 		}

@@ -5,11 +5,22 @@ using UnityEngine;
 
 public class BuffManager : Singleton<BuffManager>
 {
+
+    public Dictionary<string, BuffType> buffStringToType = new Dictionary<string, BuffType>();
+    public Dictionary<BuffType, string> buffTypeToString = new Dictionary<BuffType, string>(){
+    {BuffType.Frost,"Frost" },
+    {BuffType.Confused,"Confused" },
+};
     public Dictionary<string, BuffInfo> BuffInfoDict = new Dictionary<string, BuffInfo>();
 
     // Start is called before the first frame update
     void Awake()
     {
+        foreach(var pair in buffTypeToString)
+        {
+            buffStringToType[pair.Value] = pair.Key;
+        }
+
         var customerList = CsvUtil.LoadObjects<BuffInfo>("Buff");
         foreach (var info in customerList)
         {

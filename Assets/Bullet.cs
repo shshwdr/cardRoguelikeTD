@@ -7,22 +7,22 @@ public class Bullet : MonoBehaviour
     public bool useTarget = true;
     public Transform target;
     public Vector3 targetPosition;
-    float damage;
+    protected float damage;
     public float speed = 3f;
     public float hitDistance = 0.3f;
     public GameObject explosion;
-    float range;
+    protected float range;
     public int bulletType = 0;//0:single 1 area
-    string buff;
-    int towerLevel;
-    Tower shootTower;
+    protected string buff;
+    protected int towerLevel;
+    protected Tower shootTower;
 
     // Start is called before the first frame update
     void Start()
     {
         
     }
-    public void init(Tower tower, Transform t)
+    public virtual void init(Tower tower, Transform t)
     {
         damage = tower.damage;
         range = tower.spawnRange;
@@ -56,7 +56,7 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    void hit()
+    protected void hit()
     {
         if(bulletType == 0)
         {

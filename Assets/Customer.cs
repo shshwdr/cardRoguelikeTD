@@ -17,6 +17,8 @@ public class Customer : HPCharacterController
     CustomerInfo customerInfo;
     bool canBlock = false;
     bool noMoney = false;
+
+
     Seeker seeker;
 
     public bool getBlocked(BlockTower tower)
@@ -98,10 +100,10 @@ public class Customer : HPCharacterController
             }
         }
 
-        if (currentBuffs.ContainsKey("Frost") && currentBuffs["Frost"].Count > 0)
+        if (currentBuffs.ContainsKey(BuffType.Frost) && currentBuffs[BuffType.Frost].Count > 0)
         {
             var nextBuff = new List<Buff>();
-            foreach (var buff in currentBuffs["Frost"])
+            foreach (var buff in currentBuffs[BuffType.Frost])
             {
                 speedAdjust = 1 - buff.effect;
                 if (buff.invalidTime <= Time.time)
@@ -114,7 +116,7 @@ public class Customer : HPCharacterController
                 }
 
             }
-            currentBuffs["Frost"] = nextBuff;
+            currentBuffs[BuffType.Frost] = nextBuff;
             spriteObject.GetComponent<SpriteRenderer>().color = Color.blue;
         }
         else
@@ -126,6 +128,12 @@ public class Customer : HPCharacterController
 
         GetComponent<NPCPathFinding>().moveSpeed = customerInfo.moveSpeed * speedAdjust;
     }
+
+    public bool isConfused()
+    {
+        return currentBuffs.ContainsKey(BuffType.Confused) && currentBuffs[BuffType.Confused].Count > 0;
+    }
+
     public override bool isFlying()
     {
         return customerInfo.isFlying == 1;

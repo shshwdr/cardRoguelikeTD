@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum BuffType { Frost,Confused};
+
+
 public class BuffInfo : BaseInfo
 {
     public float duration;

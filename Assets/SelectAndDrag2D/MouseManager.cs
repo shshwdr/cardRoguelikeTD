@@ -178,6 +178,7 @@ public class MouseManager : Singleton<MouseManager>
                 if (upgradeTower)
                 {
                     upgradeTower.upgrade();
+                    currentHoverTower = null;
                     currentDragItem.GetComponent<TowerInfoController>().hideInfo();
                     currentDragItem.GetComponent<TowerInfoController>().hideUpgradeInfo();
                     currentDraggable.hideUpgradeOverlay();

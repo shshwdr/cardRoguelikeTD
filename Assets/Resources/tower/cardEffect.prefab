@@ -486,13 +486,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeCollider: {fileID: 6567840661485190548}
+  isGridBased: 1
   isDragging: 1
   overlay: {fileID: 8519503215501334642}
   type: 
+  upgradeOverlay: {fileID: 0}
   isBuilt: 0
-  cost: 0
   isMainItem: 0
+  isPathChanging: 0
   occupied: 0
+  renderer: {fileID: 6858551175470245240}
   effectRangeItem: {fileID: 0}
   affectedItems: []
 --- !u!1 &6075590779810187005

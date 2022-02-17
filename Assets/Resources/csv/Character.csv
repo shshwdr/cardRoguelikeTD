@@ -1,2 +1,2 @@
 ﻿name,displayName,initialDeck,isUnlocked,maxHP
-hero,Hero,Wall:3|Fireball:1|Cannon:1|Arrow:1|Pulse:1,1,10
+hero,Hero,Cannon:3|Frost:3,1,10

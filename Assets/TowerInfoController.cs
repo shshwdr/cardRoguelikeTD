@@ -33,6 +33,10 @@ public class TowerInfoController : MonoBehaviour
 
     public void init(Tower tower)
     {
+        if(!tower || tower.towerInfo == null||!nameLabel)
+        {
+            Debug.Log("???");
+        }
         nameLabel.text = "name: "+tower.towerInfo.displayName;
         var range = tower.range;
         rangeCircle.localScale = Vector3.one* range * 2;

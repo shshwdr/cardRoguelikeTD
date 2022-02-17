@@ -8,7 +8,24 @@ public class Utils : MonoBehaviour
     static public Vector2[] dir4V2 = { new Vector2(1, 0), new Vector2(-1, 0), new Vector2(0, -1), new Vector2(0, 1), };
     static public Vector2Int[] dir4V2Int = { new Vector2Int(1, 0), new Vector2Int(-1, 0), new Vector2Int(0, -1), new Vector2Int(0, 1), };
     static public Vector2[] dir5V2 = { new Vector2(1, 0), new Vector2(-1, 0), new Vector2(0, -1), new Vector2(0, 1), new Vector2(0, 0), };
-   
+
+    public static Vector3 Parabola(Vector3 start, Vector3 end, float height, float t)
+    {
+        System.Func<float, float> f = x => -4 * height * x * x + 4 * height * x;
+
+        var mid = Vector3.Lerp(start, end, t);
+
+        return new Vector3(mid.x, f(t) + Mathf.Lerp(start.y, end.y, t), mid.z);
+    }
+
+    public static Vector2 Parabola(Vector2 start, Vector2 end, float height, float t)
+    {
+        System.Func<float, float> f = x => -4 * height * x * x + 4 * height * x;
+
+        var mid = Vector2.Lerp(start, end, t);
+
+        return new Vector2(mid.x, f(t) + Mathf.Lerp(start.y, end.y, t));
+    }
     T CopyComponent<T>(T original, GameObject destination) where T : Component
     {
         System.Type type = original.GetType();

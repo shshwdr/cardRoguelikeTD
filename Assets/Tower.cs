@@ -7,6 +7,9 @@ public class Tower:CardEffect,IClickable
     public CardInfo towerInfo;
     public int level = 1;
 
+
+    public Sprite image { get { return Resources.Load<Sprite>("TowerArt/" + type+"/"+ Mathf.Min(3, level)); } }
+
     public Tower DeepCopy()
     {
         Tower sc = new Tower();
@@ -45,6 +48,7 @@ public class Tower:CardEffect,IClickable
     {
         level++;
         GetComponent<TowerInfoController>().init(this);
+        GetComponent<DraggableItem>().renderer.sprite = image;
     }
 
     private void Start()
@@ -54,6 +58,7 @@ public class Tower:CardEffect,IClickable
         hideInfo();
 
         GetComponentInChildren<TowerInfoController>().init(this);
+        GetComponent<DraggableItem>().renderer.sprite = image;
     }
 
     public float range

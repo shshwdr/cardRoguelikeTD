@@ -8,6 +8,8 @@ public class DraggableItem : Draggable
     public bool isMainItem;
     public bool isPathChanging;
     public bool occupied;
+
+    public SpriteRenderer renderer;
     public AffectRange effectRangeItem;
 
     public List<DraggableItem> affectedItems = new List<DraggableItem>();

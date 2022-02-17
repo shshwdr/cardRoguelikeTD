@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 850284456349508042}
   - component: {fileID: 850284456349508045}
-  - component: {fileID: 850284456349508043}
+  - component: {fileID: -7679022764027229867}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &850284456349508043
+--- !u!114 &-7679022764027229867
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,13 +92,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 850284456349508044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbc9ee0a48573414f99fe8c1cc0e4936, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b643f4b8a9f0ab499c391a4f80a0e87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   useTarget: 0
   target: {fileID: 0}
   targetPosition: {x: 0, y: 0, z: 0}
-  speed: 2
-  hitDistance: 0.1
+  speed: 3
+  hitDistance: 0.3
   explosion: {fileID: 4414296334997964582, guid: 96938ca88a41d15439a1dc3604596794, type: 3}
   bulletType: 1
+  height: 0.3

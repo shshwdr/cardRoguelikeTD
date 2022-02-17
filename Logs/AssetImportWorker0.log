@@ -1,0 +1,2702 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.26f1 (7298b473bc1a) revision 7510196'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Core' Language: 'en' Physical Memory: 15970 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2019.4.22f1\Editor\2020.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/csviv/Desktop/unity/cardRoguelikeTD
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52811
+Successfully changed project path to: C:/Users/csviv/Desktop/unity/cardRoguelikeTD
+C:/Users/csviv/Desktop/unity/cardRoguelikeTD
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 629.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.26f1 (7298b473bc1a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2019.4.22f1/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/csviv/Desktop/unity/cardRoguelikeTD/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a52)
+    Vendor:   
+    VRAM:     7985 MB
+    Driver:   27.20.100.9621
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2019.4.22f1/Editor/2020.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2019.4.22f1/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2019.4.22f1/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2019.4.22f1/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2019.4.22f1/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.013562 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 749.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.079 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3080ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (2471ms)
+			LoadAssemblies (169ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (636ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (164ms)
+			SetupLoadedEditorAssemblies (1269ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (749ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (322ms)
+				ProcessInitializeOnLoadMethodAttributes (105ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.046908 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1006.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.989 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7991ms)
+		BeginReloadAssembly (637ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (132ms)
+		EndReloadAssembly (7092ms)
+			LoadAssemblies (473ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1706ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (636ms)
+			SetupLoadedEditorAssemblies (3525ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (61ms)
+				SetLoadedEditorAssemblies (9ms)
+				RefreshPlugins (1007ms)
+				BeforeProcessingInitializeOnLoad (526ms)
+				ProcessInitializeOnLoadAttributes (1825ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.37 seconds
+Refreshing native plugins compatible for Editor in 6.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5051 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 201.2 MB.
+System memory in use after: 201.6 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 5487.
+Total: 22.948200 ms (FindLiveObjects: 0.961900 ms CreateObjectMapping: 0.652200 ms MarkObjects: 20.946900 ms  DeleteObjects: 0.383600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Resources/customer/normalSpawn.prefab
+  artifactKey: Guid(ab52426bbe92dc246b85424c3195c0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/customer/normalSpawn.prefab using Guid(ab52426bbe92dc246b85424c3195c0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a4c692d6c9772f1e790194d4d2a1600') in 3.629850 seconds 
+  Import took 3.690058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000554 seconds.
+  path: Assets/Resources/customer/normal.prefab
+  artifactKey: Guid(ebc4e4b2b7061a648adeb0ce3788233a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/customer/normal.prefab using Guid(ebc4e4b2b7061a648adeb0ce3788233a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6ba37ee2b7f94281236f1c022cf866') in 0.177755 seconds 
+  Import took 0.216664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000544 seconds.
+  path: Assets/Resources/customer/lotsHP.prefab
+  artifactKey: Guid(da60b90a882c30e4eb2bf4481babac6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/customer/lotsHP.prefab using Guid(da60b90a882c30e4eb2bf4481babac6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb6da6fa4e60c3c41ac9fd02a7cd238') in 0.154986 seconds 
+  Import took 0.189705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Assets/Resources/customer/fast.prefab
+  artifactKey: Guid(42492b1cfc636604b9ccbc7736f40075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/customer/fast.prefab using Guid(42492b1cfc636604b9ccbc7736f40075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24042dd5835b7a5e26aada3d5373bb6a') in 0.142680 seconds 
+  Import took 0.174752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000584 seconds.
+  path: Assets/Resources/customer/cantBlock.prefab
+  artifactKey: Guid(8f33149eec6f36449abf411d2da6fe0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/customer/cantBlock.prefab using Guid(8f33149eec6f36449abf411d2da6fe0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eff493c0501d18c954e2cc31f33746f') in 0.166988 seconds 
+  Import took 0.197714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/Resources/customer/customer.prefab
+  artifactKey: Guid(2f82004dfe6e10b44bd9b3b145cd3b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/customer/customer.prefab using Guid(2f82004dfe6e10b44bd9b3b145cd3b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edcd84398b54dba0af4d7426ec09a359') in 0.170199 seconds 
+  Import took 0.215416 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020932 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.930 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4932ms)
+		BeginReloadAssembly (287ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (27ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (97ms)
+		EndReloadAssembly (4475ms)
+			LoadAssemblies (250ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (2304ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (179ms)
+			SetupLoadedEditorAssemblies (1425ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (304ms)
+				ProcessInitializeOnLoadAttributes (667ms)
+				ProcessInitializeOnLoadMethodAttributes (409ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 211.3 MB.
+System memory in use after: 211.8 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 5496.
+Total: 7.397700 ms (FindLiveObjects: 0.769300 ms CreateObjectMapping: 0.496000 ms MarkObjects: 6.006000 ms  DeleteObjects: 0.123900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 300.136978 seconds.
+  path: Assets/art/towers
+  artifactKey: Guid(26908d2a1b24f5e46bf40dad1327372f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers using Guid(26908d2a1b24f5e46bf40dad1327372f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a38096a9ae58749c0485b64a297d258') in 0.030815 seconds 
+  Import took 0.050050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.999593 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers
+  artifactKey: Guid(fdc850490585bf7488f54fdff9ecede2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers using Guid(fdc850490585bf7488f54fdff9ecede2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7919b65bdb7cbc080539a583ae64382') in 0.289543 seconds 
+  Import took 0.332925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000602 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png
+  artifactKey: Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png using Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a327428edd7a7e7b08ecee2c53a0d9ce') in 0.274436 seconds 
+  Import took 0.294866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png
+  artifactKey: Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png using Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87344b5df02e537e358b401946184a1') in 0.091389 seconds 
+  Import took 0.114729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png
+  artifactKey: Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png using Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4848c9908f4d28bc4255206309b102') in 0.107462 seconds 
+  Import took 0.140202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.172139 seconds.
+  path: Assets/Resources/csv/Character.csv
+  artifactKey: Guid(41542f7596b774f48b6dbb7fcd8e13c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/csv/Character.csv using Guid(41542f7596b774f48b6dbb7fcd8e13c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f39f89cae391b0bb44648de70fc5fe6') in 0.019345 seconds 
+  Import took 0.034906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.855656 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@32px.png
+  artifactKey: Guid(4426df64dd903d54abddd489b490532a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@32px.png using Guid(4426df64dd903d54abddd489b490532a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b96d17affd9b803f79e5a8adfe2c86') in 0.038736 seconds 
+  Import took 0.051786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@1024px.png
+  artifactKey: Guid(b82883d2023767445927f3ec2381256a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@1024px.png using Guid(b82883d2023767445927f3ec2381256a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db251e9504e30f03b9f81bb389212a6') in 0.043946 seconds 
+  Import took 0.053436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@96px.png
+  artifactKey: Guid(683f8cb7f34e29b44bde25e5a8050ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@96px.png using Guid(683f8cb7f34e29b44bde25e5a8050ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec3f677fc1dd890b45aa2eea651bcf34') in 0.045673 seconds 
+  Import took 0.059091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@128px.png
+  artifactKey: Guid(11e7287e0fb03fa498c93f29d3097121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@128px.png using Guid(11e7287e0fb03fa498c93f29d3097121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e830b7a35decd21faac2260c1e81f0') in 0.045519 seconds 
+  Import took 0.058447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@512px.png
+  artifactKey: Guid(d7fd7167a76d50b47a03581aca5961b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@512px.png using Guid(d7fd7167a76d50b47a03581aca5961b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43378dae0837cab9bac500bd97ffdd4b') in 0.041890 seconds 
+  Import took 0.056158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@64px.png
+  artifactKey: Guid(bda37b1b26e5ade49a1f22896209a39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@64px.png using Guid(bda37b1b26e5ade49a1f22896209a39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe5b1c613ed8b88a61cd866002f6d6c') in 0.041012 seconds 
+  Import took 0.053540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@256px.png
+  artifactKey: Guid(46b1118819373324fa51d0f7a2d60d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@256px.png using Guid(46b1118819373324fa51d0f7a2d60d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f9c1a276b46399ea7bf432f0c1e127') in 0.041543 seconds 
+  Import took 0.052938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@1024px.png
+  artifactKey: Guid(9f32374cdae819e4a9f0496642f15dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@1024px.png using Guid(9f32374cdae819e4a9f0496642f15dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06aa1c4ae07bcd16aad0f2fc4207841b') in 0.042634 seconds 
+  Import took 0.055363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@96px.png
+  artifactKey: Guid(4ba24589db8f3e143b0b87ac4e513c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@96px.png using Guid(4ba24589db8f3e143b0b87ac4e513c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb59f8617666fa977cef7082f2e6f696') in 0.043745 seconds 
+  Import took 0.058087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@32px.png
+  artifactKey: Guid(8fc2ff5b2b423384b9555bc9dc65f262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@32px.png using Guid(8fc2ff5b2b423384b9555bc9dc65f262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a321c53eda66cdecb8f889b27e3e9a2') in 0.039614 seconds 
+  Import took 0.054603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@256px.png
+  artifactKey: Guid(94c30c9981e273a4b9531281e14b669a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@256px.png using Guid(94c30c9981e273a4b9531281e14b669a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7640e89a6cbcbcf85b8ffa1abe2c23b') in 0.042209 seconds 
+  Import took 0.054859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@512px.png
+  artifactKey: Guid(1aef41453acefbf4abe1acea8eb22e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@512px.png using Guid(1aef41453acefbf4abe1acea8eb22e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e20107920732b28174c2ad2a2ef7d067') in 0.043301 seconds 
+  Import took 0.055164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@32px.png
+  artifactKey: Guid(f0aee7f71d08c2843a5b53e865e4d54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@32px.png using Guid(f0aee7f71d08c2843a5b53e865e4d54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389e9152e2db33f3604441bd58c587ed') in 0.040396 seconds 
+  Import took 0.054147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@64px.png
+  artifactKey: Guid(8636ccdbc1667fc47a2081e3db416c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@64px.png using Guid(8636ccdbc1667fc47a2081e3db416c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e47095f75db78882fa5ee860a810c53') in 0.045510 seconds 
+  Import took 0.060726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@128px.png
+  artifactKey: Guid(91e97340947803e4a9762628e452b42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@128px.png using Guid(91e97340947803e4a9762628e452b42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34917fa20b4d330a1587a81f9d90be9c') in 0.045677 seconds 
+  Import took 0.058618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@512px.png
+  artifactKey: Guid(e93c9037ffd5d2b40b9342253b870506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@512px.png using Guid(e93c9037ffd5d2b40b9342253b870506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783052cdf3eda25da7dc92085f62190b') in 0.046759 seconds 
+  Import took 0.061689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@96px.png
+  artifactKey: Guid(691c0837f9ccb0a41b6b3799dff96d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@96px.png using Guid(691c0837f9ccb0a41b6b3799dff96d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45e9484b0324942189144de603cf824c') in 0.043407 seconds 
+  Import took 0.057793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@128px.png
+  artifactKey: Guid(ddcdb2154e2ecb34eb2e5b1d3b4761aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@128px.png using Guid(ddcdb2154e2ecb34eb2e5b1d3b4761aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd452941ea300401e6256b5312d6c1434') in 0.044663 seconds 
+  Import took 0.057165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@48px.png
+  artifactKey: Guid(bb8d4ab4f71cd9947bea200ea0f9f9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@48px.png using Guid(bb8d4ab4f71cd9947bea200ea0f9f9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa7b701de3b4b306d7421e4cea000a5a') in 0.044812 seconds 
+  Import took 0.054567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG
+  artifactKey: Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG using Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad8b314f385e5c1338b16b4ffeefc1b') in 0.042041 seconds 
+  Import took 0.056123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@48px.png
+  artifactKey: Guid(d2161968db81b7f499e75a372c7cd9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@48px.png using Guid(d2161968db81b7f499e75a372c7cd9fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c45e074c62b3ff6c1a35413110b65f54') in 0.045452 seconds 
+  Import took 0.057050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Sci-fi/Dialog_stripes_selected.png
+  artifactKey: Guid(4cd6a9f94ecaca54e857c8da5a42cf6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Sci-fi/Dialog_stripes_selected.png using Guid(4cd6a9f94ecaca54e857c8da5a42cf6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51d65161cac3b1dd93d0c193c1231a5') in 0.776779 seconds 
+  Import took 0.790757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@64px.png
+  artifactKey: Guid(926bc6ce5badc6f4493037e0cd3adf1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_5@64px.png using Guid(926bc6ce5badc6f4493037e0cd3adf1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8037aa603ab12a04968b6eb83d6b53') in 0.183180 seconds 
+  Import took 0.195676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Sci-fi/Dialog_stripes.png
+  artifactKey: Guid(8308d051e8be0b947bea843adc79c6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Sci-fi/Dialog_stripes.png using Guid(8308d051e8be0b947bea843adc79c6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '350dff2c4c436d55243b082aeb2e266c') in 0.124793 seconds 
+  Import took 0.136173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG
+  artifactKey: Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG using Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3598580c353f8912aa9fe95f204e29') in 0.041167 seconds 
+  Import took 0.053227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@24px.png
+  artifactKey: Guid(7fa7b3eea1e5843409d813201fab671f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@24px.png using Guid(7fa7b3eea1e5843409d813201fab671f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187a2b451544c3f1851ce96f86fe3d3a') in 0.041164 seconds 
+  Import took 0.055997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@1024px.png
+  artifactKey: Guid(f977818ebd87dc5468cbed221bafa676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@1024px.png using Guid(f977818ebd87dc5468cbed221bafa676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8a9858e789e97f9dd391595a795b49f') in 0.044269 seconds 
+  Import took 0.059813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@48px.png
+  artifactKey: Guid(1e9b2295cc36cd44aaabc75f4e39ce5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@48px.png using Guid(1e9b2295cc36cd44aaabc75f4e39ce5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd10d500612c02742334ffe5ecc07abfe') in 0.043481 seconds 
+  Import took 0.064990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG
+  artifactKey: Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG using Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3db225277c7e7789573e40c5bff5677') in 0.048337 seconds 
+  Import took 0.060385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@24px.png
+  artifactKey: Guid(ae4d910097021544cb69977eddd36d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_6@24px.png using Guid(ae4d910097021544cb69977eddd36d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51703966ece47c664937407739e29be0') in 0.044207 seconds 
+  Import took 0.058446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Doozy/Examples/Icons/Simple/constellation, zodiac, astronomy, horoscope.png
+  artifactKey: Guid(b66b1ff2e6119b54d98548cc4df48ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Icons/Simple/constellation, zodiac, astronomy, horoscope.png using Guid(b66b1ff2e6119b54d98548cc4df48ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f5b88c8f4a991214983dcf99beaaf47') in 0.050536 seconds 
+  Import took 0.062152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@256px.png
+  artifactKey: Guid(5a5da4fd39f1f234092a39f83007e2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/HexagonStroke_1@256px.png using Guid(5a5da4fd39f1f234092a39f83007e2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb18b3155e7d46036bf56cdf42e9ff8') in 0.039928 seconds 
+  Import took 0.052386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.151187 seconds.
+  path: Assets/Resources/tower/Cannon.prefab
+  artifactKey: Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Cannon.prefab using Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c80add1d83cbb3a36f83143ca7b69f') in 2.278594 seconds 
+  Import took 2.298046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.211226 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG
+  artifactKey: Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG using Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cd7865b7a9acbd95bf8861723630039') in 0.033317 seconds 
+  Import took 0.045672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007664 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png
+  artifactKey: Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png using Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f928d20fa5f4f7edf6e64cbd6a96c330') in 0.037025 seconds 
+  Import took 0.049702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png
+  artifactKey: Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png using Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789a04a4ea03525efd6ee935fe07ae14') in 0.032634 seconds 
+  Import took 0.045339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG
+  artifactKey: Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG using Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd853edacf7b5c3d2c6675ec14fc4812d') in 0.029376 seconds 
+  Import took 0.040702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG
+  artifactKey: Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG using Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295fdbd44cf24ee8eb603c91552a608f') in 0.035764 seconds 
+  Import took 0.048289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png
+  artifactKey: Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png using Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b236995b6233f5f12eb5338f9c9a917') in 0.031530 seconds 
+  Import took 0.044001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.330770 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG
+  artifactKey: Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG using Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c2bacd37474e6022791bde0c271488') in 0.035478 seconds 
+  Import took 0.048176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000800 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png
+  artifactKey: Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png using Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b18c388631036d446567c4365ce35f68') in 0.031271 seconds 
+  Import took 0.047013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png
+  artifactKey: Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png using Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d02a4b8e8eec5b78a7d42d2b196b47') in 0.035330 seconds 
+  Import took 0.047995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG
+  artifactKey: Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG using Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eac84fb0403ae3de8474d3e6a60a2a8') in 0.045188 seconds 
+  Import took 0.059618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG
+  artifactKey: Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG using Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c850616ef9d27674b08fb7cd19f62fe8') in 0.036961 seconds 
+  Import took 0.051076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png
+  artifactKey: Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png using Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28154244e6d3653016a720e72bba4834') in 0.040852 seconds 
+  Import took 0.055097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.975344 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG
+  artifactKey: Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG using Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1090a962a085117124ed038ed632e0') in 0.028738 seconds 
+  Import took 0.039937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006580 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png
+  artifactKey: Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png using Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a5740fc78f33894109cf26c1cec26c5') in 0.029535 seconds 
+  Import took 0.041153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png
+  artifactKey: Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png using Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e4261d301fc53537860f6c53ae1811') in 0.032585 seconds 
+  Import took 0.046370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG
+  artifactKey: Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG using Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae386a745a5d78fd8ff2b3c74a1aabe7') in 0.032266 seconds 
+  Import took 0.047311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG
+  artifactKey: Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG using Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69905c485355b76bfc82957e742fd8bf') in 0.029298 seconds 
+  Import took 0.043810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png
+  artifactKey: Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png using Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01495874359fe4d682d6e7a49d3d8f39') in 0.036266 seconds 
+  Import took 0.050182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.225712 seconds.
+  path: Assets/Resources/tower/Cannon.prefab
+  artifactKey: Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Cannon.prefab using Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '795e11209e54eac9930fcdde48bd8988') in 0.639116 seconds 
+  Import took 0.658401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.921628 seconds.
+  path: Assets/Doozy/Examples/Icons/Simple/bill, tax, invoice.png
+  artifactKey: Guid(9f1782ab34a5bc4469d14e3a6ef66ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Icons/Simple/bill, tax, invoice.png using Guid(9f1782ab34a5bc4469d14e3a6ef66ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acfdb01a238413ab6ddecf337ea9bc02') in 0.044047 seconds 
+  Import took 0.057019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000513 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Wheel/btn_pressed_splice.png
+  artifactKey: Guid(57b22252e8953e341a3b4b6135a85c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Wheel/btn_pressed_splice.png using Guid(57b22252e8953e341a3b4b6135a85c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8ec73b70be794107d474c96fc61dc1') in 0.041628 seconds 
+  Import took 0.054662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Wheel/btn_hover_splice.png
+  artifactKey: Guid(4f82e85a6dad7a4419b8c2a63f81739d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Wheel/btn_hover_splice.png using Guid(4f82e85a6dad7a4419b8c2a63f81739d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '167866a27373e115c19227d00ac775d6') in 0.036240 seconds 
+  Import took 0.046064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Wheel/border_splice.png
+  artifactKey: Guid(3d3b4b1d32565c944b0452176b513899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Wheel/border_splice.png using Guid(3d3b4b1d32565c944b0452176b513899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac7e73ebb3f09431681a57fe544c4bc') in 0.040931 seconds 
+  Import took 0.052302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Wheel/header_splice.png
+  artifactKey: Guid(d7ba33f6180e243448f102d3a55d22fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Wheel/header_splice.png using Guid(d7ba33f6180e243448f102d3a55d22fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48364d9bf371d9754c249b2916bac3b') in 0.046485 seconds 
+  Import took 0.058641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Doozy/Examples/Icons/Simple/voice, recognition, recorder.png
+  artifactKey: Guid(5e9a94787c131014d9f1884cb842eb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Icons/Simple/voice, recognition, recorder.png using Guid(5e9a94787c131014d9f1884cb842eb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325bf4ac9bb0036cc6db64580652ca25') in 0.052034 seconds 
+  Import took 0.065346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Doozy/Examples/Icons/Awesome/dice.png
+  artifactKey: Guid(80ef1ac4682f2ef448c9116d0e75007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Icons/Awesome/dice.png using Guid(80ef1ac4682f2ef448c9116d0e75007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f24a5c1848c1548022ac5f88794a37a') in 0.043614 seconds 
+  Import took 0.056867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Wheel/btn_normal_splice.png
+  artifactKey: Guid(eae9010da23b6034e9f7b9d1fa5beae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Textures/Wheel/btn_normal_splice.png using Guid(eae9010da23b6034e9f7b9d1fa5beae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da403146332f54d6d88f0eb6d4a13cc') in 0.049773 seconds 
+  Import took 0.064114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.783366 seconds.
+  path: Assets/Resources/tower/Frost.prefab
+  artifactKey: Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Frost.prefab using Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a189e8a77ab08173f8756f98c081b936') in 0.467880 seconds 
+  Import took 0.487754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.547940 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG
+  artifactKey: Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG using Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9df7bd43444143e96a70f1c89671b2') in 0.028949 seconds 
+  Import took 0.042220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png
+  artifactKey: Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png using Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3539fd0924c800dd65ef0d2960f617e4') in 0.025699 seconds 
+  Import took 0.036155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png
+  artifactKey: Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png using Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23fbb00f733950ba207e206cef650d50') in 0.024788 seconds 
+  Import took 0.037305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG
+  artifactKey: Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG using Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31aed9136be1083ce511c0acfc093a7') in 0.031569 seconds 
+  Import took 0.044370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG
+  artifactKey: Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG using Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5613c17296d8d440a42c8fbae5bf7810') in 0.032742 seconds 
+  Import took 0.045108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png
+  artifactKey: Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png using Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31fb8a3d6d2e70870402a7c875453e9f') in 0.031168 seconds 
+  Import took 0.044523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.183261 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG
+  artifactKey: Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG using Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4176d41c5b6f0a306bb65e4c27e8fcbe') in 0.027657 seconds 
+  Import took 0.040135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png
+  artifactKey: Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png using Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe77adf7718dcab4e08d0ce89918348') in 0.025646 seconds 
+  Import took 0.036382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png
+  artifactKey: Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png using Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f055b88f2e515c548ee3eca3aa88a600') in 0.030005 seconds 
+  Import took 0.041611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG
+  artifactKey: Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG using Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d874797fe7017f081585a85ac403dde') in 0.027737 seconds 
+  Import took 0.038430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG
+  artifactKey: Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG using Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef4f3229676d86442d93ec24655d5d2') in 0.033042 seconds 
+  Import took 0.045949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png
+  artifactKey: Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png using Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706565d8f9be49c1246c4f81264e3e4f') in 0.029989 seconds 
+  Import took 0.039988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.042983 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG
+  artifactKey: Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG using Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc03035d7e40ea3f53dd527638e6a735') in 0.025172 seconds 
+  Import took 0.036285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png
+  artifactKey: Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png using Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ced91464237d23184985b72cb5a7d19') in 0.029594 seconds 
+  Import took 0.040598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png
+  artifactKey: Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png using Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9994fbd5f98f4c8b398f306d15e5634') in 0.027624 seconds 
+  Import took 0.039483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG
+  artifactKey: Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG using Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ccff02d4308304a466a0f5cfaa0386a') in 0.030783 seconds 
+  Import took 0.044568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG
+  artifactKey: Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG using Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ede3b7c985e6f2b5b4db5b760384e8') in 0.026417 seconds 
+  Import took 0.040614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png
+  artifactKey: Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png using Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64fd71c11276bf5453c9a27aad85d165') in 0.027036 seconds 
+  Import took 0.042617 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.024050 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.164 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3165ms)
+		BeginReloadAssembly (200ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (84ms)
+		EndReloadAssembly (2836ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (647ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (578ms)
+			SetupLoadedEditorAssemblies (999ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (228ms)
+				ProcessInitializeOnLoadAttributes (478ms)
+				ProcessInitializeOnLoadMethodAttributes (273ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.7 MB.
+System memory in use after: 213.1 MB.
+
+Unloading 104 unused Assets to reduce memory usage. Loaded Objects now: 5523.
+Total: 6.292700 ms (FindLiveObjects: 0.362400 ms CreateObjectMapping: 0.211400 ms MarkObjects: 5.597100 ms  DeleteObjects: 0.119700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 33.696439 seconds.
+  path: Assets/Resources/tower/Frost.prefab
+  artifactKey: Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Frost.prefab using Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc9a736eb8abbb8c78aab969b1f0971a') in 1.557584 seconds 
+  Import took 1.580182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.652579 seconds.
+  path: Assets/Resources/tower/Frost.prefab
+  artifactKey: Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Frost.prefab using Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '080ecf6307d36e5bad77d4f6d08ade74') in 0.698884 seconds 
+  Import took 0.719076 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008634 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.408 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2409ms)
+		BeginReloadAssembly (204ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (2070ms)
+			LoadAssemblies (180ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (629ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (158ms)
+			SetupLoadedEditorAssemblies (941ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (204ms)
+				ProcessInitializeOnLoadAttributes (424ms)
+				ProcessInitializeOnLoadMethodAttributes (286ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.8 MB.
+System memory in use after: 213.2 MB.
+
+Unloading 104 unused Assets to reduce memory usage. Loaded Objects now: 5526.
+Total: 3.807000 ms (FindLiveObjects: 0.371100 ms CreateObjectMapping: 0.210900 ms MarkObjects: 3.149200 ms  DeleteObjects: 0.074700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 739.083501 seconds.
+  path: Assets/Resources/tower/Frost.prefab
+  artifactKey: Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Frost.prefab using Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eccbfd096cb05562875871094bf15e9') in 0.721531 seconds 
+  Import took 0.754270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.197883 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png
+  artifactKey: Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 1.png using Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '830a028470912b01b525ab88f7735867') in 0.044861 seconds 
+  Import took 0.056542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png
+  artifactKey: Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 3-1.png using Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db71a2e61cf1666d5bbce9d5ec4bb915') in 0.034667 seconds 
+  Import took 0.046504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG
+  artifactKey: Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 3).PNG using Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c99e670df4752b0ceeeae7fa321e8a68') in 0.027544 seconds 
+  Import took 0.042063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG
+  artifactKey: Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 1).PNG using Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d83bee446364ee9a8205a7dbf9ec35') in 0.029599 seconds 
+  Import took 0.042271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG
+  artifactKey: Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Strawberry Shortcake Tower & Tiers/Strawberry Shortcake Tower (Tier 2).PNG using Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bede1a960c74a5cb340efa6d3d17636') in 0.032509 seconds 
+  Import took 0.044504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png
+  artifactKey: Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Ice Cream Tower _ Tiers/ice cream tower tier 2-1.png using Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66156c88265b8e2323e548a4646549e5') in 0.036382 seconds 
+  Import took 0.051511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.771823 seconds.
+  path: Assets/Doozy/Examples/Icons/Simple/astronaut, helmet, spacesuit, cosmonaut.png
+  artifactKey: Guid(d568251b452b3dd44a799f6bfdf3d4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Icons/Simple/astronaut, helmet, spacesuit, cosmonaut.png using Guid(d568251b452b3dd44a799f6bfdf3d4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '183ec0b3e24017e5396f78fda900e5d6') in 0.048814 seconds 
+  Import took 0.062162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@512px.png
+  artifactKey: Guid(ef84bcbfbaacd88468bc9376c6e197ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@512px.png using Guid(ef84bcbfbaacd88468bc9376c6e197ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '615cdfa1b67f94cc1c2e1f69455a6c63') in 0.038862 seconds 
+  Import took 0.049391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@96px.png
+  artifactKey: Guid(fab9d73de6f6d714ca9169724c70568e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@96px.png using Guid(fab9d73de6f6d714ca9169724c70568e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7527b155a72d36696edc6f5be822bb') in 0.039433 seconds 
+  Import took 0.050802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@32px.png
+  artifactKey: Guid(9c5bdc24aa0951c42a2dceeff84d4725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@32px.png using Guid(9c5bdc24aa0951c42a2dceeff84d4725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ab77621c56e558d3b497afdbacc562') in 0.036826 seconds 
+  Import took 0.049116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@96px.png
+  artifactKey: Guid(d6f988dd3c4d6d34e8627931263b04a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@96px.png using Guid(d6f988dd3c4d6d34e8627931263b04a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942d25e322d09d271c12ba5af0eed695') in 0.037748 seconds 
+  Import took 0.048407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@24px.png
+  artifactKey: Guid(24534c8dd130c0c41b605af4fa5874d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@24px.png using Guid(24534c8dd130c0c41b605af4fa5874d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371ce75a2147def8138d6d2f91640dd4') in 0.037921 seconds 
+  Import took 0.049629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@32px.png
+  artifactKey: Guid(0bc04d2efd0c58c4e97e5377f5d80394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@32px.png using Guid(0bc04d2efd0c58c4e97e5377f5d80394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02702c0307d961ca48cba02321afdb17') in 0.045549 seconds 
+  Import took 0.055972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@48px.png
+  artifactKey: Guid(81ce430a61e641e4e810c2a242288075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@48px.png using Guid(81ce430a61e641e4e810c2a242288075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b495fcf45fe6db3645eb29acd97ad985') in 0.040334 seconds 
+  Import took 0.051915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@128px.png
+  artifactKey: Guid(640a3add65146a84690170b6770641d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@128px.png using Guid(640a3add65146a84690170b6770641d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc85bca88aa4bf49d9dd3fa2b56ba104') in 0.036288 seconds 
+  Import took 0.046816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@256px.png
+  artifactKey: Guid(2a93fedea62be3b4d92bffc95249eb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@256px.png using Guid(2a93fedea62be3b4d92bffc95249eb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9adac099f38915d99dee10907df144ac') in 0.040432 seconds 
+  Import took 0.053225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@128px.png
+  artifactKey: Guid(4e1e78e6564480445924082347adcf6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@128px.png using Guid(4e1e78e6564480445924082347adcf6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f91c42180689c0ee7ab70ad874c41e') in 0.041978 seconds 
+  Import took 0.054544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@48px.png
+  artifactKey: Guid(03502534eac6692419f9eee42d12fd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@48px.png using Guid(03502534eac6692419f9eee42d12fd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '195ed656883cf46053c7c10015498e56') in 0.039561 seconds 
+  Import took 0.051643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@24px.png
+  artifactKey: Guid(4d778afce58c45a4cae13a1ae7c7b05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@24px.png using Guid(4d778afce58c45a4cae13a1ae7c7b05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb429a267132f80b52e4af553d6ab057') in 0.041216 seconds 
+  Import took 0.052551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@64px.png
+  artifactKey: Guid(03aa87c3476ecd448a28c3f60c6905ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@64px.png using Guid(03aa87c3476ecd448a28c3f60c6905ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9360d02bbe34db5892a66faf36187eb1') in 0.041589 seconds 
+  Import took 0.054982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@64px.png
+  artifactKey: Guid(f58579eb67fc60646b150bcc80771301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_2@64px.png using Guid(f58579eb67fc60646b150bcc80771301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf07c59f5a1321925317e1d4d50da8e6') in 0.042667 seconds 
+  Import took 0.057419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@1024px.png
+  artifactKey: Guid(b998709f99199f54eb075c9752449ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@1024px.png using Guid(b998709f99199f54eb075c9752449ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a89a725bdf1850b80382ff76a7526ac') in 0.051702 seconds 
+  Import took 0.067449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000570 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@256px.png
+  artifactKey: Guid(da0c3f9e93985e24b81929e4da54aa7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@256px.png using Guid(da0c3f9e93985e24b81929e4da54aa7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8a82b0d435aeabdaa4de255f82dab7') in 0.042051 seconds 
+  Import took 0.055281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@512px.png
+  artifactKey: Guid(1d7220b6a9c00174fa00bdeddcbe7788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Doozy/Examples/Textures/Shapes/CircleStroke_1@512px.png using Guid(1d7220b6a9c00174fa00bdeddcbe7788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54bdd639b3a1145026216ca5a344697') in 0.045718 seconds 
+  Import took 0.059483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.543625 seconds.
+  path: Assets/Resources/tower/Arrow.prefab
+  artifactKey: Guid(6d504ab78e6c3824c83a400b5686a495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Arrow.prefab using Guid(6d504ab78e6c3824c83a400b5686a495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08974731c3038d5dd246b72e82254d6d') in 0.573917 seconds 
+  Import took 0.600108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/Resources/tower/Frost.prefab
+  artifactKey: Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Frost.prefab using Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c6a07eead4160e5290b7b81835eb76b') in 0.493293 seconds 
+  Import took 0.511867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Resources/tower/tower.prefab
+  artifactKey: Guid(08f9adc903d26ad46a2d8d9ad433cafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/tower.prefab using Guid(08f9adc903d26ad46a2d8d9ad433cafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fcceb1275478b74beec2b4bca2a4208') in 0.478249 seconds 
+  Import took 0.495176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Resources/tower/Balanced.prefab
+  artifactKey: Guid(5fabc3c7f8186644d89f30339dd5f4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Balanced.prefab using Guid(5fabc3c7f8186644d89f30339dd5f4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2343ac50d59400b64e91c3ee11c069b') in 1.096469 seconds 
+  Import took 1.113427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Resources/tower/Cannon.prefab
+  artifactKey: Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Cannon.prefab using Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef8a9ef017a204fc609269fb26e24cc') in 0.466966 seconds 
+  Import took 0.484137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Resources/tower/Wall.prefab
+  artifactKey: Guid(864cd05eca99a4342b44a66f1365bcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Wall.prefab using Guid(864cd05eca99a4342b44a66f1365bcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137903e7750cd8ae546f76ec2b95f56b') in 0.426417 seconds 
+  Import took 0.442509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Resources/tower/Pulse.prefab
+  artifactKey: Guid(be22f7f9c47e7df48bb779c0764420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Pulse.prefab using Guid(be22f7f9c47e7df48bb779c0764420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50be863113fb6cf8ee2120e45b41a4fa') in 0.512040 seconds 
+  Import took 0.527151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Resources/tower/Bank.prefab
+  artifactKey: Guid(1788f34ad839a2b4bb45ae784e9021ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Bank.prefab using Guid(1788f34ad839a2b4bb45ae784e9021ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1538ea0de7a37a2b2cf404fffcb021b') in 0.730236 seconds 
+  Import took 0.747419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Resources/tower/Sniper.prefab
+  artifactKey: Guid(97d7cd0af6ae0c14da2c62cf439abc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Sniper.prefab using Guid(97d7cd0af6ae0c14da2c62cf439abc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf93f7c57a0d768a76669eae29ff9394') in 1.620422 seconds 
+  Import took 1.688770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.114702 seconds.
+  path: Assets/Resources/tower/Cannon.prefab
+  artifactKey: Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Cannon.prefab using Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc4a206a639e34f0b962e36fbd42469a') in 0.504165 seconds 
+  Import took 0.517651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 843.360298 seconds.
+  path: Assets/Resources/csv/Buff.csv
+  artifactKey: Guid(977342954f83ba54eb0855986858a53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/csv/Buff.csv using Guid(977342954f83ba54eb0855986858a53c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb3f0f04e79de99fdfd7eb116f655c4e') in 0.021712 seconds 
+  Import took 0.040988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.118195 seconds.
+  path: Assets/Resources/csv/Stage.csv
+  artifactKey: Guid(f59090a773db9f84abfed005045a04b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/csv/Stage.csv using Guid(f59090a773db9f84abfed005045a04b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0c6e187909a524aa422ec7e9658a2f8') in 0.019167 seconds 
+  Import took 0.032468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.116024 seconds.
+  path: Assets/Resources/csv/Customer.csv
+  artifactKey: Guid(cb9d55002a9f98a4a929ae7a3dc2fbbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/csv/Customer.csv using Guid(cb9d55002a9f98a4a929ae7a3dc2fbbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ae7716c519b5d54a9ceec0a91abeb7') in 0.018453 seconds 
+  Import took 0.034913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 844.866317 seconds.
+  path: Assets/art/towers/Cannon/1.PNG
+  artifactKey: Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Cannon/1.PNG using Guid(a9768f147b13c7147bbdea7d8c3acb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc493b1093b533ac03e50d392fa411d2') in 0.045491 seconds 
+  Import took 0.062171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.629023 seconds.
+  path: Assets/art/towers/Cannon/2.PNG
+  artifactKey: Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Cannon/2.PNG using Guid(5de49717dc53de047aaa02b87f6eddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4305f31821704928566e820404dfc4ca') in 0.036063 seconds 
+  Import took 0.047832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.258143 seconds.
+  path: Assets/art/towers/Cannon/3.PNG
+  artifactKey: Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Cannon/3.PNG using Guid(339ecbdd22032bb48bb9989f8740a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fb29d8c2837840cda68ed27df8b42e') in 0.040362 seconds 
+  Import took 0.052918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.194089 seconds.
+  path: Assets/art/towers/Frost/1.png
+  artifactKey: Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Frost/1.png using Guid(2ac9e73e5ed67f84f8c50d609f87e4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8cec73c87cbe5d4662a9635039f92fd') in 0.037567 seconds 
+  Import took 0.050261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.284418 seconds.
+  path: Assets/art/towers/Frost/2.png
+  artifactKey: Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Frost/2.png using Guid(e87318f7b0e2e9a45b6d9297dcdc2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63fc9f680ea55cf0ee0758248b6b590d') in 0.031598 seconds 
+  Import took 0.046390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.420427 seconds.
+  path: Assets/art/towers/Frost/3.png
+  artifactKey: Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/art/towers/Frost/3.png using Guid(e2ffbe6ab5cb6f640bab27ee481460b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed537f6f048ee639c6f5a4c961a91126') in 0.028896 seconds 
+  Import took 0.041275 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012477 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.269 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3270ms)
+		BeginReloadAssembly (1190ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (390ms)
+		EndReloadAssembly (1997ms)
+			LoadAssemblies (813ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (620ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (896ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (178ms)
+				ProcessInitializeOnLoadAttributes (507ms)
+				ProcessInitializeOnLoadMethodAttributes (185ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.1 MB.
+System memory in use after: 213.5 MB.
+
+Unloading 104 unused Assets to reduce memory usage. Loaded Objects now: 5529.
+Total: 7.114400 ms (FindLiveObjects: 2.020300 ms CreateObjectMapping: 0.430000 ms MarkObjects: 4.562700 ms  DeleteObjects: 0.100100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011352 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.932 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1933ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (1687ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (485ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (104ms)
+			SetupLoadedEditorAssemblies (774ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (185ms)
+				ProcessInitializeOnLoadAttributes (343ms)
+				ProcessInitializeOnLoadMethodAttributes (232ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.1 MB.
+System memory in use after: 212.5 MB.
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 5531.
+Total: 4.040700 ms (FindLiveObjects: 0.388000 ms CreateObjectMapping: 0.249000 ms MarkObjects: 3.340100 ms  DeleteObjects: 0.062100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015423 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.262 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2263ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (2026ms)
+			LoadAssemblies (146ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (546ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (125ms)
+			SetupLoadedEditorAssemblies (1036ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (208ms)
+				ProcessInitializeOnLoadAttributes (580ms)
+				ProcessInitializeOnLoadMethodAttributes (218ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.3 MB.
+System memory in use after: 212.7 MB.
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 5533.
+Total: 7.102000 ms (FindLiveObjects: 1.022200 ms CreateObjectMapping: 0.679600 ms MarkObjects: 5.263200 ms  DeleteObjects: 0.135500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009923 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.623 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2625ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (2323ms)
+			LoadAssemblies (168ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (712ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (174ms)
+			SetupLoadedEditorAssemblies (1063ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (233ms)
+				ProcessInitializeOnLoadAttributes (533ms)
+				ProcessInitializeOnLoadMethodAttributes (265ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.3 MB.
+System memory in use after: 212.8 MB.
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 5535.
+Total: 4.060300 ms (FindLiveObjects: 0.461000 ms CreateObjectMapping: 0.269500 ms MarkObjects: 3.265400 ms  DeleteObjects: 0.063000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1041.998238 seconds.
+  path: Assets/Resources/tower/fridge.prefab
+  artifactKey: Guid(0c11d54a22589ff4bacb6c6e929173fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/fridge.prefab using Guid(0c11d54a22589ff4bacb6c6e929173fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2ab8dacc7b486993cfaec5a34f7a79') in 0.730492 seconds 
+  Import took 0.748476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Resources/tower/cardEffect.prefab
+  artifactKey: Guid(3cc0dc6db3f24f543b46534ffd4507af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/cardEffect.prefab using Guid(3cc0dc6db3f24f543b46534ffd4507af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2456043fb40cbcce71c4bee2e6718d72') in 0.523795 seconds 
+  Import took 0.538488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Resources/tower/Frost.prefab
+  artifactKey: Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Frost.prefab using Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b53bafbe3cb08aeb023c8b22667d1662') in 0.512778 seconds 
+  Import took 0.529230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/Resources/tower/tower.prefab
+  artifactKey: Guid(08f9adc903d26ad46a2d8d9ad433cafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/tower.prefab using Guid(08f9adc903d26ad46a2d8d9ad433cafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98eaa72c14b197a0df5253ff1989a8c') in 1.327214 seconds 
+  Import took 1.341534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Resources/tower/Fireball.prefab
+  artifactKey: Guid(9753cccbb46eb3048af5aa7ffd4ef18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Fireball.prefab using Guid(9753cccbb46eb3048af5aa7ffd4ef18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e769b88047b9046f290cfe7c376f38') in 0.479903 seconds 
+  Import took 0.503857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000465 seconds.
+  path: Assets/Resources/tower/Balanced.prefab
+  artifactKey: Guid(5fabc3c7f8186644d89f30339dd5f4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Balanced.prefab using Guid(5fabc3c7f8186644d89f30339dd5f4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e5989645e032478a5c85ad53787c992') in 0.454390 seconds 
+  Import took 0.472690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Resources/tower/Cannon.prefab
+  artifactKey: Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Cannon.prefab using Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef5af354a381e425470a88dca7c7daf') in 0.413684 seconds 
+  Import took 0.436973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Resources/tower/guide.prefab
+  artifactKey: Guid(38716c380d6ed034abfc1370ce84285e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/guide.prefab using Guid(38716c380d6ed034abfc1370ce84285e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '237cc3d5332a54d2b3d3d751601ddc06') in 1.263592 seconds 
+  Import took 1.283236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Resources/tower/Divination.prefab
+  artifactKey: Guid(58a2d58a427dc904aa60b6be540e88dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Divination.prefab using Guid(58a2d58a427dc904aa60b6be540e88dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa219c6418d01c4eb51cdf7f119f3283') in 0.503632 seconds 
+  Import took 0.523014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Resources/tower/Wall.prefab
+  artifactKey: Guid(864cd05eca99a4342b44a66f1365bcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Wall.prefab using Guid(864cd05eca99a4342b44a66f1365bcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b98b33b4a7f8a863603f16654b18c3d') in 1.037022 seconds 
+  Import took 1.055525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000915 seconds.
+  path: Assets/Resources/tower/Arrow.prefab
+  artifactKey: Guid(6d504ab78e6c3824c83a400b5686a495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Arrow.prefab using Guid(6d504ab78e6c3824c83a400b5686a495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3a419aa9ca0c94ff8f650b3a80ad4f') in 0.746538 seconds 
+  Import took 0.764072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000536 seconds.
+  path: Assets/Resources/tower/Pulse.prefab
+  artifactKey: Guid(be22f7f9c47e7df48bb779c0764420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Pulse.prefab using Guid(be22f7f9c47e7df48bb779c0764420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7229f90a388d4910d6ccf902db2d19e6') in 0.569531 seconds 
+  Import took 0.593941 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000530 seconds.
+  path: Assets/Resources/tower/InstanceSpell.prefab
+  artifactKey: Guid(8fe562b5df2738a4eb5067f7a3404f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/InstanceSpell.prefab using Guid(8fe562b5df2738a4eb5067f7a3404f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03119b5fc9db58e776783dda365e7ca5') in 0.495804 seconds 
+  Import took 0.512621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Resources/tower/Bank.prefab
+  artifactKey: Guid(1788f34ad839a2b4bb45ae784e9021ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Bank.prefab using Guid(1788f34ad839a2b4bb45ae784e9021ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb99d6f99ab1b14e05c47b3571620211') in 1.014688 seconds 
+  Import took 1.078579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/Resources/tower/bomb.prefab
+  artifactKey: Guid(dc2e018a136a1fb438ec98e661aa9392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/bomb.prefab using Guid(dc2e018a136a1fb438ec98e661aa9392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75db9858f3d496dffbf8f080ad89114') in 0.884736 seconds 
+  Import took 0.903440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/Resources/tower/Sniper.prefab
+  artifactKey: Guid(97d7cd0af6ae0c14da2c62cf439abc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Sniper.prefab using Guid(97d7cd0af6ae0c14da2c62cf439abc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '429d629300101e197654ceb8ca201041') in 0.519068 seconds 
+  Import took 0.538685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.221813 seconds.
+  path: Assets/Resources/tower/Arrow.prefab
+  artifactKey: Guid(6d504ab78e6c3824c83a400b5686a495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Arrow.prefab using Guid(6d504ab78e6c3824c83a400b5686a495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460fd75e0b28dfe5ad666407adf6d80f') in 1.012235 seconds 
+  Import took 1.392378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000826 seconds.
+  path: Assets/Resources/tower/fridge.prefab
+  artifactKey: Guid(0c11d54a22589ff4bacb6c6e929173fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/fridge.prefab using Guid(0c11d54a22589ff4bacb6c6e929173fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56adaa09046eba12e6845375e7d407ff') in 0.447921 seconds 
+  Import took 0.555177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/Resources/tower/cardEffect.prefab
+  artifactKey: Guid(3cc0dc6db3f24f543b46534ffd4507af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/cardEffect.prefab using Guid(3cc0dc6db3f24f543b46534ffd4507af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6da49ec204b3241b388357a6196341') in 0.453693 seconds 
+  Import took 0.472790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Resources/tower/Frost.prefab
+  artifactKey: Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Frost.prefab using Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a9bebc9e5e243c4f1a1bbf838a7a272') in 0.512008 seconds 
+  Import took 0.526939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Resources/tower/tower.prefab
+  artifactKey: Guid(08f9adc903d26ad46a2d8d9ad433cafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/tower.prefab using Guid(08f9adc903d26ad46a2d8d9ad433cafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0174e1e8393aea52cb6385e2746a1095') in 1.203187 seconds 
+  Import took 1.218826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Resources/tower/Fireball.prefab
+  artifactKey: Guid(9753cccbb46eb3048af5aa7ffd4ef18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Fireball.prefab using Guid(9753cccbb46eb3048af5aa7ffd4ef18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0b55265c9d86b9f511d8d05e41a45f') in 0.772761 seconds 
+  Import took 0.879095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Resources/tower/Balanced.prefab
+  artifactKey: Guid(5fabc3c7f8186644d89f30339dd5f4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Balanced.prefab using Guid(5fabc3c7f8186644d89f30339dd5f4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b4babc84823bfdee96f7ca80249efb9') in 1.206465 seconds 
+  Import took 1.224457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Resources/tower/Cannon.prefab
+  artifactKey: Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Cannon.prefab using Guid(f4632d0847394814d86070aef83f9de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c3e1c65259a29f4e7210e583eb9f5b') in 0.462988 seconds 
+  Import took 0.484037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Resources/tower/guide.prefab
+  artifactKey: Guid(38716c380d6ed034abfc1370ce84285e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/guide.prefab using Guid(38716c380d6ed034abfc1370ce84285e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ce18ed740e05ee8cb5573f9b29781dd') in 0.469606 seconds 
+  Import took 0.487697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Resources/tower/Divination.prefab
+  artifactKey: Guid(58a2d58a427dc904aa60b6be540e88dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Divination.prefab using Guid(58a2d58a427dc904aa60b6be540e88dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49f9cdfb016fe38c6350ea4ee9e8178') in 0.481976 seconds 
+  Import took 0.501681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Resources/tower/Wall.prefab
+  artifactKey: Guid(864cd05eca99a4342b44a66f1365bcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Wall.prefab using Guid(864cd05eca99a4342b44a66f1365bcba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843df3cbdc8f2db108bff1b582e09f83') in 2.050972 seconds 
+  Import took 2.070065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Resources/tower/Pulse.prefab
+  artifactKey: Guid(be22f7f9c47e7df48bb779c0764420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Pulse.prefab using Guid(be22f7f9c47e7df48bb779c0764420a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d33f9d75a4b40096a4cef65c9252a24') in 0.458042 seconds 
+  Import took 0.475364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/Resources/tower/InstanceSpell.prefab
+  artifactKey: Guid(8fe562b5df2738a4eb5067f7a3404f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/InstanceSpell.prefab using Guid(8fe562b5df2738a4eb5067f7a3404f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c922ed1d176e649cfd760d4eb284f5b') in 0.431671 seconds 
+  Import took 0.446630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Resources/tower/Bank.prefab
+  artifactKey: Guid(1788f34ad839a2b4bb45ae784e9021ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Bank.prefab using Guid(1788f34ad839a2b4bb45ae784e9021ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0594e6130394827e80720897386214f6') in 1.655988 seconds 
+  Import took 1.676729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Resources/tower/bomb.prefab
+  artifactKey: Guid(dc2e018a136a1fb438ec98e661aa9392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/bomb.prefab using Guid(dc2e018a136a1fb438ec98e661aa9392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bdfddfaea67a26cd87e5f0a01e55aa6') in 0.388564 seconds 
+  Import took 0.405538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Resources/tower/Sniper.prefab
+  artifactKey: Guid(97d7cd0af6ae0c14da2c62cf439abc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Sniper.prefab using Guid(97d7cd0af6ae0c14da2c62cf439abc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3806c146b1e7c75f5cae5ee35cda3ce7') in 0.509485 seconds 
+  Import took 0.528506 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006814 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.337 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2339ms)
+		BeginReloadAssembly (201ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (2018ms)
+			LoadAssemblies (186ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (543ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (144ms)
+			SetupLoadedEditorAssemblies (923ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (183ms)
+				ProcessInitializeOnLoadAttributes (456ms)
+				ProcessInitializeOnLoadMethodAttributes (263ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.6 MB.
+System memory in use after: 213.0 MB.
+
+Unloading 104 unused Assets to reduce memory usage. Loaded Objects now: 5538.
+Total: 3.587100 ms (FindLiveObjects: 0.339800 ms CreateObjectMapping: 0.198500 ms MarkObjects: 2.981800 ms  DeleteObjects: 0.065800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006529 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.231 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3232ms)
+		BeginReloadAssembly (172ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (2970ms)
+			LoadAssemblies (179ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (611ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (118ms)
+			SetupLoadedEditorAssemblies (1894ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (201ms)
+				ProcessInitializeOnLoadAttributes (492ms)
+				ProcessInitializeOnLoadMethodAttributes (1166ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.6 MB.
+System memory in use after: 213.1 MB.
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 5540.
+Total: 3.604500 ms (FindLiveObjects: 0.368500 ms CreateObjectMapping: 0.207600 ms MarkObjects: 2.948500 ms  DeleteObjects: 0.078400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015509 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.513 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2514ms)
+		BeginReloadAssembly (217ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (2180ms)
+			LoadAssemblies (189ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (713ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (179ms)
+			SetupLoadedEditorAssemblies (835ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (169ms)
+				ProcessInitializeOnLoadAttributes (390ms)
+				ProcessInitializeOnLoadMethodAttributes (238ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.4 MB.
+System memory in use after: 212.9 MB.
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 5542.
+Total: 5.032400 ms (FindLiveObjects: 0.335400 ms CreateObjectMapping: 0.206000 ms MarkObjects: 4.371400 ms  DeleteObjects: 0.117300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 120.468434 seconds.
+  path: Assets/Resources/tower/Frost.prefab
+  artifactKey: Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/tower/Frost.prefab using Guid(095e92396b263eb46837ae18afaefe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ae3ef2e1f3538d2b3768d9047140a06') in 0.645194 seconds 
+  Import took 0.665010 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011316 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.226 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2227ms)
+		BeginReloadAssembly (209ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (85ms)
+		EndReloadAssembly (1922ms)
+			LoadAssemblies (177ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (619ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (102ms)
+			SetupLoadedEditorAssemblies (863ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (153ms)
+				ProcessInitializeOnLoadAttributes (427ms)
+				ProcessInitializeOnLoadMethodAttributes (263ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.7 MB.
+System memory in use after: 213.1 MB.
+
+Unloading 104 unused Assets to reduce memory usage. Loaded Objects now: 5545.
+Total: 3.773400 ms (FindLiveObjects: 0.356500 ms CreateObjectMapping: 0.235100 ms MarkObjects: 3.110900 ms  DeleteObjects: 0.069800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008213 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.810 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1811ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1611ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (510ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (738ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (190ms)
+				ProcessInitializeOnLoadAttributes (338ms)
+				ProcessInitializeOnLoadMethodAttributes (190ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 212.7 MB.
+System memory in use after: 213.1 MB.
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 5547.
+Total: 5.759900 ms (FindLiveObjects: 0.436000 ms CreateObjectMapping: 0.226400 ms MarkObjects: 4.977100 ms  DeleteObjects: 0.117800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014318 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor.ExecuteProcessor () [0x0003f] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:44 
+  at Doozy.Editor.Internal.DoozyAssetsProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\DoozyAssetsProcessor.cs:25 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.TypeInitializationException: The type initializer for 'Doozy.Engine.Utils.DoozyPath' threw an exception. ---> System.ArgumentException: The specified path is not of a legal form (empty).
+  at System.IO.Path.InsecureGetFullPath (System.String path) [0x00025] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.Path.GetFullPathInternal (System.String path) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo.Init (System.String fileName, System.Boolean checkHost) [0x00007] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.IO.FileInfo..ctor (System.String fileName) [0x00014] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileInfo..ctor(string)
+  at Doozy.Engine.Utils.DoozyPath.get_BasePath () [0x0003b] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:158 
+  at Doozy.Engine.Utils.DoozyPath..cctor () [0x00000] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Engine\Utils\DoozyPath.cs:62 
+   --- End of inner exception stack trace ---
+  at Doozy.Editor.Internal.ProcessorsSettings.get_Instance () [0x00018] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\ProcessorsSettings.cs:23 
+  at Doozy.Editor.Internal.FoldersProcessor.ExecuteProcessor () [0x0000c] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:20 
+  at Doozy.Editor.Internal.FoldersProcessor..cctor () [0x00001] in C:\Users\csviv\Desktop\unity\cardRoguelikeTD\Assets\Doozy\Editor\Internal\FoldersProcessor.cs:15 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.028 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4029ms)
+		BeginReloadAssembly (182ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (3740ms)
+			LoadAssemblies (157ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (680ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (130ms)
+			SetupLoadedEditorAssemblies (2595ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (204ms)
+				ProcessInitializeOnLoadAttributes (2066ms)
+				ProcessInitializeOnLoadMethodAttributes (296ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.5 MB.
+System memory in use after: 214.0 MB.
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 5549.
+Total: 8.291500 ms (FindLiveObjects: 0.643400 ms CreateObjectMapping: 0.397500 ms MarkObjects: 7.096700 ms  DeleteObjects: 0.151400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

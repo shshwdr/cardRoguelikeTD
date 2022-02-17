@@ -71,7 +71,7 @@ public class HPCharacterController : MonoBehaviour
 
     }
 
-    protected Dictionary<string, List<Buff>> currentBuffs = new Dictionary<string, List<Buff>>();
+    protected Dictionary<BuffType, List<Buff>> currentBuffs = new Dictionary<BuffType, List<Buff>>();
 
     public void applyBuff(Dictionary<string,int> buffs)
     {
@@ -79,11 +79,11 @@ public class HPCharacterController : MonoBehaviour
         {
             BuffInfo buffInfo = BuffManager.Instance.getBuffInfo(pair.Key);
             Buff buff = new Buff(buffInfo, pair.Value);
-            if (!currentBuffs.ContainsKey(buffInfo.name))
+            if (!currentBuffs.ContainsKey(BuffManager.Instance.buffStringToType[ buffInfo.name]))
             {
-                currentBuffs[buffInfo.name] = new List<Buff>();
+                currentBuffs[BuffManager.Instance.buffStringToType[buffInfo.name]] = new List<Buff>();
             }
-            currentBuffs[buffInfo.name].Add(buff);
+            currentBuffs[BuffManager.Instance.buffStringToType[buffInfo.name]].Add(buff);
         }
     }
 

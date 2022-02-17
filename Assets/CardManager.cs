@@ -21,6 +21,7 @@ public class CardInfo : BaseInfo
     public bool canAttackFly;
     public bool canAttackGround;
 
+    public Sprite image { get { return Resources.LoadAll<Sprite>("TowerArt/" + cardType)[0]; } }
 
 
     public float damageIncreaseByLevel;
