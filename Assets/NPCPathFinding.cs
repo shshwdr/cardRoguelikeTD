@@ -83,6 +83,11 @@ public class NPCPathFinding : MonoBehaviour
         //StartCoroutine(updatePathFindingIenumerator());
     }
 
+    //public void stopPath()
+    //{
+    //    seeker.StopPath();
+    //}
+
     private void FixedUpdate()
     {
         if (path == null)

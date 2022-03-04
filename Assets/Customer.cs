@@ -18,8 +18,9 @@ public class Customer : HPCharacterController
     bool canBlock = false;
     bool noMoney = false;
 
+    public Animator animator;
 
-    Seeker seeker;
+
 
     public bool getBlocked(BlockTower tower)
     {
@@ -60,8 +61,8 @@ public class Customer : HPCharacterController
     protected override void Awake()
     {
         base.Awake();
-        seeker = GetComponent<Seeker>();
-        spriteObject = gameObject;
+        animator = GetComponentInChildren<Animator>();
+        spriteObject = animator.gameObject;
         pathFinding = GetComponent<NPCPathFinding>();
         emotes = GetComponentInChildren<EmotesController>();
     }
@@ -141,13 +142,14 @@ public class Customer : HPCharacterController
 
     public void clean()
     {
-
+        animator.SetTrigger("die");
+        pathFinding.cancelPath();
         CustomerManager.Instance.removeCustomer(this);
         if(MouseManager.Instance.currentFocusTarget == GetComponent<SelectToFocusTarget>())
         {
             MouseManager.Instance.currentFocusTarget = null;
         }
-        Destroy(gameObject);
+        Destroy(gameObject,1);
     }
 
     public override void Die()

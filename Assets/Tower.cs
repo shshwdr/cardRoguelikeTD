@@ -8,7 +8,8 @@ public class Tower:CardEffect,IClickable
     public int level = 1;
 
 
-    public Sprite image { get { return Resources.Load<Sprite>("TowerArt/" + type+"/"+ Mathf.Min(3, level)); } }
+    public int imageCount { get { return Resources.LoadAll<Sprite>("TowerArt/" + type).Length; } }
+    public Sprite image { get { return Resources.Load<Sprite>("TowerArt/" + type+"/"+ Mathf.Min(imageCount, level)); } }
 
     public Tower DeepCopy()
     {

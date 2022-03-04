@@ -1,2 +1,2 @@
 ﻿name,displayName,initialDeck,isUnlocked,maxHP
-hero,Hero,Cannon:3|Frost:3,1,10
+hero,Hero,Cannon:1|Frost:1|Arrow:2|Bank:1,1,10
