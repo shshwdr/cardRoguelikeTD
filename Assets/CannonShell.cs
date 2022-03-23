@@ -9,6 +9,7 @@ public class CannonShell : Bullet
 
     float totalTime;
     public float height;
+    Vector3 lastPosition;
 
     public override void init(Tower tower, Transform t)
     {
@@ -18,13 +19,27 @@ public class CannonShell : Bullet
         startPosition = transform.position;
     }
 
+    public override void init(AreaDamageSpell spell, Vector3 position)
+    {
+        base.init(spell, position);
+        startTime = Time.time;
+        totalTime = 1 / speed;
+        startPosition = transform.position;
+    }
+
     void Update()
     {
-        var time = (Time.time - startTime)/totalTime;
-        transform.position = Utils.Parabola(startPosition, targetPosition, height, time);
-        if (time >= 1)
+        if (!hasHit)
         {
-            hit();
+
+            var time = (Time.time - startTime) / totalTime;
+            transform.position = Utils.Parabola(startPosition, targetPosition, height, time);
+            transform.right = transform.position - lastPosition;
+            lastPosition = transform.position;
+            if (time >= 1)
+            {
+                hit();
+            }
         }
     }
 }

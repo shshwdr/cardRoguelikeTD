@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,11 +12,13 @@ public class Bullet : MonoBehaviour
     public float speed = 3f;
     public float hitDistance = 0.3f;
     public GameObject explosion;
+    public bool useExplosionAnimation = false;
     protected float range;
     public int bulletType = 0;//0:single 1 area
     protected string buff;
     protected int towerLevel;
     protected Tower shootTower;
+    public bool hasHit;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +38,23 @@ public class Bullet : MonoBehaviour
         {
             targetPosition = target.position;
         }
+    }
+
+    public virtual void init(AreaDamageSpell spell, Vector3 position)
+    {
+
+        damage = spell.cardInfo.damage;
+        range = spell.cardInfo.range;
+        speed = spell.cardInfo.speed;
+        buff = spell.cardInfo.buff;
+        //towerLevel = tower.level;
+        targetPosition = position;
+        //target = t;
+        ////shootTower = tower;
+        //if (!useTarget)
+        //{
+        //    targetPosition = target.position;
+        //}
     }
     // Update is called once per frame
     void Update()
@@ -69,8 +89,6 @@ public class Bullet : MonoBehaviour
         }
         else
         {
-            var explo = Instantiate(explosion, transform.position, Quaternion.identity);
-            explo.transform.localScale = Vector3.one * range * 2;
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, range, LayerMask.GetMask("Enemy"));
             foreach (var enemyC in colliders)
             {
@@ -89,8 +107,26 @@ public class Bullet : MonoBehaviour
                     Debug.LogError("customer not existed on " + enemy);
                 }
             }
-            Destroy(explo, 0.2f);
         }
-        Destroy(gameObject);
+
+        if (useExplosionAnimation)
+        {
+            GetComponentInChildren<Animator>().SetTrigger("explode");
+            hasHit = true;
+            Sequence seq = DOTween.Sequence();
+            seq.Append(transform.DOScale(range / Utils.gridSize * 2, 0.7f));
+            seq.PrependInterval(0.3f);
+            //seq.Append(transform.DOScale(1.5f, 1f));
+
+            Destroy(gameObject,2.1f);
+        }
+        else
+        {
+
+            var explo = Instantiate(explosion, transform.position, Quaternion.identity);
+            explo.transform.localScale = Vector3.one * range * 2;
+            Destroy(explo, 0.2f);
+            Destroy(gameObject);
+        }
     }
 }

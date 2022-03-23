@@ -16,7 +16,7 @@ public class CardSpell : CardEffect
             cardHappenCenter = GetComponent<Transform>();
         }
     }
-    void Start()
+    protected virtual void Start()
     {
 
         cardInfo = CardManager.Instance.getCardInfo(type);

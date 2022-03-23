@@ -1,6 +1,6 @@
 ﻿name,displayName,description,cost,damage,speed,spawnMoveSpeed,range,spawnRange,buff,tags,damageIncreaseByLevel,speedIncreaseByLevel,rangeIncreaseByLevel
 Wall,Wall,Wall,2,0,0,,0,,,Maze,,,
-Fireball,Fireball,Fireball,10,8,1,,2,,,Spell,,,
+Fireball,Fireball,Fireball,10,8,0.5,,2,,,Spell,,,
 Divination,Divination,draw two cards,3,0,0,0,0,,,Spell,,,
 Cannon,Cannon,area damage,10,10,0.7,0.7,2,1,,Tower| Area|Ground,0.1,0.1,0.1
 Balanced,Balanced,Balanced,8,8,1.5,1,2,,,Tower| Target|Ground|Sky,0.1,0.1,0.1

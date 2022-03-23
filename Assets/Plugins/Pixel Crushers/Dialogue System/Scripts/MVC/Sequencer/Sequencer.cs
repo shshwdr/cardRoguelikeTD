@@ -1123,6 +1123,10 @@ namespace PixelCrushers.DialogueSystem
             {
                 return HandleNavMeshAgentInternally(commandName, args);
             }
+            else if (string.Equals(commandName, "NPCPathFinding"))
+            {
+                return HandleNPCPathFindingAgentInternally(commandName, args);
+            }
             else if (string.Equals(commandName, "OpenPanel"))
             {
                 return HandleOpenPanelInternally(commandName, args);
@@ -1815,6 +1819,43 @@ namespace PixelCrushers.DialogueSystem
                 if (stop) navMeshAgent.Stop();
 #else
                 navMeshAgent.isStopped = stop;
+#endif
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Handles NavMeshAgent(stop|destination, [agent])
+        /// 
+        /// - stop|destination: 'stop' stops the agent. Otherwise specify a destination GameObject.
+        /// - agent: NavMeshAgent GameObject. Default: speaker.
+        /// </summary>
+        private bool HandleNPCPathFindingAgentInternally(string commandName, string[] args)
+        {
+            var stop = string.Equals(SequencerTools.GetParameter(args, 0), "stop", System.StringComparison.OrdinalIgnoreCase);
+            var destination = stop ? null : SequencerTools.GetSubject(SequencerTools.GetParameter(args, 0), m_speaker, m_listener);
+            var subject = SequencerTools.GetSubject(SequencerTools.GetParameter(args, 1), m_speaker, m_listener);
+#if UNITY_5_3 || UNITY_5_4
+            var navMeshAgent = (subject != null) ? subject.GetComponent<NavMeshAgent>() : null;
+#else
+            var navMeshAgent = (subject != null) ? subject.GetComponent("NPCPathFinding") : null;
+#endif
+            if (!stop && destination == null)
+            {
+                if (DialogueDebug.logWarnings) Debug.LogWarning("Dialogue System: Sequencer: NavMeshAgent(" + SequencerTools.GetParameter(args, 0) + "," + SequencerTools.GetParameter(args, 1) + "): Destination not found.");
+            }
+            else if (navMeshAgent == null)
+            {
+                if (DialogueDebug.logWarnings) Debug.LogWarning("Dialogue System: Sequencer: NavMeshAgent(" + SequencerTools.GetParameter(args, 0) + "," + SequencerTools.GetParameter(args, 1) + "): NavMeshAgent subject not found.");
+            }
+            else
+            {
+                if (DialogueDebug.logInfo) Debug.Log("Dialogue System: Sequencer: NavMeshAgent(" + SequencerTools.GetParameter(args, 0) + "," + SequencerTools.GetParameter(args, 1) + ")");
+                if (!stop) navMeshAgent.SendMessage("setTargetWithMapUpdate", destination.position);
+#if UNITY_5_3 || UNITY_5_4
+                if (stop) navMeshAgent.Stop();
+#else
+                navMeshAgent.SendMessage("cancelPath");
 #endif
             }
             return true;

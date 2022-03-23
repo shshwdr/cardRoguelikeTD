@@ -63,6 +63,13 @@ public class NPCPathFinding : MonoBehaviour
     {
         path = null;
     }
+
+    public void setTargetWithMapUpdate(Vector3 t)
+    {
+
+        AstarPath.active.Scan();
+        setTarget(t);
+    }
     public void setTarget(Vector3 t)
     {
         target = t;
@@ -108,7 +115,10 @@ public class NPCPathFinding : MonoBehaviour
             reachedEndOfPath = true;
             // npc.finishPath();
             //customer.spendMoney();
-            customer.finishedShopping();
+            if (customer)
+            {
+                customer.finishedShopping();
+            }
            // animator.SetFloat("speed", 0);
             return;
         }
