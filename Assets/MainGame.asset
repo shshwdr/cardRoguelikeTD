@@ -240,7 +240,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 0
         destinationConversationID: 1
-        destinationDialogueID: 29
+        destinationDialogueID: 1
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1354,7 +1354,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 20
+        destinationConversationID: 1
+        destinationDialogueID: 34
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -1393,9 +1399,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'NPCPathFinding(out,Player);
+        value: '
 
-          NPCPathFinding(out,Brother);'
+          required SetDialoguePanel(false)@Message(Continued)'
         type: 0
         typeString: 
       conversationID: 1
@@ -1409,7 +1415,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 21
         destinationConversationID: 1
-        destinationDialogueID: 22
+        destinationDialogueID: 35
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1475,8 +1481,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 319.1301
-        y: 106.95767
+        x: 351.48297
+        y: 277.5456
         width: 160
         height: 30
     - id: 23
@@ -1532,8 +1538,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 319.1301
-        y: 156.95761
+        x: 351.48297
+        y: 327.54553
         width: 160
         height: 30
     - id: 24
@@ -1587,8 +1593,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 319.1301
-        y: 206.95761
+        x: 351.48297
+        y: 377.54553
         width: 160
         height: 30
     - id: 25
@@ -1643,8 +1649,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 319.1301
-        y: 256.9576
+        x: 351.48297
+        y: 427.54553
         width: 160
         height: 30
     - id: 26
@@ -1699,8 +1705,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 319.1301
-        y: 306.9576
+        x: 351.48297
+        y: 477.54553
         width: 160
         height: 30
     - id: 27
@@ -1756,8 +1762,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 319.1301
-        y: 356.9576
+        x: 351.48297
+        y: 527.54553
         width: 160
         height: 30
     - id: 28
@@ -1812,8 +1818,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 319.1301
-        y: 406.9576
+        x: 351.48297
+        y: 577.54553
         width: 160
         height: 30
     - id: 29
@@ -1844,7 +1850,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: required SetDialoguePanel(false)@Message(Continued)
         type: 0
         typeString: 
       conversationID: 1
@@ -1858,7 +1864,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 29
         destinationConversationID: 1
-        destinationDialogueID: 30
+        destinationDialogueID: 33
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1868,8 +1874,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 548.44025
-        y: 43.164856
+        x: 354.98706
+        y: 671.81665
         width: 160
         height: 30
     - id: 30
@@ -1900,13 +1906,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Delay(2)@Message(Hidden)->Message(Reappear);
-
-          Delay(5)@{{end}};
-
-          SetActive(outRoom,true);
-
-          Delay(5)@{{end}};'
+        value: 
         type: 0
         typeString: 
       conversationID: 1
@@ -1930,57 +1930,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 609.51733
-        y: 120.73848
-        width: 160
-        height: 30
-    - id: 31
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: moved outside
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 772.88513
-        y: 34.459946
+        x: 371.23676
+        y: 831.537
         width: 160
         height: 30
     - id: 32
@@ -2028,13 +1979,174 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 609.51733
-        y: 170.73848
+        x: 367.7884
+        y: 903.9507
+        width: 160
+        height: 30
+    - id: 33
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: move outside
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: "SetContinueMode(false); \r\nContinue()@3;\r\nrequired SetContinueMode(true)@Message(Continued);\r\nrequired
+          SetDialoguePanel(true)@Message(Continued);\nSetActive(outRoom,true);"
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 33
+        destinationConversationID: 1
+        destinationDialogueID: 30
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 360.1595
+        y: 752.23926
+        width: 160
+        height: 30
+    - id: 34
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: dialogues for no...
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 328.36047
+        y: 1018.3606
+        width: 160
+        height: 30
+    - id: 35
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: wait for them left the room
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: "SetContinueMode(false); \r\nContinue()@3;\r\nrequired SetContinueMode(true)@Message(Continued);\r\nrequired
+          SetDialoguePanel(true)@Message(Continued);\nNPCPathFinding(out,Player);\nNPCPathFinding(out,Brother);"
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 35
+        destinationConversationID: 1
+        destinationDialogueID: 22
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 413.67548
+        y: 156.04852
         width: 160
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.58000046
+    canvasZoom: 0.5200006
   syncInfo:
     syncActors: 0
     syncItems: 0
