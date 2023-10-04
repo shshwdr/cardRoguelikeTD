@@ -110,6 +110,7 @@ public class StageManager : Singleton<StageManager>
     private void Start()
     {
         nextRoundButton.onClick.AddListener(delegate { clickNextRoundButton(); });
+        NavVisualizationManager.Instance.SetNav(startingPoint.position,endPoint.position);
     }
 
     void clickNextRoundButton()

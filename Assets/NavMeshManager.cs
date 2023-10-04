@@ -15,6 +15,7 @@ public class NavMeshManager : Singleton<NavMeshManager>
     {
 
         AstarPath.active.Scan();
+        NavVisualizationManager.Instance.UpdateNav();
     }
 
     // Update is called once per frame

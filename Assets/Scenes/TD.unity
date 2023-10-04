@@ -4511,7 +4511,7 @@ MonoBehaviour:
   m_ReverseArrangement: 0
 --- !u!95 &371310942
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4524,10 +4524,12 @@ Animator:
   m_UpdateMode: 2
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &371310943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7320,7 +7322,7 @@ MonoBehaviour:
   m_VerticalFit: 2
 --- !u!95 &405024600
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7333,10 +7335,12 @@ Animator:
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!225 &405024601
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7644,6 +7648,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496509165}
   m_CullTransparentMesh: 1
+--- !u!1 &504305363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504305364}
+  - component: {fileID: 504305365}
+  m_Layer: 0
+  m_Name: Line
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &504305364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504305363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 796218631}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!120 &504305365
+LineRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504305363}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 2062712933
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 1, y: 1, z: 0}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 0.1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.004901886
+        value: 0.5121956
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 0.27450982}
+      key1: {r: 1, g: 1, b: 1, a: 0.27450982}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_UseWorldSpace: 0
+  m_Loop: 0
 --- !u!1 &507829842
 GameObject:
   m_ObjectHideFlags: 0
@@ -7799,7 +7932,7 @@ MonoBehaviour:
   m_hasFocus: 0
 --- !u!95 &507829847
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7812,10 +7945,12 @@ Animator:
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!225 &507829848
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -8964,6 +9099,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1995673418375410066, guid: 9c0f94f5e400d1449b3d13ddb508a643, type: 3}
   m_PrefabInstance: {fileID: 754981505}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &796218630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 796218631}
+  - component: {fileID: 796218632}
+  - component: {fileID: 796218633}
+  m_Layer: 0
+  m_Name: NavVisualizationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &796218631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796218630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 504305364}
+  m_Father: {fileID: 1605426411}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &796218632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796218630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77517aa2df33d74f932e3d6a5c0377e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &796218633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796218630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
 --- !u!1 &796727649
 GameObject:
   m_ObjectHideFlags: 0
@@ -9009,7 +9217,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0}
 --- !u!95 &796727651
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9022,10 +9230,12 @@ Animator:
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!225 &796727652
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -22762,7 +22972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: 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
+    dataString: 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
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -25946,7 +26156,7 @@ MonoBehaviour:
       m_Calls: []
 --- !u!95 &1524687332
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -25959,10 +26169,12 @@ Animator:
   m_UpdateMode: 2
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!225 &1524687333
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -26190,7 +26402,7 @@ MonoBehaviour:
   m_VerticalFit: 2
 --- !u!95 &1532722541
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -26203,10 +26415,12 @@ Animator:
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!225 &1532722542
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -28197,6 +28411,7 @@ Transform:
   - {fileID: 1407022007}
   - {fileID: 663887741}
   - {fileID: 1756138449}
+  - {fileID: 796218631}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

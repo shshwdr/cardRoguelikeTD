@@ -240,7 +240,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 0
         destinationConversationID: 1
-        destinationDialogueID: 1
+        destinationDialogueID: 21
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1401,7 +1401,7 @@ MonoBehaviour:
       - title: Sequence
         value: '
 
-          required SetDialoguePanel(false)@Message(Continued)'
+          required SetDialoguePanel(false,immediate)@Message(Continued)'
         type: 0
         typeString: 
       conversationID: 1
@@ -1425,8 +1425,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 319.1301
-        y: 56.957672
+        x: 317.8143
+        y: 55.641876
         width: 160
         height: 30
     - id: 22
@@ -1850,7 +1850,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: required SetDialoguePanel(false)@Message(Continued)
+        value: required SetDialoguePanel(false,immediate)@Message(Continued)
         type: 0
         typeString: 
       conversationID: 1
@@ -2099,7 +2099,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2111,12 +2111,12 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: wait for them left the room
+        value: 
         type: 0
         typeString: 
       - title: Sequence
         value: "SetContinueMode(false); \r\nContinue()@3;\r\nrequired SetContinueMode(true)@Message(Continued);\r\nrequired
-          SetDialoguePanel(true)@Message(Continued);\nNPCPathFinding(out,Player);\nNPCPathFinding(out,Brother);"
+          SetDialoguePanel(true,immediate)@Message(Continued);\nNPCPathFinding(out,Player);\nNPCPathFinding(out,Brother);"
         type: 0
         typeString: 
       conversationID: 1
@@ -2141,12 +2141,12 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 413.67548
-        y: 156.04852
+        y: 154.73273
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.5200006
+    canvasScrollPosition: {x: 92.00282, y: 0}
+    canvasZoom: 0.76000035
   syncInfo:
     syncActors: 0
     syncItems: 0
