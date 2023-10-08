@@ -31,7 +31,7 @@ public class HandCardCell : MonoBehaviour
 
     public void spawnTower()
     {
-        var prefab = Resources.Load<GameObject>("tower/"+ card.cardName);
+        var prefab = Resources.Load<GameObject>("tower/"+ card.cardInfo.name);
         GameObject spawnInstance = Instantiate(prefab);
         spawnInstance.GetComponent<CardEffect>().cost = card.cost;
         spawnInstance.GetComponent<CardEffect>().card = card;
@@ -39,7 +39,7 @@ public class HandCardCell : MonoBehaviour
         {
             MouseManager.Instance.startDragItem(spawnInstance);
         }
-        spawnInstance.name = card.cardName;
+        spawnInstance.name = card.cardInfo.name;
         //spawnInstance.GetComponent<DraggableItem>().Init(prefab.name, itemInfo, isMainItem);
 
     }

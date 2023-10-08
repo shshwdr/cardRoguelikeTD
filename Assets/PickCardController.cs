@@ -20,7 +20,7 @@ public class PickCardController : MonoBehaviour
         gameObject.SetActive(true);
         Time.timeScale = 0;
 
-        var candidateCards = Utils.GetRandomItemsFromList(CardManager.Instance.cardInfoDict.Keys.ToList(), selectNum);
+        var candidateCards = Utils.GetRandomItemsFromList(CardManager.Instance.cardInfoDict.Where(x=>x.Value.isUnlocked == 1).Select(x=>x.Key).ToList(), selectNum);
         int i = 0;
         for (;i< candidateCards.Count; i++)
         {

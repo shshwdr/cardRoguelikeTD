@@ -17,6 +17,7 @@ public class CardInfo : BaseInfo
     public float spawnRange;
     public List<string> tags;
     public string buff;
+    public float buffPercent;
 
     public bool canAttackFly;
     public bool canAttackGround;
@@ -27,6 +28,7 @@ public class CardInfo : BaseInfo
     public float damageIncreaseByLevel;
     public float speedIncreaseByLevel;
     public float rangeIncreaseByLevel;
+
 
 }
 

@@ -522,6 +522,19 @@ namespace Sinbad
                     res.Add(pair);
                 }
                 return res;
+            }
+            else if (t == typeof(List<float>))
+            {
+                List<float> res = new List<float>();
+                string[] pairs = strValue.Split('|');
+                if (pairs.Length != 0)
+                {
+                    foreach (string pair in pairs)
+                    {
+                        res.Add(float.Parse( pair));
+                    }
+                }
+                return res;
             }else if (t == typeof(bool))
             {
                 return int.Parse(strValue) == 1;

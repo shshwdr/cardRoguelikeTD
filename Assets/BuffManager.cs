@@ -9,7 +9,7 @@ public class BuffManager : Singleton<BuffManager>
     public Dictionary<string, BuffType> buffStringToType = new Dictionary<string, BuffType>();
     public Dictionary<BuffType, string> buffTypeToString = new Dictionary<BuffType, string>(){
     {BuffType.Frost,"Frost" },
-    {BuffType.Confused,"Confused" },
+    {BuffType.Attract,"Attract" },
 };
     public Dictionary<string, BuffInfo> BuffInfoDict = new Dictionary<string, BuffInfo>();
 

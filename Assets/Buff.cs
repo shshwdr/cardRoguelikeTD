@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum BuffType { Frost,Confused};
+public enum BuffType { Frost,Attract};
 
 
 public class BuffInfo : BaseInfo
@@ -17,6 +17,7 @@ public class Buff {
     BuffInfo info;
     public float invalidTime;
     public int level;
+    public Tower tower;
 
     public Buff(BuffInfo inf,int lev)
     {

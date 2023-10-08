@@ -8,6 +8,7 @@ public class Customer : HPCharacterController
     EmotesController emotes;
     public NPCPathFinding pathFinding;
     public Vector3 target;
+    private Vector3 originalTarget;
     public Vector3 finalTarget;
     bool isBlocked = false;
     BlockTower blockTower;
@@ -90,7 +91,12 @@ public class Customer : HPCharacterController
 
     protected override void Update()
     {
+        if (isDead)
+        {
+            return;
+        }
         base.Update();
+        removeBuff();
         if (isBlocked)
         {
 
@@ -120,6 +126,27 @@ public class Customer : HPCharacterController
             currentBuffs[BuffType.Frost] = nextBuff;
             spriteObject.GetComponent<SpriteRenderer>().color = Color.blue;
         }
+        else if (currentBuffs.ContainsKey(BuffType.Attract) && currentBuffs[BuffType.Attract].Count > 0)
+        {
+            var nextBuff = new List<Buff>();
+            foreach (var buff in currentBuffs[BuffType.Attract])
+            {
+                
+                break;
+                // speedAdjust = 1 - buff.effect;
+                // if (buff.invalidTime <= Time.time)
+                // {
+                //
+                // }
+                // else
+                // {
+                //     nextBuff.Add(buff);
+                // }
+
+            }
+            currentBuffs[BuffType.Frost] = nextBuff;
+            spriteObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+        }
         else
         {
             //reset speed
@@ -128,12 +155,78 @@ public class Customer : HPCharacterController
         }
 
         GetComponent<NPCPathFinding>().moveSpeed = customerInfo.moveSpeed * speedAdjust;
+        
+        
     }
 
-    public bool isConfused()
+    void removeBuff()
     {
-        return currentBuffs.ContainsKey(BuffType.Confused) && currentBuffs[BuffType.Confused].Count > 0;
+        if (isDead)
+        {
+            return;
+        }
+        foreach (var buffKey in currentBuffs.Keys)
+        {
+            var nextBuff = new List<Buff>();
+            foreach (var buff in currentBuffs[buffKey])
+            {
+                if (buff.invalidTime <= Time.time)
+                {
+                    if (buffKey == BuffType.Attract)
+                    {
+                        
+                        pathFinding.setTarget(target);
+                    }
+                }
+                else
+                {
+                    nextBuff.Add(buff);
+                }
+
+            }
+            currentBuffs[BuffType.Frost] = nextBuff;
+            spriteObject.GetComponent<SpriteRenderer>().color = Color.white;
+        }
     }
+    
+    public void applyBuff(Dictionary<string,int> buffs,Tower applyee = null)
+    {
+        if (isDead)
+        {
+            return;
+        }
+        foreach(var pair in buffs)
+        {
+            BuffInfo buffInfo = BuffManager.Instance.getBuffInfo(pair.Key);
+            Buff buff = new Buff(buffInfo, pair.Value);
+            if (applyee != null)
+            {
+                buff.tower = applyee;
+            }
+
+            var buffType = BuffManager.Instance.buffStringToType[buffInfo.name];
+            
+            if (buffType == BuffType.Attract)
+            {
+                if (currentBuffs.ContainsKey(buffType))
+                {
+                    continue;
+                }
+                pathFinding.setTarget(applyee.transform.position);
+            }
+            if (!currentBuffs.ContainsKey(buffType))
+            {
+                currentBuffs[buffType] = new List<Buff>();
+            }
+            currentBuffs[buffType].Add(buff);
+
+        }
+    }
+
+    // public bool isConfused()
+    // {
+    //     return currentBuffs.ContainsKey(BuffType.Confused) && currentBuffs[BuffType.Confused].Count > 0;
+    // }
 
     public override bool isFlying()
     {
@@ -156,22 +249,26 @@ public class Customer : HPCharacterController
     {
         base.Die();
 
-        foreach(var behavior in GetComponents<BehaviorWhenDestroyed>())
-        {
-            behavior.onDestroyed(null);
-        }
+        pathFinding.setTarget(target);
+        // foreach(var behavior in GetComponents<BehaviorWhenDestroyed>())
+        // {
+        //     behavior.onDestroyed(null);
+        // }
 
         //add coins
-        Inventory.Instance.addCoin(customerInfo.reward);
-        clean();
+        //Inventory.Instance.addCoin(customerInfo.reward);
+        //clean();
 
 
     }
 
     public void finishedShopping()
     {
+        
+        //get money
+        Inventory.Instance.addCoin((int)(maxHp - hp));
         //do damage to player
-        BattleManager.Instance.getDamage(1);
+        //BattleManager.Instance.getDamage(1);
         clean();
     }
 

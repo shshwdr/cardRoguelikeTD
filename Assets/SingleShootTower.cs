@@ -40,7 +40,7 @@ public class SingleShootTower : AttackByTime
         }
 
         //check all the others
-        foreach (var cus in CustomerManager.Instance.getAllCustoemrsWithMoney())
+        foreach (var cus in CustomerManager.Instance.getAllCustomersWithMoney())
         {
             if (currentShootCount >= shootCount)
             {

@@ -59,10 +59,10 @@ public class CustomerManager : Singleton<CustomerManager>
         return customers;
     }
 
-    public List<Customer> getAllCustoemrsWithMoney()
+    public List<Customer> getAllCustomersWithMoney()
     {
-        return customers;
-       // return customers.Count == 0?customers: (List<Customer>)customers.Where(x => !x.isDead);
+        //return customers;
+        return customers.Count == 0?customers: (List<Customer>)(customers.Where(x => !x.isDead)).ToList();
     }
 
     public void spawnEnemies(List<Vector3> positions, GameObject spawnItem)

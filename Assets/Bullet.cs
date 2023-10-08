@@ -99,7 +99,7 @@ public class Bullet : MonoBehaviour
                     if (buff!=null && buff!="")
                     {
 
-                        enemy.applyBuff(new Dictionary<string, int>() { { buff, towerLevel } });
+                        enemy.applyBuff(new Dictionary<string, int>() { { buff, towerLevel } },shootTower);
                     }
                 }
                 else
@@ -118,14 +118,15 @@ public class Bullet : MonoBehaviour
             seq.PrependInterval(0.3f);
             //seq.Append(transform.DOScale(1.5f, 1f));
 
-            Destroy(gameObject,2.1f);
+            Destroy(gameObject);
+            //Destroy(gameObject,2.1f);
         }
         else
         {
 
-            var explo = Instantiate(explosion, transform.position, Quaternion.identity);
-            explo.transform.localScale = Vector3.one * range * 2;
-            Destroy(explo, 0.2f);
+            //var explo = Instantiate(explosion, transform.position, Quaternion.identity);
+           // explo.transform.localScale = Vector3.one * range * 2;
+           // Destroy(explo, 0.2f);
             Destroy(gameObject);
         }
     }

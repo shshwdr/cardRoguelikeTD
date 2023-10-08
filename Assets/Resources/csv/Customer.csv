@@ -1,7 +1,7 @@
-﻿name,displayName,hp,moveSpeed,reward,canBlock,isFlying
-normal,Small Toast,300,0.3,1,1,0
-fast,Big Toast,300,0.1,2,1,1
-cantBlock,Eggshell,300,0.2,2,0,0
-lotsHP,Bacon,300,0.3,1,1,0
-medusa,Medusa,300,0.4,2,0,0
-normalSpawn,Medusa,300,0.3,2,0,0
+﻿name,displayName,description,hp,moveSpeed,reward,canBlock,isFlying
+normal,Office worker,Man with some money.,20,0.3,1,1,0
+fast,Children,"move fast, with less money",20,0.1,2,1,1
+cantBlock,Eggshell,,20,0.2,2,0,0
+lotsHP,Bacon,,20,0.3,1,1,0
+medusa,Medusa,,20,0.4,2,0,0
+normalSpawn,Medusa,,20,0.3,2,0,0

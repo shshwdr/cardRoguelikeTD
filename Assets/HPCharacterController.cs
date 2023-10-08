@@ -73,24 +73,34 @@ public class HPCharacterController : MonoBehaviour
 
     protected Dictionary<BuffType, List<Buff>> currentBuffs = new Dictionary<BuffType, List<Buff>>();
 
-    public void applyBuff(Dictionary<string,int> buffs)
-    {
-        foreach(var pair in buffs)
-        {
-            BuffInfo buffInfo = BuffManager.Instance.getBuffInfo(pair.Key);
-            Buff buff = new Buff(buffInfo, pair.Value);
-            if (!currentBuffs.ContainsKey(BuffManager.Instance.buffStringToType[ buffInfo.name]))
-            {
-                currentBuffs[BuffManager.Instance.buffStringToType[buffInfo.name]] = new List<Buff>();
-            }
-            currentBuffs[BuffManager.Instance.buffStringToType[buffInfo.name]].Add(buff);
-        }
-    }
+    // public void applyBuff(Dictionary<string,int> buffs,Tower applyee = null)
+    // {
+    //     foreach(var pair in buffs)
+    //     {
+    //         BuffInfo buffInfo = BuffManager.Instance.getBuffInfo(pair.Key);
+    //         Buff buff = new Buff(buffInfo, pair.Value);
+    //         if (applyee != null)
+    //         {
+    //             buff.tower = applyee;
+    //         }
+    //         if (!currentBuffs.ContainsKey(BuffManager.Instance.buffStringToType[ buffInfo.name]))
+    //         {
+    //             currentBuffs[BuffManager.Instance.buffStringToType[buffInfo.name]] = new List<Buff>();
+    //         }
+    //         currentBuffs[BuffManager.Instance.buffStringToType[buffInfo.name]].Add(buff);
+    //     }
+    // }
+    
 
 
     public bool canBeDamaged(Tower tower)
     {
         if ((isFlying() && !tower.canAttackFlying) || (isFlying() && !tower.canAttackGround))
+        {
+            return false;
+        }
+
+        if (isDead)
         {
             return false;
         }

@@ -18,13 +18,27 @@ public class AttackInArea : AttackByTime
     protected override void attack()
     {
         base.attack();
-        var result = Physics2D.OverlapCircleAll(shootPoint.position, attackArea.bounds.extents.magnitude);
+        var result = Physics2D.OverlapCircleAll(shootPoint.position,  (attackArea as CircleCollider2D).radius*attackArea.transform.localScale.x);
         bool hitted = false;
         foreach(var r in result)
         {
+            var customer = r.GetComponent<Customer>();
             if (r.GetComponent<Customer>() && r.GetComponent<Customer>().canBeDamaged(tower))
             {
-                r.GetComponent<Customer>().getDamage(tower.damage, tower);
+                if (tower.damage > 0)
+                {
+                    r.GetComponent<Customer>().getDamage(tower.damage, tower);
+                }
+                if (tower.towerInfo.buff != null)
+                {
+                    if (tower.towerInfo.buffPercent > 0)
+                    {
+                        if (Random.Range(0, 100) <= tower.towerInfo.buffPercent)
+                        {
+                            customer.applyBuff(new Dictionary<string, int>(){ { tower.towerInfo.buff,tower.level}},tower);
+                        }
+                    }
+                }
                 hitted = true;
             }
         }

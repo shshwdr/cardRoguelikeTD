@@ -15,7 +15,7 @@ public class BlockTower : AttackByTime
         {
             return;
         }
-        foreach (var cus in CustomerManager.Instance.getAllCustoemrsWithMoney())
+        foreach (var cus in CustomerManager.Instance.getAllCustomersWithMoney())
         {
             //if ((cus.transform.position - shootPoint.position).magnitude <= towerInfo.range)
             //{

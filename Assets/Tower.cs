@@ -6,7 +6,7 @@ public class Tower:CardEffect,IClickable
 {
     public CardInfo towerInfo;
     public int level = 1;
-
+    
 
     public int imageCount { get { return Resources.LoadAll<Sprite>("TowerArt/" + type).Length; } }
     public Sprite image { get { return Resources.Load<Sprite>("TowerArt/" + type+"/"+ Mathf.Min(imageCount, level)); } }

@@ -1,11 +1,14 @@
-﻿name,displayName,description,cost,damage,speed,spawnMoveSpeed,range,spawnRange,buff,tags,damageIncreaseByLevel,speedIncreaseByLevel,rangeIncreaseByLevel
-Wall,Wall,Wall,2,0,0,,0,,,Maze,,,
-Fireball,Fireball,Fireball,10,8,0.5,,2,,,Spell,,,
-Divination,Divination,draw two cards,3,0,0,0,0,,,Spell,,,
-Cannon,Cannon,area damage,10,10,0.7,0.7,2,1,,Tower| Area|Ground,0.1,0.1,0.1
-Balanced,Balanced,Balanced,8,8,1.5,1,2,,,Tower| Target|Ground|Sky,0.1,0.1,0.1
-Arrow,Arrow,shoot fast,5,2,3,3,2.5,,,Tower| Target|Ground|Sky,0.1,0.1,0.1
-Bank,Bank,earn money,15,1,0.2,,0,,,Econ,,1,
-Pulse,Pulse,"a trap, wont block enemy, attack only ground, attack enemy stand on it.",10,5,1,,1,,,Tower| Area|Ground,0.1,0.1,0.1
-Frost,Frost,slow down enemy,15,2,0.7,0.7,2,1,Frost,Tower| Area| Debuff|Ground|Sky,0.1,0.1,0.1
-Sniper,Sniper,Sniper,12,15,0.3,,5,,,Tower| Target|Ground|Sky,0.1,0.1,0.1
+﻿name,displayName,description,cost,damage,speed,spawnMoveSpeed,range,spawnRange,buff,buffPercent,tags,damageIncreaseByLevel,speedIncreaseByLevel,rangeIncreaseByLevel,isUnlocked
+Wall,Shelf,Empty shelf that would block customer,2,0,0,,0,,,,Maze,,,,1
+Fireball,Fireball,Fireball,10,8,0.5,,2,,,,Spell,,,,
+Divination,Divination,draw two cards,3,0,0,0,0,,,,Spell,,,,
+Cannon,Soda,"When soda splash, everyone would want to take a try",10,10,0.7,0.7,2,1,,,Tower| Area|Ground,0.1,0.1,0.1,1
+Balanced,Balanced,Balanced,8,8,1.5,1,2,,,,Tower| Target|Ground|Sky,0.1,0.1,0.1,
+Arrow,Chips,Yummy yummy chips,5,2,3,3,2.5,,,,Tower| Target|Ground|Sky,0.1,0.1,0.1,
+Bank,ATM,Customer with not enough money would take more.,15,1,0.2,,0,,,,Econ,,1,,1
+Pulse,Pulse,"a trap, wont block enemy, attack only ground, attack enemy stand on it.",10,5,1,,1,,,,Tower| Area|Ground,0.1,0.1,0.1,
+Frost,Ads,They will attract customer and make them move slower,15,2,0.7,0.7,2,1,Frost,,Tower| Area| Debuff|Ground|Sky,0.1,0.1,0.1,1
+Sniper,Sniper,Sniper,12,15,0.3,,5,,,,Tower| Target|Ground|Sky,0.1,0.1,0.1,
+Attract,Sampling Booth,Customer would get attract and move to it,20,0,0.5,,5,,Attract,10,Tower|Area|Debuff,,,,1
+Push,Push,Push customers,20,0,1,,,,,,Tower,,,,1
+Block,salesperson,block customer,20,0,1,,,,,,Tower,,,,
